@@ -1,29 +1,27 @@
-# Publication provenance
+# Verification record
 
-This repository publishes the independently validated PDEL verification package with English documentation. The initial v1.0.0 publication preserved all 78 locked source, configuration, and verification-tool files. All 37 project Lean modules and the previous local compiler/axiom/type/dependency evidence remain byte-for-byte unchanged in v1.0.1. The v1.0.1 correction changes only dependency-fetch tooling and its recorded hash, as described below.
+## Versions and environment
 
-## Stable manuscript correspondence
+The proof archive is [v1.0.1](https://github.com/hl-ren/pdel-lean-verification/releases/tag/v1.0.1), commit `66181d74011906d2ba5aab18693d750e4a2fdb21`. It uses Lean 4.19.0 and mathlib commit `c44e0c8ee63ca166450922a373c7409c5d26b00b`. Subsequent manuscript and documentation edits retain the proof sources and dependency revisions recorded in that archive.
 
-The current paper snapshot changes only repository/release links and verification-status prose. It reports the actual recorded local builds and retains the coverage limitations. An automated comparison confirmed that mathematical blocks, theorem/proof blocks, inline mathematics, and stable LaTeX label lists are unchanged across the six edited manuscript sources. No Lean theorem, assumption, or proof was edited for publication.
+The [Ubuntu run](https://github.com/hl-ren/pdel-lean-verification/actions/runs/40495422483) compiled all 37 modules from source and audited 626 declarations. Compilation, axiom auditing, complete-type extraction and dependency checks succeeded. The release includes the compiler and audit reports, workflow log and checksums. Local runs are indexed in [the evidence directory](../evidence/README.md).
 
-The baseline manuscript and mapping remain in `paper/baseline/` and `docs/baseline/`. The current mapping has been rebound to the publication manuscript hash; its declaration associations, assumptions, and uncovered-content entries remain unchanged. Both hashes are recorded in the current mapping. Historical relative paths in the baseline map identify the original baseline snapshot.
+The audit admits only `Classical.choice`, `Quot.sound` and `propext`. The source gate rejects incomplete proofs and custom result axioms. The [declaration registry](../verification/declarations.json) and [source lock](../verification/source_lock.json) identify the audited targets and file hashes.
 
-## Manuscript build evidence
+## Manuscript correspondence
 
-The linked manuscript was compiled separately with its existing figures and bibliography. Both the 33-page full article and 8-page supplement compiled successfully. The build logs are exported under `evidence/publication/`; local path prefixes are replaced with descriptive placeholders. Repository and release link targets were checked in the generated PDFs. The PDFs and complete manuscript assets are retained with the author's publication records rather than bundled in this Lean repository.
+The [correspondence table](REVISION3_STATEMENT_MAP.json) associates stable manuscript labels with Lean declarations, hypotheses and coverage limits. Its manuscript hash identifies the current source. The [baseline manuscript](../paper/baseline/PDEL_Toroidal_Journal_Full.tex) and [baseline mapping](baseline/REVISION3_STATEMENT_MAP.json) identify the earlier audited text.
 
-These successful builds do not establish a standalone LaTeX build from this repository: the repository intentionally contains semantic snapshots, without the full figure and numerical-analysis supplement. That standalone build remains **NOT_RUN**.
+The Lean development covers a finite-dimensional core, a single-degree-of-freedom thermoviscoelastic specialization, single-temperature magnetic-quasistatic Eulerian MHD on a fixed box, conditional inter-layer results and the specified scalar history identities. It does not formalize the full Maxwell system, two-temperature PDEs, toroidal embedding, moving boundaries, a complete three-dimensional homologous solution, stability or physical validation.
 
-## Status interpretation
+## Reading the records
 
-`PACKAGE_STATUS.json` is the preserved snapshot of the earlier relocated local verification. In particular, its cloud-CI, cold-download, and LaTeX fields describe that earlier package test; they are not live deployment status. Publication manuscript-build evidence is recorded separately. Current GitHub CI results are available at <https://github.com/hl-ren/pdel-lean-verification/actions/workflows/verify.yml>.
+Each report describes the run that produced it. `NOT_RUN` denotes an operation outside that run or its scope. In particular, `PACKAGE_STATUS.json` records the local package test preceding the Ubuntu run; its cloud-execution fields are historical. The repository's LaTeX snapshots do not include the complete figure and numerical-analysis supplement, and a standalone manuscript build from these files is `NOT_RUN`.
 
-Repository: <https://github.com/hl-ren/pdel-lean-verification>
+Host-specific prefixes in exported local logs are represented by documented placeholders. Original and exported hashes are listed in [the export manifest](../evidence/export_manifest.json).
 
-Versioned verification release: <https://github.com/hl-ren/pdel-lean-verification/releases/tag/v1.0.1>
+## Dependency setup
 
-## v1.0.1 dependency-fetch correction
+Version 1.0.1 fetches the ProofWidgets release tag required by Lake and verifies that it resolves to the pinned commit. Version 1.0.0 omitted this tag during a shallow fetch. The [initial cloud-run report](../evidence/first-github-run/README.md) records that setup failure; project compilation and auditing had not started. The correction leaves dependency revisions and Lean sources unchanged.
 
-The [first GitHub run](https://github.com/hl-ren/pdel-lean-verification/actions/runs/40495033001) failed before any project Lean build or axiom audit. Exact-commit shallow fetches omitted the ProofWidgets release tag; Lake 4.19 resolves this dependency's archive using an exact tag at HEAD. The failed run's status and cache log are preserved under `evidence/first-github-run/`.
-
-The verifier now fetches the locked ProofWidgets input tag and checks that the tag resolves to the already pinned commit. It does not change dependency versions, proof sources, declaration targets, allowed axioms, or mathematical assumptions. This also avoids silently trusting a tag if it has been moved. The original v1.0.0 release remains available as a historical publication; v1.0.1 supersedes it for reproduction.
+Repository and release access is currently restricted.

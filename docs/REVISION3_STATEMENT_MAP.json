@@ -1,6 +1,6 @@
 {
   "paper": "paper/PDEL_Toroidal_Journal_Full.tex",
-  "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a",
+  "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac",
   "key": "Stable LaTeX label; no page numbers or displayed equation numbers.",
   "status_semantics": "PASS applies to associated Lean declarations, not automatically to the complete labeled paper claim; every uncovered component is NOT_RUN.",
   "entries": [
@@ -16,7 +16,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "sec:review",
@@ -30,7 +30,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewfree",
@@ -72,7 +72,7 @@
       "source_files": [
         "PDEL_Layer2_Lean/lean/PdelBasic/Model.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewconstitutive",
@@ -114,7 +114,7 @@
       "source_files": [
         "PDEL_Layer2_Lean/lean/PdelBasic/Model.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewhistories",
@@ -144,7 +144,7 @@
       "source_files": [
         "PDEL_Layer2_Lean/lean/PdelBasic/History.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewaction",
@@ -181,7 +181,7 @@
         "PDEL_Layer2_Lean/lean/PdelBasic/FirstVariation.lean",
         "PDEL_Layer2_Lean/lean/PdelBasic/IntegralBridge.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewrules",
@@ -211,7 +211,7 @@
       "source_files": [
         "PDEL_Layer2_Lean/lean/PdelBasic/History.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewcalibration",
@@ -241,7 +241,7 @@
       "source_files": [
         "PDEL_Layer2_Lean/lean/PdelBasic/History.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewfirstvariation",
@@ -278,7 +278,7 @@
         "PDEL_Layer2_Lean/lean/PdelBasic/FirstVariation.lean",
         "PDEL_Layer2_Lean/lean/PdelBasic/IntegralBridge.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewequations",
@@ -308,7 +308,7 @@
       "source_files": [
         "PDEL_Layer2_Lean/lean/PdelBasic/Stationarity.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewtemperature",
@@ -332,7 +332,7 @@
       "source_files": [
         "PDEL_Layer2_Lean/lean/PdelBasic/Energy.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewenergy",
@@ -368,7 +368,7 @@
       "source_files": [
         "PDEL_Layer2_Lean/lean/PdelBasic/Energy.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewrates",
@@ -398,7 +398,7 @@
       "source_files": [
         "PDEL_Layer3_Lean/lean/PdelEulerian/VectorCalculus.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:revieweuleraction",
@@ -434,7 +434,7 @@
       "source_files": [
         "PDEL_Revision3_Lean/lean/PdelRevision3/Nonmagnetic.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:revieweulerhistories",
@@ -476,7 +476,7 @@
       "source_files": [
         "PDEL_Layer3_Lean/lean/PdelEulerian/History.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewtransport",
@@ -518,7 +518,7 @@
       "source_files": [
         "PDEL_Layer3_Lean/lean/PdelEulerian/History.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:revieweulervariations",
@@ -555,7 +555,7 @@
         "PDEL_Layer3_Lean/lean/PdelEulerian/FirstVariation.lean",
         "PDEL_Layer3_Lean/lean/PdelEulerian/VectorCalculus.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:revieweulerspending",
@@ -591,7 +591,7 @@
       "source_files": [
         "PDEL_Revision3_Lean/lean/PdelRevision3/Nonmagnetic.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:revieweulerfirstvariation",
@@ -627,7 +627,7 @@
       "source_files": [
         "PDEL_Revision3_Lean/lean/PdelRevision3/Nonmagnetic.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:revieweulerbalances",
@@ -663,7 +663,7 @@
       "source_files": [
         "PDEL_Revision3_Lean/lean/PdelRevision3/Nonmagnetic.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewEMhistories",
@@ -677,7 +677,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewmaxwellaction",
@@ -691,7 +691,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewEMrules",
@@ -705,7 +705,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewpoynting",
@@ -719,7 +719,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewEMsplit",
@@ -733,7 +733,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "sec:pdel",
@@ -747,7 +747,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:action",
@@ -791,7 +791,7 @@
         "PDEL_Layer3_Lean/lean/PdelEulerian/IntegralBridge.lean",
         "PDEL_Layer3_Lean/lean/PdelEulerian/Stationarity.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:kinematics",
@@ -828,7 +828,7 @@
         "PDEL_Layer3_Lean/lean/PdelEulerian/Equations.lean",
         "PDEL_Layer3_Lean/lean/PdelEulerian/History.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:rates",
@@ -858,7 +858,7 @@
       "source_files": [
         "PDEL_Layer3_Lean/lean/PdelEulerian/VectorCalculus.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:historytransport",
@@ -900,7 +900,7 @@
       "source_files": [
         "PDEL_Layer3_Lean/lean/PdelEulerian/History.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:freeenergy",
@@ -936,7 +936,7 @@
       "source_files": [
         "PDEL_Layer3_Lean/lean/PdelEulerian/Thermodynamics.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:eos",
@@ -972,7 +972,7 @@
       "source_files": [
         "PDEL_Layer3_Lean/lean/PdelEulerian/Thermodynamics.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:variations",
@@ -1009,7 +1009,7 @@
         "PDEL_Layer3_Lean/lean/PdelEulerian/FirstVariation.lean",
         "PDEL_Layer3_Lean/lean/PdelEulerian/VectorCalculus.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:relative",
@@ -1058,7 +1058,7 @@
         "PDEL_Layer3_Lean/lean/PdelEulerian/Fields.lean",
         "PDEL_Layer3_Lean/lean/PdelEulerian/FirstVariation.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:weakohm",
@@ -1107,7 +1107,7 @@
         "PDEL_Layer3_Lean/lean/PdelEulerian/Fields.lean",
         "PDEL_Layer3_Lean/lean/PdelEulerian/FirstVariation.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:viscousheat",
@@ -1143,7 +1143,7 @@
       "source_files": [
         "PDEL_Layer3_Lean/lean/PdelEulerian/Fields.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:explicitMHDhistories",
@@ -1185,7 +1185,7 @@
       "source_files": [
         "PDEL_Layer3_Lean/lean/PdelEulerian/History.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:spending",
@@ -1234,7 +1234,7 @@
         "PDEL_Layer3_Lean/lean/PdelEulerian/Fields.lean",
         "PDEL_Layer3_Lean/lean/PdelEulerian/FirstVariation.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:jointdifferential",
@@ -1278,7 +1278,7 @@
         "PDEL_Layer3_Lean/lean/PdelEulerian/IntegralBridge.lean",
         "PDEL_Layer3_Lean/lean/PdelEulerian/Stationarity.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:ohm",
@@ -1315,7 +1315,7 @@
         "PDEL_Layer3_Lean/lean/PdelEulerian/Equations.lean",
         "PDEL_Layer3_Lean/lean/PdelEulerian/Fields.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:system",
@@ -1346,7 +1346,7 @@
         "PDEL_Layer3_Lean/lean/PdelEulerian/Equations.lean",
         "PDEL_Layer3_Lean/lean/PdelEulerian/Stationarity.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:mass",
@@ -1383,7 +1383,7 @@
         "PDEL_Layer3_Lean/lean/PdelEulerian/Equations.lean",
         "PDEL_Layer3_Lean/lean/PdelEulerian/History.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:mom",
@@ -1414,7 +1414,7 @@
         "PDEL_Layer3_Lean/lean/PdelEulerian/Equations.lean",
         "PDEL_Layer3_Lean/lean/PdelEulerian/Stationarity.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:induction",
@@ -1445,7 +1445,7 @@
         "PDEL_Layer3_Lean/lean/PdelEulerian/Equations.lean",
         "PDEL_Layer3_Lean/lean/PdelEulerian/Fields.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:heat",
@@ -1469,7 +1469,7 @@
       "source_files": [
         "PDEL_Layer3_Lean/lean/PdelEulerian/Energy.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:textures",
@@ -1483,7 +1483,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:oneclosures",
@@ -1497,7 +1497,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "sec:realization",
@@ -1511,7 +1511,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:complexseed",
@@ -1525,7 +1525,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:seedfield",
@@ -1539,7 +1539,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:mhs",
@@ -1553,7 +1553,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:current",
@@ -1567,7 +1567,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:designpotential",
@@ -1581,7 +1581,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:regularity",
@@ -1595,7 +1595,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:transform",
@@ -1609,7 +1609,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:shear",
@@ -1623,7 +1623,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "tab:parameters",
@@ -1637,7 +1637,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "fig:geometry",
@@ -1651,7 +1651,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "lem:tensor",
@@ -1665,7 +1665,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:tensor",
@@ -1679,7 +1679,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:eigenidentity",
@@ -1693,7 +1693,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:gpositive",
@@ -1707,7 +1707,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:gyrotropic",
@@ -1721,7 +1721,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "prop:scalar",
@@ -1735,7 +1735,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:scalareigen",
@@ -1749,7 +1749,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:scalarresidual",
@@ -1763,7 +1763,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "sec:oneT",
@@ -1777,7 +1777,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "thm:oneT",
@@ -1791,7 +1791,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:scale",
@@ -1834,7 +1834,7 @@
         "PDEL_Revision3_Lean/lean/PdelRevision3/CumulativeBudget.lean",
         "PDEL_Revision3_Lean/lean/PdelRevision3/JouleHistory.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:materialdata",
@@ -1848,7 +1848,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:onesolution",
@@ -1862,7 +1862,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:viscoussolution",
@@ -1876,7 +1876,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:forcebalance",
@@ -1890,7 +1890,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:relativefield",
@@ -1904,7 +1904,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:powers",
@@ -1953,7 +1953,7 @@
         "PDEL_Revision3_Lean/lean/PdelRevision3/CumulativeBudget.lean",
         "PDEL_Revision3_Lean/lean/PdelRevision3/JouleHistory.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:thermalclosure",
@@ -1967,7 +1967,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:potentialpair",
@@ -1981,7 +1981,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:thermalpressure",
@@ -2030,7 +2030,7 @@
         "PDEL_Revision3_Lean/lean/PdelRevision3/CumulativeBudget.lean",
         "PDEL_Revision3_Lean/lean/PdelRevision3/JouleHistory.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:exponents",
@@ -2044,7 +2044,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:passivewindow",
@@ -2058,7 +2058,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:fluxshear",
@@ -2072,7 +2072,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "fig:expansion",
@@ -2086,7 +2086,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "sec:twoT",
@@ -2100,7 +2100,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:twostate",
@@ -2114,7 +2114,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:twoheat",
@@ -2128,7 +2128,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:Czero",
@@ -2142,7 +2142,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:twoclosures",
@@ -2156,7 +2156,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:exchangeband",
@@ -2170,7 +2170,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "thm:twoT",
@@ -2184,7 +2184,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:twotemperatures",
@@ -2198,7 +2198,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:exchangepower",
@@ -2212,7 +2212,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:twoentropy",
@@ -2226,7 +2226,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:speciesentropy",
@@ -2240,7 +2240,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:Qendpoint",
@@ -2254,7 +2254,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:Tendpoint",
@@ -2268,7 +2268,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:Gpole",
@@ -2282,7 +2282,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "sec:energy",
@@ -2296,7 +2296,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:energydef",
@@ -2332,7 +2332,7 @@
       "source_files": [
         "PDEL_Layer3_Lean/lean/PdelEulerian/Energy.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:localenergy",
@@ -2368,7 +2368,7 @@
       "source_files": [
         "PDEL_Layer3_Lean/lean/PdelEulerian/Energy.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:totalstress",
@@ -2382,7 +2382,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:movingenergy",
@@ -2406,7 +2406,7 @@
       "source_files": [
         "PDEL_Layer3_Lean/lean/PdelEulerian/Energy.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:integrals",
@@ -2420,7 +2420,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:referenceports",
@@ -2434,7 +2434,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:outwardpowers",
@@ -2448,7 +2448,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:integratedenergy",
@@ -2462,7 +2462,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:globalenergy",
@@ -2476,7 +2476,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "sec:boundary",
@@ -2490,7 +2490,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:histories",
@@ -2532,7 +2532,7 @@
       "source_files": [
         "PDEL_Revision3_Lean/lean/PdelRevision3/JouleHistory.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:materialbudget",
@@ -2568,7 +2568,7 @@
       "source_files": [
         "PDEL_Revision3_Lean/lean/PdelRevision3/CumulativeBudget.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:oneentropy",
@@ -2582,7 +2582,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:exchangehistory",
@@ -2596,7 +2596,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:historycoordinate",
@@ -2656,7 +2656,7 @@
       "source_files": [
         "PDEL_Revision3_Lean/lean/PdelRevision3/JouleHistory.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "sec:verification",
@@ -2670,7 +2670,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:domainbounds",
@@ -2684,7 +2684,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:passivitybounds",
@@ -2698,7 +2698,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:twopassivity",
@@ -2712,7 +2712,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "tab:sweeps",
@@ -2726,7 +2726,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "sec:fields3d",
@@ -2740,7 +2740,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "fig:spatialBJ",
@@ -2754,7 +2754,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:fieldmap_pressure",
@@ -2768,7 +2768,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "fig:spatialrhop",
@@ -2782,7 +2782,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "fig:spatialpowers",
@@ -2796,7 +2796,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:fieldmap_scalings",
@@ -2810,7 +2810,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "fig:transform",
@@ -2824,7 +2824,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:literaturerecovery",
@@ -2838,7 +2838,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "fig:thermalenergy",
@@ -2852,7 +2852,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "fig:ratecomparison",
@@ -2866,7 +2866,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:joulefraction",
@@ -2880,7 +2880,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:partitionderivative",
@@ -2894,7 +2894,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "fig:partition",
@@ -2908,7 +2908,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:rcomparison",
@@ -2922,7 +2922,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "fig:twothermal",
@@ -2936,7 +2936,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "fig:interval",
@@ -2950,7 +2950,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:quadraturenumbers",
@@ -2964,7 +2964,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "fig:boundary",
@@ -2978,7 +2978,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "tab:residuals",
@@ -2992,7 +2992,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "sec:formal",
@@ -3023,7 +3023,7 @@
         "PDEL_Layer2_Lean/lean/PdelBasic/Stationarity.lean",
         "PDEL_Layer3_Lean/lean/PdelEulerian/Equations.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "sec:discussion",
@@ -3037,7 +3037,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "app:geometry",
@@ -3051,7 +3051,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:mapfunctions",
@@ -3065,7 +3065,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:surfacemap",
@@ -3079,7 +3079,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:ellipticidentities",
@@ -3093,7 +3093,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:jacobian",
@@ -3107,7 +3107,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:fieldlineseparation",
@@ -3121,7 +3121,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:periods",
@@ -3135,7 +3135,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:axialshear",
@@ -3149,7 +3149,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "app:scalar",
@@ -3163,7 +3163,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:scalardot",
@@ -3177,7 +3177,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:axisparameters",
@@ -3191,7 +3191,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:uniquescalar",
@@ -3205,7 +3205,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:axisderivatives",
@@ -3219,7 +3219,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:fullaxisresidual",
@@ -3233,7 +3233,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "app:exponents",
@@ -3247,7 +3247,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:generalansatz",
@@ -3261,7 +3261,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:inductionmatching",
@@ -3275,7 +3275,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:matchingresult",
@@ -3289,7 +3289,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:generalmaterial",
@@ -3303,7 +3303,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "app:review",
@@ -3317,7 +3317,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewmixedstate",
@@ -3347,7 +3347,7 @@
       "source_files": [
         "PDEL_Layer2_Lean/lean/PdelBasic/Model.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewbeforeIBP",
@@ -3384,7 +3384,7 @@
         "PDEL_Layer2_Lean/lean/PdelBasic/FirstVariation.lean",
         "PDEL_Layer2_Lean/lean/PdelBasic/IntegralBridge.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewstressIBP",
@@ -3398,7 +3398,7 @@
       "uncovered_status": "NOT_RUN",
       "axioms_by_declaration": {},
       "source_files": [],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewinternal",
@@ -3434,7 +3434,7 @@
       "source_files": [
         "PDEL_Layer2_Lean/lean/PdelBasic/Energy.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewkinetic",
@@ -3470,7 +3470,7 @@
       "source_files": [
         "PDEL_Layer2_Lean/lean/PdelBasic/Energy.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewboundarybudget",
@@ -3506,7 +3506,7 @@
       "source_files": [
         "PDEL_Layer2_Lean/lean/PdelBasic/Energy.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     },
     {
       "latex_label": "eq:reviewentropyflux",
@@ -3530,10 +3530,10 @@
       "source_files": [
         "PDEL_Layer2_Lean/lean/PdelBasic/Energy.lean"
       ],
-      "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+      "paper_sha256": "21f215bd47c0eb2170851c4dab14528d74415b519c69d735a83f017f1d3676ac"
     }
   ],
   "baseline_paper": "paper/baseline/PDEL_Toroidal_Journal_Full.tex",
   "baseline_paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a",
-  "publication_note": "Only repository links and verified-status prose changed; all mathematical blocks and stable labels are unchanged."
+  "publication_note": "The manuscript has undergone editorial revision. Mathematical expressions, theorem and proof blocks, stable labels and citation keys are unchanged. The Layer3 compilation statement refers to the archived v1.0.1 verification."
 }

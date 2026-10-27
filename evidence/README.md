@@ -1,9 +1,15 @@
-# Verification evidence
+# Verification records
 
-`historical/` is the actual 2026-10-27 combined run: 407 existing theorems and five independent interface checks, 626 named declarations, 37 freshly built project modules. These are historical results, not a claim that GitHub Actions has already run.
+| Record | Contents |
+|---|---|
+| [Combined local run](historical/summary.json) | Compilation and audit of the three layers, bridges, Revision3 modules and interface checks. |
+| [Independent package build](portable-test/summary.json) | Reproduction from an isolated copy with pinned third-party dependencies. |
+| [Ubuntu run](https://github.com/hl-ren/pdel-lean-verification/actions/runs/40495422483) | Fresh dependency fetch and complete compilation, axiom, type and dependency checks; reports archived in [v1.0.1](https://github.com/hl-ren/pdel-lean-verification/releases/tag/v1.0.1). |
+| [Initial cloud run](first-github-run/README.md) | Dependency-cache setup failure in v1.0.0. |
+| `publication/` | LaTeX build records and manuscript correspondence checks from the initial repository publication. |
 
-Only host-specific path prefixes were replaced during export. `${HISTORICAL_RUN}` identifies the original run root; `${ORIGINAL_PROJECT}`, `${PRIOR_REVISION3_RUN}` and `${HOME}` are provenance placeholders, not runtime dependencies. `export_manifest.json` records both original-byte and exported-byte SHA-256 hashes. Logs without host paths remain byte-identical.
+The successful proof runs cover 407 mathematical theorems, five interface checks and 626 named declarations in 37 modules. The [declaration audit](historical/declaration_status.json), [axiom output](historical/06_all_axioms.log) and [complete types](historical/07_all_full_types.log) give the individual results.
 
-The package's fresh local reproduction is separately recorded in `portable-test/` after it completes. GitHub-hosted execution and a cold dependency download are recorded separately in `PACKAGE_STATUS.json`; unexecuted work is NOT_RUN.
+Exported local logs replace host-specific prefixes only. `${HISTORICAL_RUN}`, `${ORIGINAL_PROJECT}`, `${PRIOR_REVISION3_RUN}` and `${HOME}` identify the original locations. [The export manifest](export_manifest.json) records original and exported SHA-256 hashes.
 
-The raw source packages and original evidence are not overwritten. The bundled LaTeX snapshot retains its original hash; it describes the manuscript baseline, not a replacement for the current verification status.
+Status fields apply to the associated run. `NOT_RUN` marks checks that were not executed in that run; later results are recorded separately. Mathematical coverage limits are specified in the manuscript correspondence and repository documentation.

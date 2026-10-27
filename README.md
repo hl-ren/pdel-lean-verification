@@ -1,27 +1,29 @@
-# PDEL Lean verification
+# PDEL: Lean formalization
 
-Reproducible Lean 4 compilation, per-declaration axiom audits, and cross-layer dependency checks for **PDEL Toroidal Journal, Revision 3**.
+Lean 4 formalization accompanying *A path-dependent entropic Lagrangian formulation for exact thermoviscous evolution of sheared magnetic tori with anisotropic resistivity*.
 
-[Verification release v1.0.1](https://github.com/hl-ren/pdel-lean-verification/releases/tag/v1.0.1) · [GitHub Actions](https://github.com/hl-ren/pdel-lean-verification/actions/workflows/verify.yml)
+[Manuscript](paper/PDEL_Toroidal_Journal_Full.tex) · [Verification archive](https://github.com/hl-ren/pdel-lean-verification/releases/tag/v1.0.1) · [Declaration correspondence](docs/REVISION3_STATEMENT_MAP.json)
 
-## Recorded verification
+## Mathematical scope
 
-| Project | Theorems | Named declarations audited |
-|---|---:|---:|
-| PdelMHD / Layer 1 | 37 | 44 |
-| PdelBasic / Layer 2 | 66 | 100 |
-| PdelEulerian / Layer 3 | 217 | 354 |
-| PdelBridge | 41 | 59 |
-| PdelRevision3 | 46 | 64 |
-| Independent PdelIntegration checks | 5 | 5 |
+| Library | Scope | Theorems | Named declarations |
+|---|---|---:|---:|
+| `PdelMHD` | Finite-dimensional passivity and balance identities | 37 | 44 |
+| `PdelBasic` | Single-degree-of-freedom thermoviscoelasticity | 66 | 100 |
+| `PdelEulerian` | Single-temperature, magnetic-quasistatic Eulerian MHD; fixed-box integration | 217 | 354 |
+| `PdelBridge` | Conditional correspondences among the three layers | 41 | 59 |
+| `PdelRevision3` | Nonmagnetic specialization and scalar history/budget identities | 46 | 64 |
+| `PdelIntegration` | Cross-library compatibility checks | 5 | 5 |
 
-The existing projects contain **407 theorems**; the **5 independent interface checks** are counted separately. The recorded local runs freshly compiled **37 project modules** and audited **626 named declarations**. Compilation, full-type extraction, axiom auditing, and dependency checks all passed. The allowed axiom set is `Classical.choice`, `Quot.sound`, and `propext`; `sorryAx` and custom result axioms are rejected.
+The formalization contains 407 mathematical theorems and five interface checks. Its 37 modules comprise 626 named declarations. Cross-layer statements retain their normalization, reference-state and interface-power hypotheses. The Revision3 history results concern the prescribed scalar expansion branch.
 
-All 37 Lean source modules retain their original bytes, theorem statements, hypotheses, and proofs. See [proof-source provenance](verification/proof_source_provenance.json). Lean is pinned to **4.19.0**, and mathlib to commit `c44e0c8ee63ca166450922a373c7409c5d26b00b`.
+Full Maxwell dynamics, the two-temperature PDE system, toroidal embedding, moving-boundary energy balance, a complete three-dimensional homologous field/flow realization, stability and physical validation lie outside the formalized scope. These items are marked `NOT_RUN` in the verification records.
 
-## Reproduce the checks
+## Reproduction
 
-Requirements: Python 3.11+, Git, and curl. On macOS, install Apple Command Line Tools. The verification entry point supports macOS and Linux.
+The development uses **Lean 4.19.0** and mathlib commit `c44e0c8ee63ca166450922a373c7409c5d26b00b`. All nine third-party dependency revisions are fixed in [the dependency manifest](verification/dependencies.lock.json).
+
+Requirements: Python 3.11 or later, Git and curl; macOS also requires Apple Command Line Tools. Repository access is currently restricted, so cloning requires an authorized account.
 
 ```sh
 git clone https://github.com/hl-ren/pdel-lean-verification.git
@@ -29,66 +31,28 @@ cd pdel-lean-verification
 bash verify.sh
 ```
 
-The first run installs Elan if needed, obtains the pinned Lean toolchain and all nine third-party dependencies at the exact commits in [the dependency lock](verification/dependencies.lock.json), and downloads the mathlib cache. Network access and sufficient disk space are required.
+The script installs the pinned Lean toolchain if necessary, obtains the dependency sources and mathlib cache, and compiles the project in a new directory under `verification-runs/`. Each run starts without project build products. Its `report/` directory contains compiler output, complete declaration types, axiom dependencies, import and proof-dependency checks, and source hashes.
 
-Each run creates a new `verification-runs/run-*/` directory. It copies the source into an independent `kit/` and builds each project's `.lake/build` from an empty directory. Only pinned third-party dependency artifacts may be reused; the project's own previous build products are never copied. The run's `report/` contains actual logs, exit codes, declaration statuses, axiom dependencies, full types, module-resolution paths, and source hashes.
+An existing cache of the nine pinned third-party packages can be supplied with `--dependency-cache /absolute/path/to/packages`. Dependency commits and tracked files are checked before use. Project build products are excluded from cache reuse.
 
-Optionally, reuse an existing directory containing the nine pinned third-party Git packages:
+`bash verify.sh --check-only` validates source and configuration integrity without executing Lean; compilation and axiom auditing are reported as `NOT_RUN` for that mode.
 
-```sh
-bash verify.sh --dependency-cache /absolute/path/to/packages
-```
+## Verification records
 
-This option validates dependency commits and tracked working-tree state. It does not accept project build products as a cache.
+The [Ubuntu verification run](https://github.com/hl-ren/pdel-lean-verification/actions/runs/40495422483) completed a fresh dependency fetch, compilation, axiom audit, type extraction and dependency analysis. The full report is archived with [v1.0.1](https://github.com/hl-ren/pdel-lean-verification/releases/tag/v1.0.1). The logical dependencies are limited to `Classical.choice`, `Quot.sound` and `propext`.
 
-For package integrity, source-policy, declaration-registry, and configuration checks only:
+- [Local verification records](evidence/README.md), including the [declaration audit](evidence/historical/declaration_status.json), [axiom output](evidence/historical/06_all_axioms.log) and [complete types](evidence/historical/07_all_full_types.log).
+- [Verification record and version information](docs/PUBLICATION.md).
+- [Declaration registry](verification/declarations.json), [source lock](verification/source_lock.json) and [proof-source hashes](verification/proof_source_provenance.json).
 
-```sh
-bash verify.sh --check-only
-```
+The [manuscript correspondence](docs/REVISION3_STATEMENT_MAP.json) is indexed by stable LaTeX labels and records the associated declarations, hypotheses and unformalized content. The repository includes the manuscript source for reference; its figures and numerical-analysis files are distributed separately with the manuscript.
 
-This command reports compilation and axiom auditing as **NOT_RUN**. It is not a Lean proof check. Modified sources, registries, or pinned configurations are rejected by the entry point rather than silently matched to old results.
+## Checksums
 
-## Continuous integration and evidence
-
-The [GitHub Actions workflow](.github/workflows/verify.yml) runs on pushes, pull requests, and manual dispatch. It performs a fresh verification and uploads the actual reports. Action versions are pinned to commits. Project build artifacts are not cached.
-
-The bundled local evidence predates GitHub publication. Its GitHub Actions and cold dependency-download fields therefore remain **NOT_RUN**. Current cloud execution status is shown on the [Actions page](https://github.com/hl-ren/pdel-lean-verification/actions/workflows/verify.yml); a repository upload or a green package-integrity check alone does not establish a successful cloud Lean run.
-
-- [Local package status](PACKAGE_STATUS.json) and [successful relocated package run](evidence/portable-test/summary.json).
-- [Historical evidence guide](evidence/README.md) and [combined-run summary](evidence/historical/summary.json).
-- [Per-declaration statuses](evidence/historical/declaration_status.json), [actual axiom output](evidence/historical/06_all_axioms.log), and [complete declaration types](evidence/historical/07_all_full_types.log).
-- [Stable LaTeX label / Lean declaration / hypotheses / uncovered-content mapping](docs/REVISION3_STATEMENT_MAP.json).
-- [Source and tool lock](verification/source_lock.json), [declaration registry](verification/declarations.json), and [dependency lock](verification/dependencies.lock.json).
-
-Historical log exports replace local path prefixes only. Declaration names, types, axioms, statuses, and mathematical content are preserved. Original/export SHA-256 pairs are recorded in [the export manifest](evidence/export_manifest.json). The original verification results remain preserved outside this publication copy.
-
-## Manuscript provenance
-
-The [Revision3 LaTeX snapshot](paper/PDEL_Toroidal_Journal_Full.tex) includes the public repository and versioned release links, with verification-status prose updated to reflect the recorded local runs. Mathematical statements, mathematical assumptions, equations, and stable labels are unchanged.
-
-The [original audited manuscript](paper/baseline/PDEL_Toroidal_Journal_Full.tex) and [original statement mapping](docs/baseline/REVISION3_STATEMENT_MAP.json) remain available byte-for-byte. The current mapping records both manuscript hashes. The baseline mapping's historical paper path refers to that original snapshot. See [publication provenance](docs/PUBLICATION.md).
-
-The repository contains LaTeX snapshots for semantic traceability. It does not include the manuscript's complete figure and numerical-analysis supplement, so a standalone manuscript build from this repository is **NOT_RUN**.
-
-## Coverage boundaries
-
-- **Layer 1:** finite-dimensional and algebraic core.
-- **Layer 2:** a single-degree-of-freedom thermoviscoelastic specialization.
-- **Layer 3:** single-temperature, magnetic-quasistatic Eulerian MHD and fixed-box proofs.
-- **Cross-layer bridges:** conditional correspondences retaining their normalization, reference-state, and interface-port hypotheses.
-- **Revision3:** scalar calculations on the prescribed branch, including the nonmagnetic specialization, the four-to-one cumulative pressure-work / irreversible-heat relation, and current-volume Joule-history derivatives, extrema, and monotonic intervals.
-
-Revision3 directly imports Layers 2 and 3. Five independent interface checks also connect its power coefficient to Layer 1, its three cumulative quantities to Layer 2's integral definition, and its nonmagnetic reference state to the existing bridge. These results do not establish unconditional equivalence of complete models.
-
-**NOT_RUN / outside the certified scope:** full Maxwell theory, the two-temperature PDE system, toroidal embedding, moving boundaries, a complete three-dimensional homologous-expansion field/material-map realization, stability, and physical validation.
-
-## File integrity
-
-`SHA256SUMS` covers every distributed repository file except itself. After extracting the release archive, run:
+`SHA256SUMS` lists the hashes of the repository files. To verify an extracted archive:
 
 ```sh
 shasum -a 256 -c SHA256SUMS
 ```
 
-The release also includes a separate SHA-256 file for the ZIP archive. Generated run directories are excluded from the distributed package.
+Each release ZIP has a separate SHA-256 checksum file.
