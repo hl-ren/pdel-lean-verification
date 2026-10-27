@@ -1,0 +1,34 @@
+{
+  "changed_files": [
+    "PDEL_Toroidal_Journal_Full.tex",
+    "PDEL_Toroidal_Journal.tex",
+    "PDEL_Toroidal_Supplement.tex",
+    "preamble.tex",
+    "sections/07_verification.tex",
+    "sections/04_one_temperature.tex"
+  ],
+  "math_blocks_unchanged": true,
+  "stable_labels_unchanged": true,
+  "repository_url": "https://github.com/hl-ren/pdel-lean-verification",
+  "versioned_release_url": "https://github.com/hl-ren/pdel-lean-verification/releases/tag/v1.0.0",
+  "locked_files_unchanged": 78,
+  "historical_and_portable_evidence_unchanged": true,
+  "local_latex_compilation": {
+    "article": "PASS",
+    "supplement": "PASS"
+  },
+  "standalone_repository_latex_build": "NOT_RUN",
+  "full_lean_build_this_publication_step": "NOT_RUN; existing actual local build evidence preserved byte-for-byte",
+  "pdf_link_targets": "PASS",
+  "pdf_visual_review": "PASS",
+  "reviewed_pages": {
+    "article": [
+      12,
+      27,
+      28
+    ],
+    "supplement": [
+      7
+    ]
+  }
+}

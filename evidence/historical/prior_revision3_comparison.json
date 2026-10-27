@@ -1,0 +1,2597 @@
+{
+  "status": "PASS",
+  "matched_count": 518,
+  "prior_run": "${PRIOR_REVISION3_RUN}",
+  "declarations": [
+    {
+      "name": "PdelBasic.internalEnergy",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.totalEnergy",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.totalEnergy_off_shell",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.energy_from_stationarity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.finite_interval_energy_balance",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.internalEnergy_from_stationarity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.internal_history_budget",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.temperature_equation_from_stationarity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.entropy_flux_identity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.entropy_production_nonnegative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.adiabatic_entropy_nonnegative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.closed_energy_derivative_zero",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.reservoir_entropy_identity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.reservoir_entropy_nonnegative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.basic_variation_and_energy",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.witnessMaterial",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.witnessPath",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.witnessLoads",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.witness_governing",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.witness_stationary",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.witness_nonzero_dissipation",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.witness_energy",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.duplicate_heat_creates_energy",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.Path",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.Loads",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.Variation",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.path_theta_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.path_entropy_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.path_dissipation_continuous",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.path_entropyState_continuous",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.stateHistoryDensity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.action",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.stateHistoryDensity_continuous",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.action_integrable",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.mixedDensity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.mixedAction",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.firstVariation",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.mechanicalResidual",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.thermalResidual",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.entropyResidual",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.weakDensity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.mixedDensity_at_zero",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.mixedAction_at_zero",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.affineJet_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.varied_motion_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.entropy_path_channel_derivative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.mixedDensity_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.firstVariation_raw",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.mechanicalResidual_c1",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.thermalResidual_continuous",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.entropyResidual_continuous",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.weakDensity_continuous",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.firstVariation_residual",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.powerHistory",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.powerHistory_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.powerHistory_continuous",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.powerHistory_zero",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.endpoint_channel_derivative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.endpoint_channel_formula",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.powerHistory_nonnegative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.powerHistory_additive",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.spending",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.spending_realized_path",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.synchronized_spending_zero",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.mixedAction_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.IntegralRegular",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.mixed_action_stationarity_iff",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.Material",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.freeEnergy",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.elasticForce",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.entropyState",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.viscousForce",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.dissipation",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.kinetic",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.mixedInternal",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.viscous_same_response",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.dissipation_nonnegative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.dissipation_positive",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.freeEnergy_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.freeEnergy_x_derivative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.freeEnergy_theta_derivative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.entropy_is_negative_thermal_derivative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.entropyState_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.mixedInternal_chain_rule",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.internalEnergy_on_conjugacy",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.kinetic_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.endpointWeight",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.endpointWeight_nonnegative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.endpointWeight_positive",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.continuous_zero_from_interior",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.weighted_square_localization",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.mechanicalTest",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.thermalTest",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.entropyTest",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.Stationary",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.GoverningOn",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.integral_zero_on_interval",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.stationary_iff_residuals",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.pdel_basic_variational_theorem",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelBasic.thermal_conjugacy_from_stationarity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.closed",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.interior",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.integrate",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.integral",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.boundaryFlux",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.VanishesOnFaces",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.le",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.mem_interior",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.mem_closed",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.interior_subset",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.interior_open",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.closure_interior",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.integrable",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.integral_zero",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.integral_add",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.integral_neg",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.integral_sub",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.integral_congr",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.integral_divergence",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.boundaryFlux_zero",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.zero_vanishes",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.mul_vanishes",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.weightFactor",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.weight",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.weight_nonnegative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.weight_positive",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.weight_vanishes",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.weighted_square_localization",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.magneticEnergy",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.totalEnergy",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.totalEnergyFlux",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.energyResidual",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.temperatureResidual",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.entropyFlux",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.entropyProduction",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.magnetic_energy_kinematic",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.resistive_energy_recombination",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.total_energy_off_shell",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.mixed_internal_decomposition",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.temperature_residual_identity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.entropy_identity_off_shell",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.entropy_production_nonnegative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.energy_from_stationarity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.temperature_from_stationarity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.entropy_from_stationarity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.sliceEnergy",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.spatialBoundaryFlux",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Box.boundary_current_decomposition",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.integrated_energy_from_stationarity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.eulerian_pdel_mhd_and_energy",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.physicalMomentum",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.ohmDefect",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.physicalThermalPower",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.physicalEntropy",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.inductionResidual",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.physical_momentum_identity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.ohm_defect_identity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.ohm_residual_from_defect",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.ohm_defect_from_residual",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.physical_entropy_from_residual",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.induction_defect_identity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.EulerianMHDOn",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.MassAdmissible",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.eulerian_pdel_mhd_theorem",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.eulerian_pdel_mhd_from_material_motion",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.thermal_conjugacy_from_stationarity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.induction_from_stationarity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.one_plus_exp_nonzero",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.amplitude",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.diffusivity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.amplitude_positive",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.amplitude_lt_one",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.diffusivity_positive",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.diffusivity_nonzero",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.dt_amplitude",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.dx_amplitude",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.temp",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.temp_positive",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.temp_nonzero",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.gas",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.thermalState",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.transport",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.fields",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.dt_cosz",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.dt_sinz",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.dx_cosz",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.dx_sinz",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.dt_temp",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.dx_temp",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.chart",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.example_magnetic",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.example_current",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.example_norm",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.example_relative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.example_resistance",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.example_joule",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.example_joule_strictly_positive",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.example_viscous",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.example_heatFlux",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.example_rho",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.example_primitive",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.example_stationary",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Example.example_full_mhd",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Transport",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Transport.eta_sigma",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Transport.sigma_eta",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.magnetic",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.current",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.electric",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.relativeRate",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.resistance",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.joulePower",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.viscousStress",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.viscousPower",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.heatFlux",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.kinetic",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.densityResidual",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.momentumResidual",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.ohmResidual",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.thermalResidual",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.entropyResidual",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.magnetic_divergence",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.faraday_identity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.relative_electric_identity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.bulk_power",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.joule_nonnegative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.viscous_nonnegative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.ohm_from_residual",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Fields.joule_on_ohm",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Test",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Test.drho",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Test.dv",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Test.dtemp",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Test.ds",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Test.dmagnetic",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Test.zero",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.mixedDensity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.stateHistoryDensity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.rawVariation",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.mixedDensity_at_zero",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.varied_magnetic_is_curl",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.affine_jet_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.norm_jet_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.mixedDensity_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.actual_local_first_variation",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.resistive_power_calibration",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.kinetic_weak_identity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.thermal_state_weak_identity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.variationCurrent",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.residualPairing",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.first_variation_divergence_identity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Label",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.tangent",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.fderiv_tangent",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.shifted_endpoint_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.MaterialChart",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.MaterialChart.position_continuous",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.MaterialChart.volume_continuous",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.MaterialChart.along_flow_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.MaterialChart.refHistory",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.MaterialChart.currentHistory",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.MaterialChart.receiverHistory",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.MaterialChart.refHistory_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.MaterialChart.receiver_endpoint_derivative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.MaterialChart.receiver_at_current",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.MaterialChart.density_channel_derivative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.MaterialChart.material_history_derivative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.MaterialChart.eulerian_history_transport",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.MaterialChart.mass_conservation",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.det3",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.determinant_liouville",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.mass_from_material_constraint",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.mixedAction",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.mixedAction_at_zero",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ActionRegular",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.mixedAction_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.literal_action_stationarity_iff",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.finite_action_and_mhd",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ST",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.smoothScalars",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Scalar",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.scalar_ext",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.eval_zero",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.eval_one",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.eval_add",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.eval_neg",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.eval_sub",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.eval_mul",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.eval_pow",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.C",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.eval_C",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.C_zero",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.C_one",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.C_add",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.C_mul",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.C_neg",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Scalar.smooth",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Scalar.continuous",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Scalar.differentiable",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Scalar.hasFDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.d",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.d_apply",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.d_C",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.d_zero",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.d_one",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.d_add",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.d_neg",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.d_sub",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.d_mul",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.d_sq",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.d_comm",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.coordinate",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.coordinate_apply",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.d_coordinate",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.reciprocal",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.reciprocal_apply",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.reciprocal_mul",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.mul_reciprocal",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.d_reciprocal",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.slog",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.slog_apply",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.d_slog",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.sexp",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ssin",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.scos",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.sexp_apply",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ssin_apply",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.scos_apply",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.d_sexp",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.d_ssin",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.d_scos",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ssin_sq_add_scos_sq",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.d_eq_zero_on_open",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Admissible",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.firstVariation",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.stateHistoryAction",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.HistoryIntegrable",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.PrimitiveOn",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Stationary",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.firstVariation_is_integrable",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.stateHistoryAction_integrable",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.firstVariation_raw",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.firstVariation_with_boundary",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.variationCurrent_boundary_zero",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.firstVariation_residual",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.oneComponent",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dot_oneComponent",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.momentumTest",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.potentialTest",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.temperatureTest",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.entropyTest",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.oneComponent_vanishes",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.momentumTest_admissible",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.potentialTest_admissible",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.temperatureTest_admissible",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.entropyTest_admissible",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.eulerian_pdel_variational_theorem",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Gas",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.invRho",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.invTemp",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.logRho",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.logTemp",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.freeEnergy",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.phiRho",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.phiTemp",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.pressure",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.mixedInternal",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.conjugacyResidual",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.pressure_ideal_gas",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.internal_energy_on_conjugacy",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.d_freeEnergy",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.d_pressure",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.conservative_internal_chain",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.freeEnergyReal",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.freeEnergyReal_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.density_partial_derivative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.temperature_partial_derivative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.ThermalState.logarithm_reference_ratio",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Vector",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Tensor",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.Vector4",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dx",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dt_C",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dt_zero",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dt_one",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dt_add",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dt_sub",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dt_neg",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dt_mul",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dt_sq",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dx_C",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dx_zero",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dx_one",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dx_add",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dx_sub",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dx_neg",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dx_mul",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dx_sq",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dot",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.normSq",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.scale",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.cross",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.grad",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.div",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.curl",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dtV",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.adv",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.material",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.conservative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.materialV",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.advV",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.matvec",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.transpose",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.divTensor",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.stressWork",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.massResidual",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.conservativeMomentum",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.velocityVariation",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.densityVariation",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.scalarVariation",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.div4",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.spacetimeCurrent",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.div4_current",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.div_curl",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.curl_grad",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dt_curl",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.curl_add",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.curl_neg",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.curl_sub",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.curl_C_scale",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dot_comm",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dot_cross",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.cross_antisymm",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.cross_self",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dot_scale_left",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dot_scale_right",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.div_scale",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.conservative_split",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.material_mul",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.conservative_product",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.conservative_momentum_split",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.linearized_mass_transport",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.magnetic_weak_identity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.stress_weak_identity",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.poynting_product_rule",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.material_divergence_kinetic",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.valueV",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.rdot",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.dot_eval",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelEulerian.normSq_nonnegative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.expansionScale",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.expansionScale_positive",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.branchJoulePower",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.branchViscousPower",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.branchPressure",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.referenceHeatRate",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.referencePressureRate",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.cumulativeIrreversibleHeat",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.cumulativePressureWork",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.pressure_rate_four_heat",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.reference_heat_integrable",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.cumulative_pressure_four_irreversible",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.historyCoordinate",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.referenceJouleProfile",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.currentJouleProfile",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.peakScale",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.peakTime",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.current_profile_density",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.peakScale_gt_one",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.historyCoordinate_peak",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.historyCoordinate_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.reference_profile_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.current_profile_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.current_profile_peak_value",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.current_profile_global_max",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.current_profile_derivative_positive",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.current_profile_derivative_negative",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.current_profile_derivative_at_peak",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.current_profile_increasing",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.current_profile_decreasing",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.referenceJouleHistory",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.currentJouleHistory",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.scale_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.scale_positive_between",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.reference_history_closed",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.current_history_closed",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.current_history_hasDerivAt",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.scale_at_peakTime",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.current_history_peak",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.current_history_global_max",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.peakTime_positive",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.scale_le_peak_iff",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.current_history_increasing",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.current_history_decreasing",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.current_history_derivative_at_peak",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.reference_history_increasing",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.paper_reference_joule_rate",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.current_history_is_paper_integral",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.paper_current_history_peak",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.nonmagneticFields",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.curl_zero_vector",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.dt_zero_vector",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.cross_zero_vector",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.matvec_zero_vector",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.nonmagnetic_magnetic",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.nonmagnetic_current",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.nonmagnetic_relative_rate",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.nonmagnetic_resistance",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.nonmagnetic_joule",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.nonmagnetic_ohm",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.withoutPotentialTest",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.nonmagnetic_first_variation",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.FluidEquationsOn",
+      "source_match": true,
+      "axioms_match": true
+    },
+    {
+      "name": "PdelRevision3.nonmagnetic_stationarity_iff",
+      "source_match": true,
+      "axioms_match": true
+    }
+  ]
+}

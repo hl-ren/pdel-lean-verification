@@ -1,0 +1,44 @@
+[
+  {
+    "project": "layer1",
+    "path": "lean",
+    "namespace": "PdelMHD",
+    "declarations": 44,
+    "theorems": 37
+  },
+  {
+    "project": "layer2",
+    "path": "PDEL_Layer2_Lean/lean",
+    "namespace": "PdelBasic",
+    "declarations": 100,
+    "theorems": 66
+  },
+  {
+    "project": "layer3",
+    "path": "PDEL_Layer3_Lean/lean",
+    "namespace": "PdelEulerian",
+    "declarations": 354,
+    "theorems": 217
+  },
+  {
+    "project": "bridge",
+    "path": "PDEL_CrossLayer_Lean/lean",
+    "namespace": "PdelBridge",
+    "declarations": 59,
+    "theorems": 41
+  },
+  {
+    "project": "revision3",
+    "path": "PDEL_Revision3_Lean/lean",
+    "namespace": "PdelRevision3",
+    "declarations": 64,
+    "theorems": 46
+  },
+  {
+    "project": "integration_checks",
+    "path": "PDEL_Integration_Check/lean",
+    "namespace": "PdelIntegration",
+    "declarations": 5,
+    "theorems": 5
+  }
+]

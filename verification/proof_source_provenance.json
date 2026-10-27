@@ -1,0 +1,267 @@
+{
+  "status": "PASS",
+  "unchanged_lean_modules": 37,
+  "theorem_or_assumption_changes": [],
+  "modules": [
+    {
+      "file": "lean/PdelMHD/Balances.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "eef4c50d7ed4ec8a8cd9824a20cd6ebf8cefe271f2f75edeff68dea39637a85f",
+      "package_sha256": "eef4c50d7ed4ec8a8cd9824a20cd6ebf8cefe271f2f75edeff68dea39637a85f",
+      "unchanged": true
+    },
+    {
+      "file": "lean/PdelMHD/PassiveTensor.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "1f4832fc61913e387c0ad4fdf32778db4aa745e37f160d44fb7d362e704e9081",
+      "package_sha256": "1f4832fc61913e387c0ad4fdf32778db4aa745e37f160d44fb7d362e704e9081",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer2_Lean/lean/PdelBasic/Energy.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "98bccb78ef5f3e1969f9d6a718d54f0ea25a0f45698f88cca946837511487692",
+      "package_sha256": "98bccb78ef5f3e1969f9d6a718d54f0ea25a0f45698f88cca946837511487692",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer2_Lean/lean/PdelBasic/Examples.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "9738a6cbfaa6f2df2b53ca830cbe846c6686d1fbb1919622fe71f4956d2aaa3a",
+      "package_sha256": "9738a6cbfaa6f2df2b53ca830cbe846c6686d1fbb1919622fe71f4956d2aaa3a",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer2_Lean/lean/PdelBasic/FirstVariation.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "16a5c0a7ad7604c5175b1864525354b95dcc264c086faf8dfcb7f20d946f7992",
+      "package_sha256": "16a5c0a7ad7604c5175b1864525354b95dcc264c086faf8dfcb7f20d946f7992",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer2_Lean/lean/PdelBasic/History.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "e07644030ad0ec60e014d997bc2d915f3758ae16fb67b5f7434aaf05de100686",
+      "package_sha256": "e07644030ad0ec60e014d997bc2d915f3758ae16fb67b5f7434aaf05de100686",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer2_Lean/lean/PdelBasic/IntegralBridge.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "a1ab08c545799f7557ac985a60bb074ecfb234fca5816d2634eb177834d36556",
+      "package_sha256": "a1ab08c545799f7557ac985a60bb074ecfb234fca5816d2634eb177834d36556",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer2_Lean/lean/PdelBasic/Model.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "318d3bbbedd608509c56ac46cdd9bb6af53ea8a5286c0137f5564a19817c283e",
+      "package_sha256": "318d3bbbedd608509c56ac46cdd9bb6af53ea8a5286c0137f5564a19817c283e",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer2_Lean/lean/PdelBasic/Stationarity.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "315b76acdbba73dff1c32317f97e8abc2cbe289d37cc022f2f6db2b151641868",
+      "package_sha256": "315b76acdbba73dff1c32317f97e8abc2cbe289d37cc022f2f6db2b151641868",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer3_Lean/lean/PdelEulerian/BoxIntegration.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "2f733e4d4c1cbd6177d884b291b1bdebd1442eefd733f4c73f4781ce900e89e1",
+      "package_sha256": "2f733e4d4c1cbd6177d884b291b1bdebd1442eefd733f4c73f4781ce900e89e1",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer3_Lean/lean/PdelEulerian/Energy.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "86081b5a53570185c12d355070c475febf251298523705a50577cd738cc7ec4f",
+      "package_sha256": "86081b5a53570185c12d355070c475febf251298523705a50577cd738cc7ec4f",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer3_Lean/lean/PdelEulerian/Equations.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "2f279c81af41f633b224f9c918c7c39a4184081e248b312c6ba8499bc71c3951",
+      "package_sha256": "2f279c81af41f633b224f9c918c7c39a4184081e248b312c6ba8499bc71c3951",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer3_Lean/lean/PdelEulerian/Examples.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "9864817a92677ae9bffbc0ba7c52584bd61603f381fb48c1cd496f4622a0e772",
+      "package_sha256": "9864817a92677ae9bffbc0ba7c52584bd61603f381fb48c1cd496f4622a0e772",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer3_Lean/lean/PdelEulerian/Fields.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "20ff974bab3dfe26157ce037127fc48f62bedcebab4f26d6bc013ccd5b3fd3ca",
+      "package_sha256": "20ff974bab3dfe26157ce037127fc48f62bedcebab4f26d6bc013ccd5b3fd3ca",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer3_Lean/lean/PdelEulerian/FirstVariation.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "f2c974ca6a9df0968660982d57155a5338a31382b187565658a052b2f9e715c7",
+      "package_sha256": "f2c974ca6a9df0968660982d57155a5338a31382b187565658a052b2f9e715c7",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer3_Lean/lean/PdelEulerian/History.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "f9313a01b08c029f009f47ae984ac9a96627d2697a84400e1b673e18bf820c38",
+      "package_sha256": "f9313a01b08c029f009f47ae984ac9a96627d2697a84400e1b673e18bf820c38",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer3_Lean/lean/PdelEulerian/IntegralBridge.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "bb9fc587b0d8e316485eb0ee20a87c131561ccb0ab693b33e6be2e91a1b2b213",
+      "package_sha256": "bb9fc587b0d8e316485eb0ee20a87c131561ccb0ab693b33e6be2e91a1b2b213",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer3_Lean/lean/PdelEulerian/Smooth.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "a3ded5b7ce522f71509e00cbb118fbdc8c448a50fb944310443cefcdbbc606cd",
+      "package_sha256": "a3ded5b7ce522f71509e00cbb118fbdc8c448a50fb944310443cefcdbbc606cd",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer3_Lean/lean/PdelEulerian/Stationarity.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "fd0d5618adb4c83c480f6b7a7e37e13dc6415effa73ca9e258c968782f39a22b",
+      "package_sha256": "fd0d5618adb4c83c480f6b7a7e37e13dc6415effa73ca9e258c968782f39a22b",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer3_Lean/lean/PdelEulerian/Thermodynamics.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "f802412306d3a92437e6af36319d650036821c40a374ace920914fa7cc022bac",
+      "package_sha256": "f802412306d3a92437e6af36319d650036821c40a374ace920914fa7cc022bac",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer3_Lean/lean/PdelEulerian/VectorCalculus.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "8ec2b4ef85bf13dba4d67d7c405704e5857278de5d866c813e2001afffbd110e",
+      "package_sha256": "8ec2b4ef85bf13dba4d67d7c405704e5857278de5d866c813e2001afffbd110e",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_CrossLayer_Lean/lean/PdelBridge/Budgets.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "fa8eb20d45e5201fe89c2e6fdf4598f17a90ee119ec63809dffa99163a8707e7",
+      "package_sha256": "fa8eb20d45e5201fe89c2e6fdf4598f17a90ee119ec63809dffa99163a8707e7",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_CrossLayer_Lean/lean/PdelBridge/Histories.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "a79b92a7a0c810064c7af6305d022bd73e869fee0823377808158c87113d5962",
+      "package_sha256": "a79b92a7a0c810064c7af6305d022bd73e869fee0823377808158c87113d5962",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_CrossLayer_Lean/lean/PdelBridge/Tensor.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "9ab815afae95776868aa99ce1b88e2a73a70a08ec63420904ede5b16f618faa5",
+      "package_sha256": "9ab815afae95776868aa99ce1b88e2a73a70a08ec63420904ede5b16f618faa5",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_CrossLayer_Lean/lean/PdelBridge/Thermal.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "dee50f3ff18f7a254b2a7cb070e469e1f12ccb61dc7b57b07cc6af4d69357806",
+      "package_sha256": "dee50f3ff18f7a254b2a7cb070e469e1f12ccb61dc7b57b07cc6af4d69357806",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_CrossLayer_Lean/lean/PdelBridge/ThermalReduction.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "cae7df3a86d5f228d5fb8957dbadfacbaf61ff5d25c664ae2e43062f65656c38",
+      "package_sha256": "cae7df3a86d5f228d5fb8957dbadfacbaf61ff5d25c664ae2e43062f65656c38",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_CrossLayer_Lean/lean/PdelBridge/Transport.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "17408fc8814927d7d79c51beda9887a795877c9fb1e920ebdbea167ce30f0214",
+      "package_sha256": "17408fc8814927d7d79c51beda9887a795877c9fb1e920ebdbea167ce30f0214",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_CrossLayer_Lean/lean/PdelBridge/Vectors.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "39facd8f563e3eee4a2c47e4d22dec1041c936d6a043a096c4744912920f61fc",
+      "package_sha256": "39facd8f563e3eee4a2c47e4d22dec1041c936d6a043a096c4744912920f61fc",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Revision3_Lean/lean/PdelRevision3/CumulativeBudget.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "3287ad321d039c62e96a13c5a412ae4acee71e85cb5c8d28ed028d89a407086d",
+      "package_sha256": "3287ad321d039c62e96a13c5a412ae4acee71e85cb5c8d28ed028d89a407086d",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Revision3_Lean/lean/PdelRevision3/JouleHistory.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "9781e5f692772e1aca1d359ae28ddb717e6eb9d36456e67ec8ebe55a93a5c425",
+      "package_sha256": "9781e5f692772e1aca1d359ae28ddb717e6eb9d36456e67ec8ebe55a93a5c425",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Revision3_Lean/lean/PdelRevision3/Nonmagnetic.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "5b374032a02bbd48c51b34e1fad82a4dbafa396c6ee9a9287ef5a9a0415d39f7",
+      "package_sha256": "5b374032a02bbd48c51b34e1fad82a4dbafa396c6ee9a9287ef5a9a0415d39f7",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Integration_Check/lean/PdelIntegration.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "91687bfe8307e37c3ffa2fd1a6865e3a3d9e6572e53764b7f8f949ce2a8e926b",
+      "package_sha256": "91687bfe8307e37c3ffa2fd1a6865e3a3d9e6572e53764b7f8f949ce2a8e926b",
+      "unchanged": true
+    },
+    {
+      "file": "lean/PdelMHD.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "2cc66db8434c0116cc510a0c9359b21b9b8aceae7efb9551ccb4bf45f0175f93",
+      "package_sha256": "2cc66db8434c0116cc510a0c9359b21b9b8aceae7efb9551ccb4bf45f0175f93",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer2_Lean/lean/PdelBasic.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "bef03c35254a0c4002e489e7a98e760befb7c65b75cfb88a06960979c2270af1",
+      "package_sha256": "bef03c35254a0c4002e489e7a98e760befb7c65b75cfb88a06960979c2270af1",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Layer3_Lean/lean/PdelEulerian.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "37e85603d5245596ee3fce86f3798da5a43ea73d1558d6ee1bf08ec1c3d1e2cd",
+      "package_sha256": "37e85603d5245596ee3fce86f3798da5a43ea73d1558d6ee1bf08ec1c3d1e2cd",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_CrossLayer_Lean/lean/PdelBridge.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "c545ca672924dedf2cb353413c6ead6b62929a9ad733deb2bfaa77a416b720eb",
+      "package_sha256": "c545ca672924dedf2cb353413c6ead6b62929a9ad733deb2bfaa77a416b720eb",
+      "unchanged": true
+    },
+    {
+      "file": "PDEL_Revision3_Lean/lean/PdelRevision3.lean",
+      "origin": "previously verified isolated source",
+      "original_sha256": "f659a22794566486cd5abe821a1611d2a0e188d16dec962cf2e9ebae2b63ab92",
+      "package_sha256": "f659a22794566486cd5abe821a1611d2a0e188d16dec962cf2e9ebae2b63ab92",
+      "unchanged": true
+    }
+  ],
+  "manifest_note": "Only dependency manifests were normalized for the standalone package; existing lakefile.toml and Lean source bytes are preserved."
+}

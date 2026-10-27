@@ -1,0 +1,12 @@
+import PdelEulerian.Smooth
+import PdelEulerian.VectorCalculus
+import PdelEulerian.Thermodynamics
+import PdelEulerian.Fields
+import PdelEulerian.History
+import PdelEulerian.FirstVariation
+import PdelEulerian.BoxIntegration
+import PdelEulerian.Stationarity
+import PdelEulerian.Equations
+import PdelEulerian.Energy
+import PdelEulerian.IntegralBridge
+import PdelEulerian.Examples

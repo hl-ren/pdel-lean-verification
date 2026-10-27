@@ -1,0 +1,30 @@
+name: Lean verification
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: lean-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - name: Validate package integrity
+        run: bash verify.sh --check-only
+      - name: Fresh compile and per-declaration axiom audit
+        run: bash verify.sh
+      - name: Save actual verification reports
+        if: always()
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        with:
+          name: lean-verification-${{ github.run_id }}-${{ github.run_attempt }}
+          path: verification-runs/*/report/
+          if-no-files-found: warn
+          retention-days: 30

@@ -1,0 +1,171 @@
+PdelBridge.reservoir_exchange_via_layer1 (M : PdelBasic.Material) (P : PdelBasic.Path) (L : PdelBasic.Loads) {a b : ℝ}
+  (hab : a < b) (hst : PdelBasic.Stationary M P L a b) {t bath conductance : ℝ} (ht : t ∈ Set.Icc a b) (hb : 0 < bath)
+  (hq : L.heatOut t = conductance * (P.theta t - bath)) :
+  deriv P.entropy t + L.heatOut t / bath =
+    PdelBasic.dissipation M (P.v t) / P.theta t + conductance * (P.theta t - bath) * (1 / bath - 1 / P.theta t)
+PdelBridge.reservoir_nonnegative_via_layer1 (M : PdelBasic.Material) (P : PdelBasic.Path) (L : PdelBasic.Loads)
+  {a b : ℝ} (hab : a < b) (hst : PdelBasic.Stationary M P L a b) {t bath conductance : ℝ} (ht : t ∈ Set.Icc a b)
+  (hb : 0 < bath) (hc : 0 ≤ conductance) (hq : L.heatOut t = conductance * (P.theta t - bath)) :
+  0 ≤ deriv P.entropy t + L.heatOut t / bath
+PdelBridge.coupled_finite_energy_budget (M : PdelBasic.Material) (P : PdelBasic.Path) (L : PdelBasic.Loads)
+  (Q : PdelEulerian.Box) (G : PdelEulerian.Gas) (K : PdelEulerian.Transport) (U : PdelEulerian.Fields)
+  (F : PdelEulerian.MaterialChart U.velocity) (t0 : ℝ) (hbasic : PdelBasic.Stationary M P L (Q.lo 0) (Q.hi 0))
+  (hmass : PdelEulerian.MassAdmissible Q U) (heuler : PdelEulerian.Stationary Q G K U F t0) :
+  PdelBasic.totalEnergy M P (Q.hi 0) - PdelBasic.totalEnergy M P (Q.lo 0) + PdelBridge.eulerianEnergyChange Q G U =
+    PdelBridge.basicPort M P L (Q.lo 0) (Q.hi 0) - PdelBridge.eulerianOutwardPort Q G K U
+PdelBridge.three_layer_exchange_budget (M : PdelBasic.Material) (P : PdelBasic.Path) (L : PdelBasic.Loads)
+  (Q : PdelEulerian.Box) (G : PdelEulerian.Gas) (K : PdelEulerian.Transport) (U : PdelEulerian.Fields)
+  (F : PdelEulerian.MaterialChart U.velocity) (t0 basicExternal eulerExternal exchange : ℝ)
+  (hbasic : PdelBasic.Stationary M P L (Q.lo 0) (Q.hi 0)) (hmass : PdelEulerian.MassAdmissible Q U)
+  (heuler : PdelEulerian.Stationary Q G K U F t0)
+  (hbport : PdelBridge.basicPort M P L (Q.lo 0) (Q.hi 0) = basicExternal + exchange)
+  (heport : -PdelBridge.eulerianOutwardPort Q G K U = eulerExternal - exchange) :
+  PdelBasic.totalEnergy M P (Q.hi 0) - PdelBasic.totalEnergy M P (Q.lo 0) + PdelBridge.eulerianEnergyChange Q G U =
+    basicExternal + eulerExternal
+PdelBridge.closed_three_layer_energy (M : PdelBasic.Material) (P : PdelBasic.Path) (L : PdelBasic.Loads)
+  (Q : PdelEulerian.Box) (G : PdelEulerian.Gas) (K : PdelEulerian.Transport) (U : PdelEulerian.Fields)
+  (F : PdelEulerian.MaterialChart U.velocity) (t0 : ℝ) (hbasic : PdelBasic.Stationary M P L (Q.lo 0) (Q.hi 0))
+  (hmass : PdelEulerian.MassAdmissible Q U) (heuler : PdelEulerian.Stationary Q G K U F t0)
+  (hinterface : PdelBridge.basicPort M P L (Q.lo 0) (Q.hi 0) = PdelBridge.eulerianOutwardPort Q G K U) :
+  PdelBasic.totalEnergy M P (Q.hi 0) - PdelBasic.totalEnergy M P (Q.lo 0) + PdelBridge.eulerianEnergyChange Q G U = 0
+PdelBridge.reference_history_is_layer2 (v : PdelEulerian.Vector) (F : PdelEulerian.MaterialChart v)
+  (D : PdelEulerian.Scalar) (a t : ℝ) (X : PdelEulerian.Label) :
+  F.refHistory D a t X = PdelBasic.powerHistory (fun u => F.volumeFactor u X * ↑D (F.position u X)) a t
+PdelBridge.current_history_normalization (v : PdelEulerian.Vector) (F : PdelEulerian.MaterialChart v)
+  (D : PdelEulerian.Scalar) (a : ℝ) (p : PdelEulerian.ST) :
+  F.currentHistory D a p =
+    PdelBasic.powerHistory (fun u => F.volumeFactor u (F.label p) * ↑D (F.position u (F.label p))) a (p 0) /
+      F.volumeFactor (p 0) (F.label p)
+PdelBridge.receiver_derivative_via_layer2 (v : PdelEulerian.Vector) (F : PdelEulerian.MaterialChart v)
+  (D : PdelEulerian.Scalar) (a : ℝ) (p : PdelEulerian.ST) (selector : ℝ) :
+  HasDerivAt (fun e => F.receiverHistory D a p (p 0 + e * selector)) (↑D p * selector) 0
+PdelBridge.unit_volume_history (v : PdelEulerian.Vector) (F : PdelEulerian.MaterialChart v) (D : PdelEulerian.Scalar)
+  (hunit : ∀ (t : ℝ) (X : PdelEulerian.Label), F.volumeFactor t X = 1) (a : ℝ) (p : PdelEulerian.ST) :
+  F.currentHistory D a p = PdelBasic.powerHistory (fun u => ↑D (F.position u (F.label p))) a (p 0)
+PdelBridge.box_weight_product (Q : PdelEulerian.Box) (p : PdelEulerian.ST) :
+  ↑Q.weight p =
+    PdelBasic.endpointWeight (Q.lo 0) (Q.hi 0) (p 0) * PdelBasic.endpointWeight (Q.lo 1) (Q.hi 1) (p 1) *
+        PdelBasic.endpointWeight (Q.lo 2) (Q.hi 2) (p 2) *
+      PdelBasic.endpointWeight (Q.lo 3) (Q.hi 3) (p 3)
+PdelBridge.seed_action (ell : ℝ) (A J w : PdelEulerian.Vector)
+  (hg : ∀ (p : PdelEulerian.ST), ↑(PdelEulerian.dot A J) p ≠ 0)
+  (hj : ∀ (p : PdelEulerian.ST), ↑(PdelEulerian.normSq J) p ≠ 0) (p : PdelEulerian.ST) :
+  PdelBridge.toV3 (PdelEulerian.valueV (PdelEulerian.matvec (PdelBridge.seedTensor ell A J hg hj) w) p) =
+    PdelMHD.tensorAction ell (PdelBridge.toV3 (PdelEulerian.valueV A p)) (PdelBridge.toV3 (PdelEulerian.valueV J p))
+      (PdelBridge.toV3 (PdelEulerian.valueV w p))
+PdelBridge.seed_symmetric (ell : ℝ) (A J : PdelEulerian.Vector)
+  (hg : ∀ (p : PdelEulerian.ST), ↑(PdelEulerian.dot A J) p ≠ 0)
+  (hj : ∀ (p : PdelEulerian.ST), ↑(PdelEulerian.normSq J) p ≠ 0) (i j : Fin 3) :
+  PdelBridge.seedTensor ell A J hg hj i j = PdelBridge.seedTensor ell A J hg hj j i
+PdelBridge.seed_positive_definite (ell : ℝ) (A J : PdelEulerian.Vector)
+  (hg : ∀ (p : PdelEulerian.ST), ↑(PdelEulerian.dot A J) p ≠ 0)
+  (hj : ∀ (p : PdelEulerian.ST), ↑(PdelEulerian.normSq J) p ≠ 0) (hell : 0 < ell)
+  (hpos : ∀ (p : PdelEulerian.ST), 0 < ↑(PdelEulerian.dot A J) p) (p : PdelEulerian.ST) (z : PdelBridge.RVector)
+  (hz : z ≠ 0) :
+  0 <
+    PdelEulerian.rdot z fun i =>
+      ↑(PdelBridge.seedTensor ell A J hg hj i 0) p * z 0 + ↑(PdelBridge.seedTensor ell A J hg hj i 1) p * z 1 +
+        ↑(PdelBridge.seedTensor ell A J hg hj i 2) p * z 2
+PdelBridge.seed_maps_current (ell : ℝ) (A J : PdelEulerian.Vector)
+  (hg : ∀ (p : PdelEulerian.ST), ↑(PdelEulerian.dot A J) p ≠ 0)
+  (hj : ∀ (p : PdelEulerian.ST), ↑(PdelEulerian.normSq J) p ≠ 0) :
+  PdelEulerian.matvec (PdelBridge.seedTensor ell A J hg hj) J = PdelEulerian.scale (PdelEulerian.C ell) A
+PdelBridge.seed_current_power (ell : ℝ) (A J : PdelEulerian.Vector)
+  (hg : ∀ (p : PdelEulerian.ST), ↑(PdelEulerian.dot A J) p ≠ 0)
+  (hj : ∀ (p : PdelEulerian.ST), ↑(PdelEulerian.normSq J) p ≠ 0) (p : PdelEulerian.ST) :
+  ↑(PdelEulerian.dot J (PdelEulerian.matvec (PdelBridge.seedTensor ell A J hg hj) J)) p =
+    ell * ↑(PdelEulerian.dot A J) p
+PdelBridge.free_energy_reference (G : PdelEulerian.Gas) (viscosity : ℝ) (hv : 0 ≤ viscosity) (x T : ℝ) (hT : 0 < T) :
+  PdelBasic.freeEnergy (PdelBridge.referenceMaterial G viscosity hv) x T =
+    x ^ 2 / 2 + PdelEulerian.ThermalState.freeEnergyReal G G.rhoRef T - G.rhoRef * G.cv * G.tempRef
+PdelBridge.entropy_reference (G : PdelEulerian.Gas) (viscosity : ℝ) (hv : 0 ≤ viscosity)
+  (temp entropy : PdelEulerian.Scalar) (ht : ∀ (p : PdelEulerian.ST), 0 < ↑temp p) (x : ℝ) (p : PdelEulerian.ST) :
+  PdelBasic.entropyState (PdelBridge.referenceMaterial G viscosity hv) x (↑temp p) =
+    -↑(PdelEulerian.ThermalState.phiTemp G (PdelBridge.referenceState G temp entropy ht)) p
+PdelBridge.mixed_internal_reference (G : PdelEulerian.Gas) (viscosity : ℝ) (hv : 0 ≤ viscosity)
+  (temp entropy : PdelEulerian.Scalar) (ht : ∀ (p : PdelEulerian.ST), 0 < ↑temp p) (x : ℝ) (p : PdelEulerian.ST) :
+  PdelBasic.mixedInternal (PdelBridge.referenceMaterial G viscosity hv) x (↑temp p) (↑entropy p) =
+    x ^ 2 / 2 + ↑(PdelEulerian.ThermalState.mixedInternal G (PdelBridge.referenceState G temp entropy ht)) p -
+      G.rhoRef * G.cv * G.tempRef
+PdelBridge.conjugacy_residual_reference (G : PdelEulerian.Gas) (viscosity : ℝ) (hv : 0 ≤ viscosity)
+  (temp entropy : PdelEulerian.Scalar) (ht : ∀ (p : PdelEulerian.ST), 0 < ↑temp p) (P : PdelBasic.Path) (t : ℝ)
+  (p : PdelEulerian.ST) (hT : P.theta t = ↑temp p) (hs : P.entropy t = ↑entropy p) :
+  PdelBasic.thermalResidual (PdelBridge.referenceMaterial G viscosity hv) P t =
+    ↑(PdelEulerian.ThermalState.conjugacyResidual G (PdelBridge.referenceState G temp entropy ht)) p
+PdelBridge.bulk_dissipation_is_scalar (M : PdelBasic.Material) (K : PdelEulerian.Transport) (P : PdelEulerian.Fields)
+  (p : PdelEulerian.ST) (hbulk : ↑K.bulk p = M.viscosity) :
+  ↑(PdelEulerian.Fields.viscousPower K P) p = PdelBasic.dissipation M (↑(PdelEulerian.div P.velocity) p)
+PdelBridge.bulk_spending_is_scalar (M : PdelBasic.Material) (K : PdelEulerian.Transport) (P : PdelEulerian.Fields)
+  (xi : PdelEulerian.Vector) (p : PdelEulerian.ST) (selector : ℝ) (hbulk : ↑K.bulk p = M.viscosity) :
+  ↑(PdelEulerian.Fields.viscousPower K P) p * selector -
+      ↑(PdelEulerian.stressWork (PdelEulerian.Fields.viscousStress K P) xi) p =
+    PdelBasic.spending M (↑(PdelEulerian.div P.velocity) p) (↑(PdelEulerian.div xi) p) selector
+PdelBridge.no_full_fixed_density_identification (M : PdelBasic.Material) (G : PdelEulerian.Gas) (rho datum : ℝ) :
+  ¬∀ (x : ℝ), PdelBasic.freeEnergy M x M.thetaRef = PdelEulerian.ThermalState.freeEnergyReal G rho M.thetaRef + datum
+PdelBridge.time_trace_smooth (f : PdelEulerian.Scalar) (X : PdelEulerian.Label) :
+  ContDiff ℝ (↑⊤) (PdelBridge.timeTrace f X)
+PdelBridge.time_trace_hasDerivAt (f : PdelEulerian.Scalar) (X : PdelEulerian.Label) (t : ℝ) :
+  HasDerivAt (PdelBridge.timeTrace f X) (↑(PdelEulerian.dt f) (PdelBridge.restPoint t X)) t
+PdelBridge.rest_point_in_box (Q : PdelEulerian.Box) (X : PdelEulerian.Label)
+  (hX : ∀ (i : Fin 3), Q.lo i.succ ≤ X i ∧ X i ≤ Q.hi i.succ) {t : ℝ} (ht : t ∈ Set.Icc (Q.lo 0) (Q.hi 0)) :
+  PdelBridge.restPoint t X ∈ Q.closed
+PdelBridge.thermal_projection_stationary (G : PdelEulerian.Gas) (K : PdelEulerian.Transport)
+  (temp entropy : PdelEulerian.Scalar) (ht : ∀ (p : PdelEulerian.ST), 0 < ↑temp p) (potential : PdelEulerian.Vector)
+  (Q : PdelEulerian.Box) (F : PdelEulerian.MaterialChart (PdelBridge.restFields G temp entropy ht potential).velocity)
+  (t0 viscosity : ℝ) (hv : 0 ≤ viscosity) (X : PdelEulerian.Label)
+  (hX : ∀ (i : Fin 3), Q.lo i.succ ≤ X i ∧ X i ≤ Q.hi i.succ)
+  (hs : PdelEulerian.Stationary Q G K (PdelBridge.restFields G temp entropy ht potential) F t0) :
+  PdelBasic.Stationary (PdelBridge.referenceMaterial G viscosity hv) (PdelBridge.thermalTracePath temp entropy ht X)
+    (PdelBridge.thermalTraceLoads K (PdelBridge.restFields G temp entropy ht potential) X) (Q.lo 0) (Q.hi 0)
+PdelBridge.projected_temperature_equation (G : PdelEulerian.Gas) (K : PdelEulerian.Transport)
+  (temp entropy : PdelEulerian.Scalar) (ht : ∀ (p : PdelEulerian.ST), 0 < ↑temp p) (potential : PdelEulerian.Vector)
+  (Q : PdelEulerian.Box) (F : PdelEulerian.MaterialChart (PdelBridge.restFields G temp entropy ht potential).velocity)
+  (t0 viscosity : ℝ) (hv : 0 ≤ viscosity) (X : PdelEulerian.Label)
+  (hX : ∀ (i : Fin 3), Q.lo i.succ ≤ X i ∧ X i ≤ Q.hi i.succ)
+  (hs : PdelEulerian.Stationary Q G K (PdelBridge.restFields G temp entropy ht potential) F t0) {t : ℝ}
+  (htime : t ∈ Set.Ioo (Q.lo 0) (Q.hi 0)) :
+  G.rhoRef * G.cv * deriv (PdelBridge.timeTrace temp X) t +
+      (PdelBridge.thermalTraceLoads K (PdelBridge.restFields G temp entropy ht potential) X).heatOut t =
+    0
+PdelBridge.example_thermal_projection (Q : PdelEulerian.Box) (X : PdelEulerian.Label)
+  (hX : ∀ (i : Fin 3), Q.lo i.succ ≤ X i ∧ X i ≤ Q.hi i.succ) :
+  PdelBasic.Stationary (PdelBridge.referenceMaterial PdelEulerian.Example.gas 0 ⋯)
+    (PdelBridge.thermalTracePath PdelEulerian.Example.temp
+      (PdelEulerian.slog PdelEulerian.Example.temp PdelEulerian.Example.temp_nonzero) PdelEulerian.Example.temp_positive
+      X)
+    (PdelBridge.thermalTraceLoads PdelEulerian.Example.transport PdelEulerian.Example.fields X) (Q.lo 0) (Q.hi 0)
+PdelBridge.positive_pairing_norm_positive (A J : PdelEulerian.Vector)
+  (hpos : ∀ (p : PdelEulerian.ST), 0 < ↑(PdelEulerian.dot A J) p) (p : PdelEulerian.ST) : 0 < ↑(PdelEulerian.normSq J) p
+PdelBridge.stationary_seed_joule (ell : ℝ) (A : PdelEulerian.Vector) (Q : PdelEulerian.Box) (G : PdelEulerian.Gas)
+  (K : PdelEulerian.Transport) (P : PdelEulerian.Fields) (F : PdelEulerian.MaterialChart P.velocity) (t0 : ℝ)
+  (hpos : ∀ (p : PdelEulerian.ST), 0 < ↑(PdelEulerian.dot A P.current) p)
+  (heta : K.eta = PdelBridge.positiveSeed ell A P.current hpos) (hs : PdelEulerian.Stationary Q G K P F t0)
+  {p : PdelEulerian.ST} (hp : p ∈ Q.closed) :
+  ↑(PdelEulerian.Fields.joulePower K P) p = ell * ↑(PdelEulerian.dot A P.current) p
+PdelBridge.stationary_seed_joule_positive (ell : ℝ) (hell : 0 < ell) (A : PdelEulerian.Vector) (Q : PdelEulerian.Box)
+  (G : PdelEulerian.Gas) (K : PdelEulerian.Transport) (P : PdelEulerian.Fields)
+  (F : PdelEulerian.MaterialChart P.velocity) (t0 : ℝ)
+  (hpos : ∀ (p : PdelEulerian.ST), 0 < ↑(PdelEulerian.dot A P.current) p)
+  (heta : K.eta = PdelBridge.positiveSeed ell A P.current hpos) (hs : PdelEulerian.Stationary Q G K P F t0)
+  {p : PdelEulerian.ST} (hp : p ∈ Q.closed) : 0 < ↑(PdelEulerian.Fields.joulePower K P) p
+PdelBridge.unit_pairing_positive (p : PdelEulerian.ST) :
+  0 < ↑(PdelEulerian.dot PdelBridge.unitVector PdelBridge.unitVector) p
+PdelBridge.seed_transport_realizes_tensor (ell : ℝ) (hell : 0 < ell) :
+  (PdelBridge.seedTransport ell hell).eta =
+    PdelBridge.positiveSeed ell PdelBridge.unitVector PdelBridge.unitVector PdelBridge.unit_pairing_positive
+PdelBridge.to_from (v : PdelMHD.V3) : PdelBridge.toV3 (PdelBridge.fromV3 v) = v
+PdelBridge.from_to (v : PdelBridge.RVector) : PdelBridge.fromV3 (PdelBridge.toV3 v) = v
+PdelBridge.toV3_zero_iff (v : PdelBridge.RVector) : PdelBridge.toV3 v = PdelMHD.zeroV ↔ v = 0
+PdelBridge.dot_conversion (u v : PdelBridge.RVector) :
+  PdelMHD.dot (PdelBridge.toV3 u) (PdelBridge.toV3 v) = PdelEulerian.rdot u v
+PdelBridge.dot_evaluation (u v : PdelEulerian.Vector) (p : PdelEulerian.ST) :
+  PdelMHD.dot (PdelBridge.toV3 (PdelEulerian.valueV u p)) (PdelBridge.toV3 (PdelEulerian.valueV v p)) =
+    ↑(PdelEulerian.dot u v) p
+PdelBridge.cross_evaluation (u v : PdelEulerian.Vector) (p : PdelEulerian.ST) :
+  PdelBridge.toV3 (PdelEulerian.valueV (PdelEulerian.cross u v) p) =
+    PdelMHD.cross (PdelBridge.toV3 (PdelEulerian.valueV u p)) (PdelBridge.toV3 (PdelEulerian.valueV v p))
+PdelBridge.norm_evaluation (v : PdelEulerian.Vector) (p : PdelEulerian.ST) :
+  PdelMHD.normSq (PdelBridge.toV3 (PdelEulerian.valueV v p)) = ↑(PdelEulerian.normSq v) p
+PdelBridge.lorentz_power_pointwise (J E v B : PdelEulerian.Vector) (p : PdelEulerian.ST) :
+  ↑(PdelEulerian.dot J E) p - ↑(PdelEulerian.dot v (PdelEulerian.cross J B)) p =
+    ↑(PdelEulerian.dot J E) p + ↑(PdelEulerian.dot J (PdelEulerian.cross v B)) p

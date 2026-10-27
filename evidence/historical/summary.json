@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-27T10:46:02.333262+00:00",
+  "run": "${HISTORICAL_RUN}",
+  "projects": {
+    "layer1": {
+      "status": "PASS",
+      "build": "PASS",
+      "axioms": "PASS",
+      "full_types": "PASS",
+      "theorems": 37,
+      "named_declarations": 44,
+      "fresh_modules": 3
+    },
+    "layer2": {
+      "status": "PASS",
+      "build": "PASS",
+      "axioms": "PASS",
+      "full_types": "PASS",
+      "theorems": 66,
+      "named_declarations": 100,
+      "fresh_modules": 8
+    },
+    "layer3": {
+      "status": "PASS",
+      "build": "PASS",
+      "axioms": "PASS",
+      "full_types": "PASS",
+      "theorems": 217,
+      "named_declarations": 354,
+      "fresh_modules": 13
+    },
+    "bridge": {
+      "status": "PASS",
+      "build": "PASS",
+      "axioms": "PASS",
+      "full_types": "PASS",
+      "theorems": 41,
+      "named_declarations": 59,
+      "fresh_modules": 8
+    },
+    "revision3": {
+      "status": "PASS",
+      "build": "PASS",
+      "axioms": "PASS",
+      "full_types": "PASS",
+      "theorems": 46,
+      "named_declarations": 64,
+      "fresh_modules": 4
+    },
+    "integration_checks": {
+      "status": "PASS",
+      "build": "PASS",
+      "axioms": "PASS",
+      "full_types": "PASS",
+      "theorems": 5,
+      "named_declarations": 5,
+      "fresh_modules": 1
+    }
+  },
+  "existing_theorems": 407,
+  "existing_named_declarations": 621,
+  "additional_interface_checks": 5,
+  "total_audited_declarations": 626,
+  "fresh_project_modules": 37,
+  "loaded_project_constants_for_dependency_scan": 1709,
+  "preserved_original_files": 3434,
+  "preserved_symlinks": 9,
+  "matched_prior_revision3_declarations": 518,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "original_theorem_or_assumption_changes": [],
+  "lean_version": "4.19.0",
+  "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "source_lock_files": 37,
+  "cross_layer_report": "${HISTORICAL_RUN}/kit/PDEL_CrossLayer_Lean/results/run-20261027T103441Z-52119/cross_layer.json",
+  "source_sha256": "${HISTORICAL_RUN}/source_sha256.json",
+  "axioms": "${HISTORICAL_RUN}/declaration_status.json",
+  "full_types": "${HISTORICAL_RUN}/07_all_full_types.log",
+  "actual_dependency_checks": "${HISTORICAL_RUN}/dependency_checks.json",
+  "actual_module_resolution": "${HISTORICAL_RUN}/module_resolution.json",
+  "source_import_graph": "${HISTORICAL_RUN}/import_graph.json",
+  "package_dependencies": "${HISTORICAL_RUN}/package_dependencies.json",
+  "not_run": [
+    "auxiliary unit tests",
+    "full Maxwell",
+    "two-temperature PDEs",
+    "toroidal embedding",
+    "moving boundary",
+    "full homologous MHD field solution",
+    "constructing a homologous MaterialChart identifying the Revision3 scalar branch with a Layer3 solution",
+    "physical or numerical validation"
+  ],
+  "scope": "Compiled joint environment and explicit interface checks, not unconditional full-model equivalence."
+}

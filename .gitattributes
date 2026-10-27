@@ -1,0 +1,9 @@
+# Preserve proof bytes and recorded hashes on every checkout.
+* -text
+*.lean diff
+*.py diff
+*.sh diff
+*.md diff
+*.json diff
+*.toml diff
+*.yml diff

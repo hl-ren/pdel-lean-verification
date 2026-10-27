@@ -1,0 +1,19 @@
+⚠ [2793/2796] Built PdelMHD.PassiveTensor
+warning: ././././PdelMHD/PassiveTensor.lean:74:2: try 'simp at hg' instead of 'simpa using hg'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././PdelMHD/PassiveTensor.lean:120:30: 'ring' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: ././././PdelMHD/PassiveTensor.lean:120:30: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: ././././PdelMHD/PassiveTensor.lean:128:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././././PdelMHD/PassiveTensor.lean:138:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2794/2796] Built PdelMHD.Balances
+warning: ././././PdelMHD/Balances.lean:67:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././././PdelMHD/Balances.lean:86:5: unused variable `hg`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+✔ [2795/2796] Built PdelMHD
+Build completed successfully.
+

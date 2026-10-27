@@ -1,0 +1,1981 @@
+{
+  "status": "PASS",
+  "proof_status": "PASS",
+  "build_status": "PASS",
+  "axiom_status": "PASS",
+  "logs": [
+    "01_version.log",
+    "02_mathlib.log",
+    "03_build.log",
+    "04_statements.log",
+    "05_axioms.log"
+  ],
+  "target_counts": {
+    "layer1": 37,
+    "layer2": 66,
+    "layer3": 217,
+    "bridge_theorems": 41,
+    "bridge_declarations": 59,
+    "all_audited": 379
+  },
+  "source_sha256": {
+    "PDEL_CrossLayer_Lean/lean/CheckAllAxioms.lean": "1240d5cbdab8382e0bda4839bea008ed4f3a4c150d11640ce14fa32bee743847",
+    "PDEL_CrossLayer_Lean/lean/CheckBridgeStatements.lean": "c0399229ac388b39e8668093f61776a2072b198e8d3c465e46089dd6c1b1ade6",
+    "PDEL_CrossLayer_Lean/lean/PdelBridge/Budgets.lean": "fa8eb20d45e5201fe89c2e6fdf4598f17a90ee119ec63809dffa99163a8707e7",
+    "PDEL_CrossLayer_Lean/lean/PdelBridge/Histories.lean": "a79b92a7a0c810064c7af6305d022bd73e869fee0823377808158c87113d5962",
+    "PDEL_CrossLayer_Lean/lean/PdelBridge/Tensor.lean": "9ab815afae95776868aa99ce1b88e2a73a70a08ec63420904ede5b16f618faa5",
+    "PDEL_CrossLayer_Lean/lean/PdelBridge/Thermal.lean": "dee50f3ff18f7a254b2a7cb070e469e1f12ccb61dc7b57b07cc6af4d69357806",
+    "PDEL_CrossLayer_Lean/lean/PdelBridge/ThermalReduction.lean": "cae7df3a86d5f228d5fb8957dbadfacbaf61ff5d25c664ae2e43062f65656c38",
+    "PDEL_CrossLayer_Lean/lean/PdelBridge/Transport.lean": "17408fc8814927d7d79c51beda9887a795877c9fb1e920ebdbea167ce30f0214",
+    "PDEL_CrossLayer_Lean/lean/PdelBridge/Vectors.lean": "39facd8f563e3eee4a2c47e4d22dec1041c936d6a043a096c4744912920f61fc",
+    "PDEL_CrossLayer_Lean/lean/PdelBridge.lean": "c545ca672924dedf2cb353413c6ead6b62929a9ad733deb2bfaa77a416b720eb",
+    "PDEL_CrossLayer_Lean/lean/bridge_targets.json": "4b4b05bf8445e382cbf63498d654e9a9a0bd293661316250865299d53ae2a9d4",
+    "PDEL_CrossLayer_Lean/lean/lake-manifest.json": "e33c9a9b700f4f50181eebeee4a51bcf19b2fad5480a52bc3481381c7a484ded",
+    "PDEL_CrossLayer_Lean/lean/lakefile.toml": "170f6fab3e95db26a6fde712061f6dc2470038a276f48d9bde9977e425470bee",
+    "PDEL_CrossLayer_Lean/lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+    "PDEL_CrossLayer_Lean/scripts/verify_cross_layer.py": "6597bf6ff9b3a4cf3528f727078aef193ef7e3d2cc3d7959f184f00a5fc85a70",
+    "PDEL_CrossLayer_Lean/source_lock.json": "324d84eacba270b0853ef73c22a128f106f9e75f45011e6476987a429e65755c",
+    "PDEL_Layer2_Lean/lean/CheckLayer2Axioms.lean": "0dda41dd5f2f05211d957f48c5e73e64e79464315fadbf9667abbd5f5c3918ad",
+    "PDEL_Layer2_Lean/lean/PdelBasic/Energy.lean": "98bccb78ef5f3e1969f9d6a718d54f0ea25a0f45698f88cca946837511487692",
+    "PDEL_Layer2_Lean/lean/PdelBasic/Examples.lean": "9738a6cbfaa6f2df2b53ca830cbe846c6686d1fbb1919622fe71f4956d2aaa3a",
+    "PDEL_Layer2_Lean/lean/PdelBasic/FirstVariation.lean": "16a5c0a7ad7604c5175b1864525354b95dcc264c086faf8dfcb7f20d946f7992",
+    "PDEL_Layer2_Lean/lean/PdelBasic/History.lean": "e07644030ad0ec60e014d997bc2d915f3758ae16fb67b5f7434aaf05de100686",
+    "PDEL_Layer2_Lean/lean/PdelBasic/IntegralBridge.lean": "a1ab08c545799f7557ac985a60bb074ecfb234fca5816d2634eb177834d36556",
+    "PDEL_Layer2_Lean/lean/PdelBasic/Model.lean": "318d3bbbedd608509c56ac46cdd9bb6af53ea8a5286c0137f5564a19817c283e",
+    "PDEL_Layer2_Lean/lean/PdelBasic/Stationarity.lean": "315b76acdbba73dff1c32317f97e8abc2cbe289d37cc022f2f6db2b151641868",
+    "PDEL_Layer2_Lean/lean/PdelBasic.lean": "bef03c35254a0c4002e489e7a98e760befb7c65b75cfb88a06960979c2270af1",
+    "PDEL_Layer2_Lean/lean/lakefile.toml": "dcdd6b07af845c90b80a312100f270ea561875191ee921960f6fdab753d2cfbf",
+    "PDEL_Layer2_Lean/lean/layer2_theorems.json": "14394e037d442a1f561cf10f2fd91bb31ee719a17f345981e74f7a66792ff07a",
+    "PDEL_Layer2_Lean/lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+    "PDEL_Layer3_Lean/lean/CheckLayer3Axioms.lean": "c39d7d2e2627d03f7d6e8b9c86dc782e58fc7099b2ec092db1bf537ceb24e950",
+    "PDEL_Layer3_Lean/lean/CheckLayer3Statements.lean": "9193a9cf5c610f65b03cad9bae29b55c0d12b30e41c23e82b3d6cc89a0685750",
+    "PDEL_Layer3_Lean/lean/PdelEulerian/BoxIntegration.lean": "2f733e4d4c1cbd6177d884b291b1bdebd1442eefd733f4c73f4781ce900e89e1",
+    "PDEL_Layer3_Lean/lean/PdelEulerian/Energy.lean": "86081b5a53570185c12d355070c475febf251298523705a50577cd738cc7ec4f",
+    "PDEL_Layer3_Lean/lean/PdelEulerian/Equations.lean": "2f279c81af41f633b224f9c918c7c39a4184081e248b312c6ba8499bc71c3951",
+    "PDEL_Layer3_Lean/lean/PdelEulerian/Examples.lean": "9864817a92677ae9bffbc0ba7c52584bd61603f381fb48c1cd496f4622a0e772",
+    "PDEL_Layer3_Lean/lean/PdelEulerian/Fields.lean": "20ff974bab3dfe26157ce037127fc48f62bedcebab4f26d6bc013ccd5b3fd3ca",
+    "PDEL_Layer3_Lean/lean/PdelEulerian/FirstVariation.lean": "f2c974ca6a9df0968660982d57155a5338a31382b187565658a052b2f9e715c7",
+    "PDEL_Layer3_Lean/lean/PdelEulerian/History.lean": "f9313a01b08c029f009f47ae984ac9a96627d2697a84400e1b673e18bf820c38",
+    "PDEL_Layer3_Lean/lean/PdelEulerian/IntegralBridge.lean": "bb9fc587b0d8e316485eb0ee20a87c131561ccb0ab693b33e6be2e91a1b2b213",
+    "PDEL_Layer3_Lean/lean/PdelEulerian/Smooth.lean": "a3ded5b7ce522f71509e00cbb118fbdc8c448a50fb944310443cefcdbbc606cd",
+    "PDEL_Layer3_Lean/lean/PdelEulerian/Stationarity.lean": "fd0d5618adb4c83c480f6b7a7e37e13dc6415effa73ca9e258c968782f39a22b",
+    "PDEL_Layer3_Lean/lean/PdelEulerian/Thermodynamics.lean": "f802412306d3a92437e6af36319d650036821c40a374ace920914fa7cc022bac",
+    "PDEL_Layer3_Lean/lean/PdelEulerian/VectorCalculus.lean": "8ec2b4ef85bf13dba4d67d7c405704e5857278de5d866c813e2001afffbd110e",
+    "PDEL_Layer3_Lean/lean/PdelEulerian.lean": "37e85603d5245596ee3fce86f3798da5a43ea73d1558d6ee1bf08ec1c3d1e2cd",
+    "PDEL_Layer3_Lean/lean/lakefile.toml": "aad56a48747b842deaf19048225375dfd0ef2960b8fbcc05cf941624c1508e0b",
+    "PDEL_Layer3_Lean/lean/layer3_theorems.json": "316533abb5d6904813f9f479dc2395001f1f27c6d57acc5cf79c4f12f4904505",
+    "PDEL_Layer3_Lean/lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+    "lean/CheckAxioms.lean": "643a0f83d1a255c254a4708b3c4b36f29d27cf38fc3b5a26e051ef8305e4343a",
+    "lean/PdelMHD/Balances.lean": "eef4c50d7ed4ec8a8cd9824a20cd6ebf8cefe271f2f75edeff68dea39637a85f",
+    "lean/PdelMHD/PassiveTensor.lean": "1f4832fc61913e387c0ad4fdf32778db4aa745e37f160d44fb7d362e704e9081",
+    "lean/PdelMHD.lean": "2cc66db8434c0116cc510a0c9359b21b9b8aceae7efb9551ccb4bf45f0175f93",
+    "lean/lakefile.toml": "e4725085ab8f9e5035afc3adbfcf137d649f891e70405d8e2036f19013c7bc04",
+    "lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+    "lean/theorems.json": "3028fe111061cf0577b552197683a6b4a88dbaac59f827eb2745d22bf076d1ba"
+  },
+  "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "axioms": {
+    "PdelMHD.effective_pressure": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.density_numerator_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.bulk_numerator_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.density_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.dissipative_power_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.joule_coefficient_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.viscous_coefficient_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.thermal_coefficient_balance": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.reference_history_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.reference_internal_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.boundary_power_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.energy_coefficient_balance": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.exchange_energy_cancellation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.exchange_entropy_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.exchange_entropy_nonnegative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.two_temperature_mean": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.two_temperature_gap_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.endpoint_numerator_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.endpoint_power_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.no_finite_exchange_at_equal_temperatures": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.scalar_obstruction_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.lorentz_power_split": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.dot_comm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.normSq_nonneg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.normSq_eq_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.normSq_pos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.current_nonzero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.lagrange_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.triple_x": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.triple_y": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.triple_z": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.zero_of_dot_cross": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.tensor_maps_current": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.tensor_bilinear_symmetric": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.tensor_quadratic_sos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.tensor_positive_definite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelMHD.current_power": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.totalEnergy_off_shell": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.energy_from_stationarity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.finite_interval_energy_balance": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.internalEnergy_from_stationarity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.internal_history_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.temperature_equation_from_stationarity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.entropy_flux_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.entropy_production_nonnegative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.adiabatic_entropy_nonnegative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.closed_energy_derivative_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.reservoir_entropy_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.reservoir_entropy_nonnegative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.basic_variation_and_energy": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.witness_governing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.witness_stationary": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.witness_nonzero_dissipation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.witness_energy": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.duplicate_heat_creates_energy": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.path_theta_hasDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.path_entropy_hasDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.path_dissipation_continuous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.path_entropyState_continuous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.stateHistoryDensity_continuous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.action_integrable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.mixedDensity_at_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.mixedAction_at_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.affineJet_hasDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.varied_motion_hasDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.entropy_path_channel_derivative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.mixedDensity_hasDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.firstVariation_raw": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.mechanicalResidual_c1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.thermalResidual_continuous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.entropyResidual_continuous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.weakDensity_continuous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.firstVariation_residual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.powerHistory_hasDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.powerHistory_continuous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.powerHistory_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.endpoint_channel_derivative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.endpoint_channel_formula": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.powerHistory_nonnegative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.powerHistory_additive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.spending_realized_path": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.synchronized_spending_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.mixedAction_hasDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.mixed_action_stationarity_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.viscous_same_response": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.dissipation_nonnegative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.dissipation_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.freeEnergy_hasDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.freeEnergy_x_derivative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.freeEnergy_theta_derivative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.entropy_is_negative_thermal_derivative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.entropyState_hasDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.mixedInternal_chain_rule": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.internalEnergy_on_conjugacy": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.kinetic_hasDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.endpointWeight_nonnegative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.endpointWeight_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.continuous_zero_from_interior": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.weighted_square_localization": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.integral_zero_on_interval": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.stationary_iff_residuals": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.pdel_basic_variational_theorem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBasic.thermal_conjugacy_from_stationarity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.scalar_ext": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.eval_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.eval_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.eval_add": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.eval_neg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.eval_sub": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.eval_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.eval_pow": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.eval_C": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.C_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.C_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.C_add": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.C_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.C_neg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Scalar.smooth": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Scalar.continuous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Scalar.differentiable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Scalar.hasFDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.d_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.d_C": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.d_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.d_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.d_add": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.d_neg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.d_sub": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.d_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.d_sq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.d_comm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.coordinate_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.d_coordinate": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.reciprocal_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.reciprocal_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.mul_reciprocal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.d_reciprocal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.slog_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.d_slog": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.sexp_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.ssin_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.scos_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.d_sexp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.d_ssin": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.d_scos": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.ssin_sq_add_scos_sq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.d_eq_zero_on_open": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dt_C": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dt_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dt_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dt_add": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dt_sub": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dt_neg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dt_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dt_sq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dx_C": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dx_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dx_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dx_add": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dx_sub": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dx_neg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dx_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dx_sq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.div4_current": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.div_curl": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.curl_grad": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dt_curl": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.curl_add": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.curl_neg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.curl_sub": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.curl_C_scale": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dot_comm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dot_cross": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.cross_antisymm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.cross_self": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dot_scale_left": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dot_scale_right": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.div_scale": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.conservative_split": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.material_mul": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.conservative_product": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.conservative_momentum_split": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.linearized_mass_transport": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.magnetic_weak_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.stress_weak_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.poynting_product_rule": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.material_divergence_kinetic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dot_eval": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.normSq_nonnegative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.ThermalState.pressure_ideal_gas": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.ThermalState.internal_energy_on_conjugacy": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.ThermalState.d_freeEnergy": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.ThermalState.d_pressure": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.ThermalState.conservative_internal_chain": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.ThermalState.freeEnergyReal_hasDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.ThermalState.density_partial_derivative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.ThermalState.temperature_partial_derivative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.ThermalState.logarithm_reference_ratio": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Transport.eta_sigma": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Transport.sigma_eta": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.magnetic_divergence": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.faraday_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.relative_electric_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.bulk_power": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.joule_nonnegative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.viscous_nonnegative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.ohm_from_residual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.joule_on_ohm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.fderiv_tangent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.shifted_endpoint_hasDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.MaterialChart.position_continuous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.MaterialChart.volume_continuous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.MaterialChart.along_flow_hasDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.MaterialChart.refHistory_hasDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.MaterialChart.receiver_endpoint_derivative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.MaterialChart.receiver_at_current": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.MaterialChart.density_channel_derivative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.MaterialChart.material_history_derivative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.MaterialChart.eulerian_history_transport": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.MaterialChart.mass_conservation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.determinant_liouville": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.mass_from_material_constraint": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.mixedDensity_at_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.varied_magnetic_is_curl": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.affine_jet_hasDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.norm_jet_hasDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.mixedDensity_hasDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.actual_local_first_variation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.resistive_power_calibration": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.kinetic_weak_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.thermal_state_weak_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.first_variation_divergence_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.le": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.mem_interior": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.mem_closed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.interior_subset": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.interior_open": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.closure_interior": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.integrable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.integral_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.integral_add": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.integral_neg": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.integral_sub": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.integral_congr": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.integral_divergence": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.boundaryFlux_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.zero_vanishes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.mul_vanishes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.weight_nonnegative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.weight_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.weight_vanishes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.weighted_square_localization": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.firstVariation_is_integrable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.stateHistoryAction_integrable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.firstVariation_raw": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.firstVariation_with_boundary": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.variationCurrent_boundary_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.firstVariation_residual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.dot_oneComponent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.oneComponent_vanishes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.momentumTest_admissible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.potentialTest_admissible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.temperatureTest_admissible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.entropyTest_admissible": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.eulerian_pdel_variational_theorem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.physical_momentum_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.ohm_defect_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.ohm_residual_from_defect": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.ohm_defect_from_residual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.physical_entropy_from_residual": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.induction_defect_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.eulerian_pdel_mhd_theorem": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.eulerian_pdel_mhd_from_material_motion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.thermal_conjugacy_from_stationarity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.induction_from_stationarity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.magnetic_energy_kinematic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.resistive_energy_recombination": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.total_energy_off_shell": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.mixed_internal_decomposition": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.temperature_residual_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.entropy_identity_off_shell": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Fields.entropy_production_nonnegative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.energy_from_stationarity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.temperature_from_stationarity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.entropy_from_stationarity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Box.boundary_current_decomposition": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.integrated_energy_from_stationarity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.eulerian_pdel_mhd_and_energy": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.mixedAction_at_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.mixedAction_hasDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.literal_action_stationarity_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.finite_action_and_mhd": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.one_plus_exp_nonzero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.amplitude_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.amplitude_lt_one": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.diffusivity_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.diffusivity_nonzero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.dt_amplitude": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.dx_amplitude": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.temp_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.temp_nonzero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.dt_cosz": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.dt_sinz": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.dx_cosz": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.dx_sinz": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.dt_temp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.dx_temp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.example_magnetic": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.example_current": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.example_norm": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.example_relative": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.example_resistance": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.example_joule": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.example_joule_strictly_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.example_viscous": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.example_heatFlux": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.example_rho": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.example_primitive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.example_stationary": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelEulerian.Example.example_full_mhd": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.reservoir_exchange_via_layer1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.reservoir_nonnegative_via_layer1": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.basicPort": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.eulerianEnergyChange": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.eulerianOutwardPort": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.coupled_finite_energy_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.three_layer_exchange_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.closed_three_layer_energy": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.reference_history_is_layer2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.current_history_normalization": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.receiver_derivative_via_layer2": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.unit_volume_history": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.box_weight_product": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.seedTensor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.seed_action": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.seed_symmetric": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.seed_positive_definite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.seed_maps_current": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.seed_current_power": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.referenceMaterial": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.referenceState": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.free_energy_reference": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.entropy_reference": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.mixed_internal_reference": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.conjugacy_residual_reference": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.bulk_dissipation_is_scalar": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.bulk_spending_is_scalar": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.no_full_fixed_density_identification": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.restPoint": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.timeTrace": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.time_trace_smooth": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.time_trace_hasDerivAt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.restFields": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.thermalTracePath": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.thermalTraceLoads": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.rest_point_in_box": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.thermal_projection_stationary": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.projected_temperature_equation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.example_thermal_projection": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.positive_pairing_norm_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.positiveSeed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.stationary_seed_joule": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.stationary_seed_joule_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.unitVector": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.unit_pairing_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.seedTransport": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.seed_transport_realizes_tensor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.RVector": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.toV3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.fromV3": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.to_from": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.from_to": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.vectorEquiv": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.toV3_zero_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.dot_conversion": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.dot_evaluation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.cross_evaluation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.norm_evaluation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PdelBridge.lorentz_power_pointwise": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "original_sources_unchanged": true,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "report_file": "${HISTORICAL_RUN}/kit/PDEL_CrossLayer_Lean/results/run-20261027T103441Z-52119/cross_layer.json"
+}

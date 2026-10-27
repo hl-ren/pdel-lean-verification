@@ -1,0 +1,324 @@
+{
+  "declarations": [
+    {
+      "name": "PdelRevision3.expansionScale",
+      "kind": "def",
+      "file": "PdelRevision3/CumulativeBudget.lean"
+    },
+    {
+      "name": "PdelRevision3.expansionScale_positive",
+      "kind": "theorem",
+      "file": "PdelRevision3/CumulativeBudget.lean"
+    },
+    {
+      "name": "PdelRevision3.branchJoulePower",
+      "kind": "def",
+      "file": "PdelRevision3/CumulativeBudget.lean"
+    },
+    {
+      "name": "PdelRevision3.branchViscousPower",
+      "kind": "def",
+      "file": "PdelRevision3/CumulativeBudget.lean"
+    },
+    {
+      "name": "PdelRevision3.branchPressure",
+      "kind": "def",
+      "file": "PdelRevision3/CumulativeBudget.lean"
+    },
+    {
+      "name": "PdelRevision3.referenceHeatRate",
+      "kind": "def",
+      "file": "PdelRevision3/CumulativeBudget.lean"
+    },
+    {
+      "name": "PdelRevision3.referencePressureRate",
+      "kind": "def",
+      "file": "PdelRevision3/CumulativeBudget.lean"
+    },
+    {
+      "name": "PdelRevision3.cumulativeIrreversibleHeat",
+      "kind": "def",
+      "file": "PdelRevision3/CumulativeBudget.lean"
+    },
+    {
+      "name": "PdelRevision3.cumulativePressureWork",
+      "kind": "def",
+      "file": "PdelRevision3/CumulativeBudget.lean"
+    },
+    {
+      "name": "PdelRevision3.pressure_rate_four_heat",
+      "kind": "theorem",
+      "file": "PdelRevision3/CumulativeBudget.lean"
+    },
+    {
+      "name": "PdelRevision3.reference_heat_integrable",
+      "kind": "theorem",
+      "file": "PdelRevision3/CumulativeBudget.lean"
+    },
+    {
+      "name": "PdelRevision3.cumulative_pressure_four_irreversible",
+      "kind": "theorem",
+      "file": "PdelRevision3/CumulativeBudget.lean"
+    },
+    {
+      "name": "PdelRevision3.historyCoordinate",
+      "kind": "def",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.referenceJouleProfile",
+      "kind": "def",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.currentJouleProfile",
+      "kind": "def",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.peakScale",
+      "kind": "def",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.peakTime",
+      "kind": "def",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.current_profile_density",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.peakScale_gt_one",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.historyCoordinate_peak",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.historyCoordinate_hasDerivAt",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.reference_profile_hasDerivAt",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.current_profile_hasDerivAt",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.current_profile_peak_value",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.current_profile_global_max",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.current_profile_derivative_positive",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.current_profile_derivative_negative",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.current_profile_derivative_at_peak",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.current_profile_increasing",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.current_profile_decreasing",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.referenceJouleHistory",
+      "kind": "def",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.currentJouleHistory",
+      "kind": "def",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.scale_hasDerivAt",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.scale_positive_between",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.reference_history_closed",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.current_history_closed",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.current_history_hasDerivAt",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.scale_at_peakTime",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.current_history_peak",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.current_history_global_max",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.peakTime_positive",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.scale_le_peak_iff",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.current_history_increasing",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.current_history_decreasing",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.current_history_derivative_at_peak",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.reference_history_increasing",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.paper_reference_joule_rate",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.current_history_is_paper_integral",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.paper_current_history_peak",
+      "kind": "theorem",
+      "file": "PdelRevision3/JouleHistory.lean"
+    },
+    {
+      "name": "PdelRevision3.nonmagneticFields",
+      "kind": "def",
+      "file": "PdelRevision3/Nonmagnetic.lean"
+    },
+    {
+      "name": "PdelRevision3.curl_zero_vector",
+      "kind": "theorem",
+      "file": "PdelRevision3/Nonmagnetic.lean"
+    },
+    {
+      "name": "PdelRevision3.dt_zero_vector",
+      "kind": "theorem",
+      "file": "PdelRevision3/Nonmagnetic.lean"
+    },
+    {
+      "name": "PdelRevision3.cross_zero_vector",
+      "kind": "theorem",
+      "file": "PdelRevision3/Nonmagnetic.lean"
+    },
+    {
+      "name": "PdelRevision3.matvec_zero_vector",
+      "kind": "theorem",
+      "file": "PdelRevision3/Nonmagnetic.lean"
+    },
+    {
+      "name": "PdelRevision3.nonmagnetic_magnetic",
+      "kind": "theorem",
+      "file": "PdelRevision3/Nonmagnetic.lean"
+    },
+    {
+      "name": "PdelRevision3.nonmagnetic_current",
+      "kind": "theorem",
+      "file": "PdelRevision3/Nonmagnetic.lean"
+    },
+    {
+      "name": "PdelRevision3.nonmagnetic_relative_rate",
+      "kind": "theorem",
+      "file": "PdelRevision3/Nonmagnetic.lean"
+    },
+    {
+      "name": "PdelRevision3.nonmagnetic_resistance",
+      "kind": "theorem",
+      "file": "PdelRevision3/Nonmagnetic.lean"
+    },
+    {
+      "name": "PdelRevision3.nonmagnetic_joule",
+      "kind": "theorem",
+      "file": "PdelRevision3/Nonmagnetic.lean"
+    },
+    {
+      "name": "PdelRevision3.nonmagnetic_ohm",
+      "kind": "theorem",
+      "file": "PdelRevision3/Nonmagnetic.lean"
+    },
+    {
+      "name": "PdelRevision3.withoutPotentialTest",
+      "kind": "def",
+      "file": "PdelRevision3/Nonmagnetic.lean"
+    },
+    {
+      "name": "PdelRevision3.nonmagnetic_first_variation",
+      "kind": "theorem",
+      "file": "PdelRevision3/Nonmagnetic.lean"
+    },
+    {
+      "name": "PdelRevision3.FluidEquationsOn",
+      "kind": "def",
+      "file": "PdelRevision3/Nonmagnetic.lean"
+    },
+    {
+      "name": "PdelRevision3.nonmagnetic_stationarity_iff",
+      "kind": "theorem",
+      "file": "PdelRevision3/Nonmagnetic.lean"
+    }
+  ]
+}

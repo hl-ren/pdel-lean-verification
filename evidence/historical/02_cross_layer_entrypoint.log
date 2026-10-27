@@ -1,0 +1,34 @@
+>>> lake env lean --version
+>>> git -C ${HISTORICAL_RUN}/kit/PDEL_CrossLayer_Lean/lean/.lake/packages/mathlib rev-parse HEAD
+>>> lake build PdelBridge
+>>> lake env lean CheckBridgeStatements.lean
+>>> lake env lean CheckAllAxioms.lean
+{
+  "status": "PASS",
+  "proof_status": "PASS",
+  "build_status": "PASS",
+  "axiom_status": "PASS",
+  "logs": [
+    "01_version.log",
+    "02_mathlib.log",
+    "03_build.log",
+    "04_statements.log",
+    "05_axioms.log"
+  ],
+  "target_counts": {
+    "layer1": 37,
+    "layer2": 66,
+    "layer3": 217,
+    "bridge_theorems": 41,
+    "bridge_declarations": 59,
+    "all_audited": 379
+  },
+  "mathlib_commit": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "original_sources_unchanged": true,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "report_file": "${HISTORICAL_RUN}/kit/PDEL_CrossLayer_Lean/results/run-20261027T103441Z-52119/cross_layer.json"
+}

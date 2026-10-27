@@ -1,0 +1,10 @@
+--- before/sections/04_one_temperature.tex
++++ after/sections/04_one_temperature.tex
+@@ -1,6 +1,6 @@
+ \section{One-temperature exact evolution}\label{sec:oneT}
+ \subsection{Construction and complete field equations}
+-The supplementary package contains SymPy scripts for the exponent matching, stress and power identities, and material-history derivatives in this section, together with independent Cartesian residual checks. A GitHub release is being prepared (\repositoryplaceholder). The compiled Layer~1 Lean statements cover selected tensor and balance identities; Layers~2 and~3 address the variational foundations at source level only. Their precise status is summarized in Section~\ref{sec:formal}.
++The supplementary package contains SymPy scripts for the exponent matching, stress and power identities, and material-history derivatives in this section, together with independent Cartesian residual checks. The separate Lean verification suite is available at \repositoryurl\ and archived as \repositoryarchive. Its actual build results, axiom dependencies and coverage limits are summarized in Section~\ref{sec:formal}.
+ 
+ \begin{theorem}[Resistive thermoviscous homologous evolution]\label{thm:oneT}
+ Let the reference seed satisfy \eqref{eq:mhs}, \eqref{eq:designpotential}, $g>0$ and $p_0>g/3$ on $\overline\Omega_0$. Choose $\gamma=5/3$, $b_*,T_*,\eta_*>0$ and set

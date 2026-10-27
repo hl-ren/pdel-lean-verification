@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "module_count": 37,
+  "modules_by_build_log": {
+    "${HISTORICAL_RUN}/layer1_report/lean_step_1.log": [
+      "PdelMHD",
+      "PdelMHD.Balances",
+      "PdelMHD.PassiveTensor"
+    ],
+    "${HISTORICAL_RUN}/kit/PDEL_CrossLayer_Lean/results/run-20261027T103441Z-52119/03_build.log": [
+      "PdelBasic",
+      "PdelBasic.Energy",
+      "PdelBasic.Examples",
+      "PdelBasic.FirstVariation",
+      "PdelBasic.History",
+      "PdelBasic.IntegralBridge",
+      "PdelBasic.Model",
+      "PdelBasic.Stationarity",
+      "PdelBridge",
+      "PdelBridge.Budgets",
+      "PdelBridge.Histories",
+      "PdelBridge.Tensor",
+      "PdelBridge.Thermal",
+      "PdelBridge.ThermalReduction",
+      "PdelBridge.Transport",
+      "PdelBridge.Vectors",
+      "PdelEulerian",
+      "PdelEulerian.BoxIntegration",
+      "PdelEulerian.Energy",
+      "PdelEulerian.Equations",
+      "PdelEulerian.Examples",
+      "PdelEulerian.Fields",
+      "PdelEulerian.FirstVariation",
+      "PdelEulerian.History",
+      "PdelEulerian.IntegralBridge",
+      "PdelEulerian.Smooth",
+      "PdelEulerian.Stationarity",
+      "PdelEulerian.Thermodynamics",
+      "PdelEulerian.VectorCalculus"
+    ],
+    "${HISTORICAL_RUN}/03_revision3_build.log": [
+      "PdelRevision3",
+      "PdelRevision3.CumulativeBudget",
+      "PdelRevision3.JouleHistory",
+      "PdelRevision3.Nonmagnetic"
+    ],
+    "${HISTORICAL_RUN}/04_integration_build.log": [
+      "PdelIntegration"
+    ]
+  },
+  "initial_project_artifacts_copied": false
+}

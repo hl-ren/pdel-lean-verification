@@ -1,0 +1,3536 @@
+{
+  "paper": "paper/PDEL_Toroidal_Journal_Full.tex",
+  "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a",
+  "key": "Stable LaTeX label; no page numbers or displayed equation numbers.",
+  "status_semantics": "PASS applies to associated Lean declarations, not automatically to the complete labeled paper claim; every uncovered component is NOT_RUN.",
+  "entries": [
+    {
+      "latex_label": "sec:intro",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "sec:review",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewfree",
+      "lean_declarations": [
+        "PdelBasic.freeEnergy",
+        "PdelBasic.freeEnergy_hasDerivAt",
+        "PdelBasic.entropy_is_negative_thermal_derivative",
+        "PdelBasic.dissipation_nonnegative"
+      ],
+      "relation": "SINGLE_DOF_SPECIALIZATION",
+      "assumptions": "Material: positive mass, stiffness, heat capacity and reference temperature; viscosity nonnegative; positive temperature. x replaces a single strain coordinate, capacity replaces reference volumetric heat capacity.",
+      "uncovered": "No tensor elasticity/viscosity, spatial strain compatibility or Fourier divergence operator in Layer2.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelBasic.freeEnergy": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.freeEnergy_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.entropy_is_negative_thermal_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.dissipation_nonnegative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer2_Lean/lean/PdelBasic/Model.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewconstitutive",
+      "lean_declarations": [
+        "PdelBasic.freeEnergy",
+        "PdelBasic.freeEnergy_hasDerivAt",
+        "PdelBasic.entropy_is_negative_thermal_derivative",
+        "PdelBasic.dissipation_nonnegative"
+      ],
+      "relation": "SINGLE_DOF_SPECIALIZATION",
+      "assumptions": "Material: positive mass, stiffness, heat capacity and reference temperature; viscosity nonnegative; positive temperature. x replaces a single strain coordinate, capacity replaces reference volumetric heat capacity.",
+      "uncovered": "No tensor elasticity/viscosity, spatial strain compatibility or Fourier divergence operator in Layer2.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelBasic.freeEnergy": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.freeEnergy_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.entropy_is_negative_thermal_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.dissipation_nonnegative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer2_Lean/lean/PdelBasic/Model.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewhistories",
+      "lean_declarations": [
+        "PdelBasic.powerHistory",
+        "PdelBasic.powerHistory_hasDerivAt"
+      ],
+      "relation": "SINGLE_DOF_SPECIALIZATION",
+      "assumptions": "Continuous realized scalar power; heatOut is a signed outward heat-power port.",
+      "uncovered": "No spatial heat-flux field or divergence theorem in Layer2.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelBasic.powerHistory": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.powerHistory_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer2_Lean/lean/PdelBasic/History.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewaction",
+      "lean_declarations": [
+        "PdelBasic.mixedDensity_hasDerivAt",
+        "PdelBasic.firstVariation_residual",
+        "PdelBasic.mixedAction_hasDerivAt"
+      ],
+      "relation": "SINGLE_DOF_SPECIALIZATION",
+      "assumptions": "Path/Loads regularity; mechanical endpoint conditions; dominated IntegralRegular assumptions only for literal derivative under integral.",
+      "uncovered": "No continuum spatial integration by parts, boundary traction or arbitrary continuum functional.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelBasic.mixedDensity_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.firstVariation_residual": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.mixedAction_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer2_Lean/lean/PdelBasic/FirstVariation.lean",
+        "PDEL_Layer2_Lean/lean/PdelBasic/IntegralBridge.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewrules",
+      "lean_declarations": [
+        "PdelBasic.endpoint_channel_derivative",
+        "PdelBasic.spending"
+      ],
+      "relation": "SINGLE_DOF_SPECIALIZATION",
+      "assumptions": "Independent mechanical, temperature and entropy-selector directions; weak donor is the declared PDEL same-force modeling rule.",
+      "uncovered": "Endpoint calculus alone does not derive the weak donor; no restriction of arbitrary mechanical test to a realized-rate direction.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelBasic.endpoint_channel_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.spending": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer2_Lean/lean/PdelBasic/History.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewcalibration",
+      "lean_declarations": [
+        "PdelBasic.endpoint_channel_derivative",
+        "PdelBasic.spending"
+      ],
+      "relation": "SINGLE_DOF_SPECIALIZATION",
+      "assumptions": "Independent mechanical, temperature and entropy-selector directions; weak donor is the declared PDEL same-force modeling rule.",
+      "uncovered": "Endpoint calculus alone does not derive the weak donor; no restriction of arbitrary mechanical test to a realized-rate direction.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelBasic.endpoint_channel_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.spending": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer2_Lean/lean/PdelBasic/History.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewfirstvariation",
+      "lean_declarations": [
+        "PdelBasic.mixedDensity_hasDerivAt",
+        "PdelBasic.firstVariation_residual",
+        "PdelBasic.mixedAction_hasDerivAt"
+      ],
+      "relation": "SINGLE_DOF_SPECIALIZATION",
+      "assumptions": "Path/Loads regularity; mechanical endpoint conditions; dominated IntegralRegular assumptions only for literal derivative under integral.",
+      "uncovered": "No continuum spatial integration by parts, boundary traction or arbitrary continuum functional.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelBasic.mixedDensity_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.firstVariation_residual": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.mixedAction_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer2_Lean/lean/PdelBasic/FirstVariation.lean",
+        "PDEL_Layer2_Lean/lean/PdelBasic/IntegralBridge.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewequations",
+      "lean_declarations": [
+        "PdelBasic.pdel_basic_variational_theorem",
+        "PdelBasic.thermal_conjugacy_from_stationarity"
+      ],
+      "relation": "SINGLE_DOF_SPECIALIZATION",
+      "assumptions": "Nondegenerate interval; universal independent Variation tests; no target governing equations in Material/Path/Loads.",
+      "uncovered": "Spatial force-balance PDE and traction condition are outside Layer2.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelBasic.pdel_basic_variational_theorem": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.thermal_conjugacy_from_stationarity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer2_Lean/lean/PdelBasic/Stationarity.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewtemperature",
+      "lean_declarations": [
+        "PdelBasic.temperature_equation_from_stationarity"
+      ],
+      "relation": "SINGLE_DOF_SPECIALIZATION",
+      "assumptions": "Stationarity and interior time; positive temperature; scalar heat port.",
+      "uncovered": "No tensor conduction or spatial thermal PDE.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelBasic.temperature_equation_from_stationarity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer2_Lean/lean/PdelBasic/Energy.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewenergy",
+      "lean_declarations": [
+        "PdelBasic.totalEnergy_off_shell",
+        "PdelBasic.finite_interval_energy_balance",
+        "PdelBasic.internal_history_budget"
+      ],
+      "relation": "SINGLE_DOF_SPECIALIZATION",
+      "assumptions": "C1 kinematics; stationarity where on-shell; real interval integral.",
+      "uncovered": "No continuum boundary flux or moving-volume energy theorem.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelBasic.totalEnergy_off_shell": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.finite_interval_energy_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.internal_history_budget": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer2_Lean/lean/PdelBasic/Energy.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewrates",
+      "lean_declarations": [
+        "PdelEulerian.conservative_split",
+        "PdelEulerian.conservative_product"
+      ],
+      "relation": "EXACT_LOCAL_IDENTITY",
+      "assumptions": "Smooth scalar/vector fields on real spacetime.",
+      "uncovered": "No general manifold or low-regularity/distributional formulation.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.conservative_split": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.conservative_product": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/VectorCalculus.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:revieweuleraction",
+      "lean_declarations": [
+        "PdelRevision3.nonmagnetic_first_variation",
+        "PdelRevision3.nonmagnetic_stationarity_iff",
+        "PdelRevision3.nonmagnetic_joule"
+      ],
+      "relation": "FIXED_BOX_NONMAGNETIC_SPECIALIZATION",
+      "assumptions": "Zero-potential field construction, smooth positive thermal state, original independent Test quadruples and original Admissible box boundary class; mass admissibility is kinematic.",
+      "uncovered": "No moving-domain theorem or general matrix conductivity; the three fluid tests remain arbitrary. Potential directions have zero first differential by proof, not by restricting the original test space.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelRevision3.nonmagnetic_first_variation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.nonmagnetic_stationarity_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.nonmagnetic_joule": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Revision3_Lean/lean/PdelRevision3/Nonmagnetic.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:revieweulerhistories",
+      "lean_declarations": [
+        "PdelEulerian.MaterialChart.currentHistory",
+        "PdelEulerian.MaterialChart.receiver_endpoint_derivative",
+        "PdelEulerian.MaterialChart.material_history_derivative",
+        "PdelEulerian.MaterialChart.eulerian_history_transport"
+      ],
+      "relation": "CONDITIONAL_TRANSPORT",
+      "assumptions": "MaterialChart characteristics, inverse labels, positive volume factor satisfying Liouville ODE; supplied smooth realization where Eulerian differentiation is used.",
+      "uncovered": "No global flow existence; no automatic spatial smoothness of arbitrary material histories; volume normalization is retained.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.MaterialChart.currentHistory": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.MaterialChart.receiver_endpoint_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.MaterialChart.material_history_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.MaterialChart.eulerian_history_transport": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/History.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewtransport",
+      "lean_declarations": [
+        "PdelEulerian.MaterialChart.currentHistory",
+        "PdelEulerian.MaterialChart.receiver_endpoint_derivative",
+        "PdelEulerian.MaterialChart.material_history_derivative",
+        "PdelEulerian.MaterialChart.eulerian_history_transport"
+      ],
+      "relation": "CONDITIONAL_TRANSPORT",
+      "assumptions": "MaterialChart characteristics, inverse labels, positive volume factor satisfying Liouville ODE; supplied smooth realization where Eulerian differentiation is used.",
+      "uncovered": "No global flow existence; no automatic spatial smoothness of arbitrary material histories; volume normalization is retained.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.MaterialChart.currentHistory": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.MaterialChart.receiver_endpoint_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.MaterialChart.material_history_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.MaterialChart.eulerian_history_transport": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/History.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:revieweulervariations",
+      "lean_declarations": [
+        "PdelEulerian.Test",
+        "PdelEulerian.velocityVariation",
+        "PdelEulerian.linearized_mass_transport"
+      ],
+      "relation": "DECLARED_DIRECTIONS_AND_IDENTITY",
+      "assumptions": "Independent smooth vector displacement, vector-potential, temperature and entropy-selector fields.",
+      "uncovered": "No full two-parameter diffeomorphism construction; calibration does not replace independent tests.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.Test": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.velocityVariation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.linearized_mass_transport": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/FirstVariation.lean",
+        "PDEL_Layer3_Lean/lean/PdelEulerian/VectorCalculus.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:revieweulerspending",
+      "lean_declarations": [
+        "PdelRevision3.nonmagnetic_first_variation",
+        "PdelRevision3.nonmagnetic_stationarity_iff",
+        "PdelRevision3.nonmagnetic_joule"
+      ],
+      "relation": "FIXED_BOX_NONMAGNETIC_SPECIALIZATION",
+      "assumptions": "Zero-potential field construction, smooth positive thermal state, original independent Test quadruples and original Admissible box boundary class; mass admissibility is kinematic.",
+      "uncovered": "No moving-domain theorem or general matrix conductivity; the three fluid tests remain arbitrary. Potential directions have zero first differential by proof, not by restricting the original test space.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelRevision3.nonmagnetic_first_variation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.nonmagnetic_stationarity_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.nonmagnetic_joule": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Revision3_Lean/lean/PdelRevision3/Nonmagnetic.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:revieweulerfirstvariation",
+      "lean_declarations": [
+        "PdelRevision3.nonmagnetic_first_variation",
+        "PdelRevision3.nonmagnetic_stationarity_iff",
+        "PdelRevision3.nonmagnetic_joule"
+      ],
+      "relation": "FIXED_BOX_NONMAGNETIC_SPECIALIZATION",
+      "assumptions": "Zero-potential field construction, smooth positive thermal state, original independent Test quadruples and original Admissible box boundary class; mass admissibility is kinematic.",
+      "uncovered": "No moving-domain theorem or general matrix conductivity; the three fluid tests remain arbitrary. Potential directions have zero first differential by proof, not by restricting the original test space.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelRevision3.nonmagnetic_first_variation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.nonmagnetic_stationarity_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.nonmagnetic_joule": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Revision3_Lean/lean/PdelRevision3/Nonmagnetic.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:revieweulerbalances",
+      "lean_declarations": [
+        "PdelRevision3.nonmagnetic_first_variation",
+        "PdelRevision3.nonmagnetic_stationarity_iff",
+        "PdelRevision3.nonmagnetic_joule"
+      ],
+      "relation": "FIXED_BOX_NONMAGNETIC_SPECIALIZATION",
+      "assumptions": "Zero-potential field construction, smooth positive thermal state, original independent Test quadruples and original Admissible box boundary class; mass admissibility is kinematic.",
+      "uncovered": "No moving-domain theorem or general matrix conductivity; the three fluid tests remain arbitrary. Potential directions have zero first differential by proof, not by restricting the original test space.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelRevision3.nonmagnetic_first_variation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.nonmagnetic_stationarity_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.nonmagnetic_joule": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Revision3_Lean/lean/PdelRevision3/Nonmagnetic.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewEMhistories",
+      "lean_declarations": [],
+      "relation": "FULL_MAXWELL_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Layer3 is magnetic-quasistatic, with no electric-field energy or displacement current; full Maxwell history/action not certified.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewmaxwellaction",
+      "lean_declarations": [],
+      "relation": "FULL_MAXWELL_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Layer3 is magnetic-quasistatic, with no electric-field energy or displacement current; full Maxwell history/action not certified.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewEMrules",
+      "lean_declarations": [],
+      "relation": "FULL_MAXWELL_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Layer3 is magnetic-quasistatic, with no electric-field energy or displacement current; full Maxwell history/action not certified.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewpoynting",
+      "lean_declarations": [],
+      "relation": "FULL_MAXWELL_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Layer3 is magnetic-quasistatic, with no electric-field energy or displacement current; full Maxwell history/action not certified.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewEMsplit",
+      "lean_declarations": [],
+      "relation": "FULL_MAXWELL_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Layer3 is magnetic-quasistatic, with no electric-field energy or displacement current; full Maxwell history/action not certified.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "sec:pdel",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:action",
+      "lean_declarations": [
+        "PdelEulerian.mixedDensity_hasDerivAt",
+        "PdelEulerian.first_variation_divergence_identity",
+        "PdelEulerian.firstVariation_with_boundary",
+        "PdelEulerian.literal_action_stationarity_iff"
+      ],
+      "relation": "FIXED_BOX_FORMALIZATION",
+      "assumptions": "Nondegenerate fixed spacetime box; independent boundary-zero test quadruples; MassAdmissible for physical momentum; ActionRegular for literal action differentiation.",
+      "uncovered": "Moving-domain functional and natural traction/electromagnetic boundary conditions not certified; full smoothness stronger than paper informal regularity.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.mixedDensity_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.first_variation_divergence_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.firstVariation_with_boundary": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.literal_action_stationarity_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/FirstVariation.lean",
+        "PDEL_Layer3_Lean/lean/PdelEulerian/IntegralBridge.lean",
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Stationarity.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:kinematics",
+      "lean_declarations": [
+        "PdelEulerian.MaterialChart.mass_conservation",
+        "PdelEulerian.determinant_liouville",
+        "PdelEulerian.eulerian_pdel_mhd_from_material_motion"
+      ],
+      "relation": "CONDITIONAL_KINEMATICS",
+      "assumptions": "Reference-density material constraint; positive volume factor and flow kinematics; literal matrix ODE for determinant lemma.",
+      "uncovered": "Does not construct a global material map or prove every supplied volume factor equals its deformation-gradient determinant.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.MaterialChart.mass_conservation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.determinant_liouville": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.eulerian_pdel_mhd_from_material_motion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Equations.lean",
+        "PDEL_Layer3_Lean/lean/PdelEulerian/History.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:rates",
+      "lean_declarations": [
+        "PdelEulerian.conservative_split",
+        "PdelEulerian.conservative_product"
+      ],
+      "relation": "EXACT_LOCAL_IDENTITY",
+      "assumptions": "Smooth scalar/vector fields on real spacetime.",
+      "uncovered": "No general manifold or low-regularity/distributional formulation.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.conservative_split": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.conservative_product": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/VectorCalculus.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:historytransport",
+      "lean_declarations": [
+        "PdelEulerian.MaterialChart.currentHistory",
+        "PdelEulerian.MaterialChart.receiver_endpoint_derivative",
+        "PdelEulerian.MaterialChart.material_history_derivative",
+        "PdelEulerian.MaterialChart.eulerian_history_transport"
+      ],
+      "relation": "CONDITIONAL_TRANSPORT",
+      "assumptions": "MaterialChart characteristics, inverse labels, positive volume factor satisfying Liouville ODE; supplied smooth realization where Eulerian differentiation is used.",
+      "uncovered": "No global flow existence; no automatic spatial smoothness of arbitrary material histories; volume normalization is retained.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.MaterialChart.currentHistory": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.MaterialChart.receiver_endpoint_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.MaterialChart.material_history_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.MaterialChart.eulerian_history_transport": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/History.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:freeenergy",
+      "lean_declarations": [
+        "PdelEulerian.ThermalState.freeEnergyReal_hasDerivAt",
+        "PdelEulerian.ThermalState.pressure_ideal_gas",
+        "PdelEulerian.ThermalState.internal_energy_on_conjugacy"
+      ],
+      "relation": "IDEAL_GAS_SPECIALIZATION",
+      "assumptions": "Gas.cv, gasR and references positive; rho and T smooth and globally positive; internal-energy simplification after conjugacy.",
+      "uncovered": "Gas has independent positive cv and gasR; gamma=1+R/cv identification is not a separate named theorem; no arbitrary EOS.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.ThermalState.freeEnergyReal_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.ThermalState.pressure_ideal_gas": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.ThermalState.internal_energy_on_conjugacy": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Thermodynamics.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:eos",
+      "lean_declarations": [
+        "PdelEulerian.ThermalState.freeEnergyReal_hasDerivAt",
+        "PdelEulerian.ThermalState.pressure_ideal_gas",
+        "PdelEulerian.ThermalState.internal_energy_on_conjugacy"
+      ],
+      "relation": "IDEAL_GAS_SPECIALIZATION",
+      "assumptions": "Gas.cv, gasR and references positive; rho and T smooth and globally positive; internal-energy simplification after conjugacy.",
+      "uncovered": "Gas has independent positive cv and gasR; gamma=1+R/cv identification is not a separate named theorem; no arbitrary EOS.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.ThermalState.freeEnergyReal_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.ThermalState.pressure_ideal_gas": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.ThermalState.internal_energy_on_conjugacy": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Thermodynamics.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:variations",
+      "lean_declarations": [
+        "PdelEulerian.Test",
+        "PdelEulerian.velocityVariation",
+        "PdelEulerian.linearized_mass_transport"
+      ],
+      "relation": "DECLARED_DIRECTIONS_AND_IDENTITY",
+      "assumptions": "Independent smooth vector displacement, vector-potential, temperature and entropy-selector fields.",
+      "uncovered": "No full two-parameter diffeomorphism construction; calibration does not replace independent tests.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.Test": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.velocityVariation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.linearized_mass_transport": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/FirstVariation.lean",
+        "PDEL_Layer3_Lean/lean/PdelEulerian/VectorCalculus.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:relative",
+      "lean_declarations": [
+        "PdelEulerian.Fields.relativeRate",
+        "PdelEulerian.Fields.resistance",
+        "PdelEulerian.Fields.joulePower",
+        "PdelEulerian.resistive_power_calibration",
+        "PdelEulerian.mixedDensity_hasDerivAt"
+      ],
+      "relation": "EXACT_DECLARED_MIXED_RULE",
+      "assumptions": "Smooth SPD resistivity and smooth inverse; temporal-gauge potential; common-power donor/receiver construction.",
+      "uncovered": "No ordinary revariation of committed history; no full Maxwell electric storage or displacement current.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.Fields.relativeRate": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.Fields.resistance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.Fields.joulePower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.resistive_power_calibration": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.mixedDensity_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Fields.lean",
+        "PDEL_Layer3_Lean/lean/PdelEulerian/FirstVariation.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:weakohm",
+      "lean_declarations": [
+        "PdelEulerian.Fields.relativeRate",
+        "PdelEulerian.Fields.resistance",
+        "PdelEulerian.Fields.joulePower",
+        "PdelEulerian.resistive_power_calibration",
+        "PdelEulerian.mixedDensity_hasDerivAt"
+      ],
+      "relation": "EXACT_DECLARED_MIXED_RULE",
+      "assumptions": "Smooth SPD resistivity and smooth inverse; temporal-gauge potential; common-power donor/receiver construction.",
+      "uncovered": "No ordinary revariation of committed history; no full Maxwell electric storage or displacement current.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.Fields.relativeRate": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.Fields.resistance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.Fields.joulePower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.resistive_power_calibration": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.mixedDensity_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Fields.lean",
+        "PDEL_Layer3_Lean/lean/PdelEulerian/FirstVariation.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:viscousheat",
+      "lean_declarations": [
+        "PdelEulerian.Fields.bulk_power",
+        "PdelEulerian.Fields.viscous_nonnegative",
+        "PdelEulerian.Fields.heatFlux"
+      ],
+      "relation": "CONSTITUTIVE_SPECIALIZATION",
+      "assumptions": "Scalar bulk and scalar thermal conductivity nonnegative; smooth fields.",
+      "uncovered": "General matrix thermal conductivity and deviatoric shear viscosity are not formalized; paper strict bulk positivity is a specialization of nonnegativity.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.Fields.bulk_power": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.Fields.viscous_nonnegative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.Fields.heatFlux": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Fields.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:explicitMHDhistories",
+      "lean_declarations": [
+        "PdelEulerian.MaterialChart.currentHistory",
+        "PdelEulerian.MaterialChart.receiver_endpoint_derivative",
+        "PdelEulerian.MaterialChart.material_history_derivative",
+        "PdelEulerian.MaterialChart.eulerian_history_transport"
+      ],
+      "relation": "CONDITIONAL_TRANSPORT",
+      "assumptions": "MaterialChart characteristics, inverse labels, positive volume factor satisfying Liouville ODE; supplied smooth realization where Eulerian differentiation is used.",
+      "uncovered": "No global flow existence; no automatic spatial smoothness of arbitrary material histories; volume normalization is retained.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.MaterialChart.currentHistory": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.MaterialChart.receiver_endpoint_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.MaterialChart.material_history_derivative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.MaterialChart.eulerian_history_transport": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/History.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:spending",
+      "lean_declarations": [
+        "PdelEulerian.Fields.relativeRate",
+        "PdelEulerian.Fields.resistance",
+        "PdelEulerian.Fields.joulePower",
+        "PdelEulerian.resistive_power_calibration",
+        "PdelEulerian.mixedDensity_hasDerivAt"
+      ],
+      "relation": "EXACT_DECLARED_MIXED_RULE",
+      "assumptions": "Smooth SPD resistivity and smooth inverse; temporal-gauge potential; common-power donor/receiver construction.",
+      "uncovered": "No ordinary revariation of committed history; no full Maxwell electric storage or displacement current.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.Fields.relativeRate": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.Fields.resistance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.Fields.joulePower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.resistive_power_calibration": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.mixedDensity_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Fields.lean",
+        "PDEL_Layer3_Lean/lean/PdelEulerian/FirstVariation.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:jointdifferential",
+      "lean_declarations": [
+        "PdelEulerian.mixedDensity_hasDerivAt",
+        "PdelEulerian.first_variation_divergence_identity",
+        "PdelEulerian.firstVariation_with_boundary",
+        "PdelEulerian.literal_action_stationarity_iff"
+      ],
+      "relation": "FIXED_BOX_FORMALIZATION",
+      "assumptions": "Nondegenerate fixed spacetime box; independent boundary-zero test quadruples; MassAdmissible for physical momentum; ActionRegular for literal action differentiation.",
+      "uncovered": "Moving-domain functional and natural traction/electromagnetic boundary conditions not certified; full smoothness stronger than paper informal regularity.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.mixedDensity_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.first_variation_divergence_identity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.firstVariation_with_boundary": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.literal_action_stationarity_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/FirstVariation.lean",
+        "PDEL_Layer3_Lean/lean/PdelEulerian/IntegralBridge.lean",
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Stationarity.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:ohm",
+      "lean_declarations": [
+        "PdelEulerian.Fields.ohm_from_residual",
+        "PdelEulerian.Fields.joule_on_ohm",
+        "PdelEulerian.eulerian_pdel_mhd_theorem"
+      ],
+      "relation": "POTENTIAL_FORM_MHD",
+      "assumptions": "Independent vector-potential test; SPD eta and smooth inverse; stationarity; mass admissibility for full equivalence.",
+      "uncovered": "No full Maxwell system, ideal-resistivity limit or nontrivial global potential topology; strict Joule positivity is not a separate general named target here.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.Fields.ohm_from_residual": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.Fields.joule_on_ohm": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.eulerian_pdel_mhd_theorem": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Equations.lean",
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Fields.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:system",
+      "lean_declarations": [
+        "PdelEulerian.eulerian_pdel_variational_theorem",
+        "PdelEulerian.eulerian_pdel_mhd_theorem"
+      ],
+      "relation": "FIXED_BOX_SINGLE_TEMPERATURE_MHD",
+      "assumptions": "All independent smooth boundary-zero tests; positive rho/T; MassAdmissible supplied kinematically.",
+      "uncovered": "The exact homologous toroidal fields and their Cartesian PDE verification are not instantiated in this layer.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.eulerian_pdel_variational_theorem": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.eulerian_pdel_mhd_theorem": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Equations.lean",
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Stationarity.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:mass",
+      "lean_declarations": [
+        "PdelEulerian.MaterialChart.mass_conservation",
+        "PdelEulerian.determinant_liouville",
+        "PdelEulerian.eulerian_pdel_mhd_from_material_motion"
+      ],
+      "relation": "CONDITIONAL_KINEMATICS",
+      "assumptions": "Reference-density material constraint; positive volume factor and flow kinematics; literal matrix ODE for determinant lemma.",
+      "uncovered": "Does not construct a global material map or prove every supplied volume factor equals its deformation-gradient determinant.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.MaterialChart.mass_conservation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.determinant_liouville": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.eulerian_pdel_mhd_from_material_motion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Equations.lean",
+        "PDEL_Layer3_Lean/lean/PdelEulerian/History.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:mom",
+      "lean_declarations": [
+        "PdelEulerian.eulerian_pdel_variational_theorem",
+        "PdelEulerian.eulerian_pdel_mhd_theorem"
+      ],
+      "relation": "FIXED_BOX_SINGLE_TEMPERATURE_MHD",
+      "assumptions": "All independent smooth boundary-zero tests; positive rho/T; MassAdmissible supplied kinematically.",
+      "uncovered": "The exact homologous toroidal fields and their Cartesian PDE verification are not instantiated in this layer.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.eulerian_pdel_variational_theorem": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.eulerian_pdel_mhd_theorem": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Equations.lean",
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Stationarity.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:induction",
+      "lean_declarations": [
+        "PdelEulerian.induction_from_stationarity",
+        "PdelEulerian.Fields.magnetic_divergence"
+      ],
+      "relation": "INTERIOR_CONSEQUENCE",
+      "assumptions": "Stationarity on closed box; evaluation in interior so Ohm can be differentiated on a neighborhood.",
+      "uncovered": "Not an equivalence to curl-only induction; does not eliminate gradient/harmonic electric constraints.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.induction_from_stationarity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.Fields.magnetic_divergence": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Equations.lean",
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Fields.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:heat",
+      "lean_declarations": [
+        "PdelEulerian.temperature_from_stationarity"
+      ],
+      "relation": "SINGLE_TEMPERATURE_INTERIOR_CONSEQUENCE",
+      "assumptions": "Mass admissibility, stationarity and interior point; ideal gas and smooth positive temperature.",
+      "uncovered": "No separate electron/ion thermal channels.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.temperature_from_stationarity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Energy.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:textures",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:oneclosures",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "sec:realization",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:complexseed",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:seedfield",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:mhs",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:current",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:designpotential",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:regularity",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:transform",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:shear",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "tab:parameters",
+      "lean_declarations": [],
+      "relation": "FIGURE_OR_NUMERICAL_TABLE",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Not a Lean theorem target; no Lean certification of numerical images or tables.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "fig:geometry",
+      "lean_declarations": [],
+      "relation": "FIGURE_OR_NUMERICAL_TABLE",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Not a Lean theorem target; no Lean certification of numerical images or tables.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "lem:tensor",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:tensor",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:eigenidentity",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:gpositive",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:gyrotropic",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "prop:scalar",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:scalareigen",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:scalarresidual",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "sec:oneT",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "thm:oneT",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:scale",
+      "lean_declarations": [
+        "PdelRevision3.expansionScale",
+        "PdelRevision3.scale_hasDerivAt",
+        "PdelRevision3.peakTime",
+        "PdelRevision3.scale_at_peakTime"
+      ],
+      "relation": "DECLARED_BRANCH_SCALE_CALCULUS",
+      "assumptions": "Affine material scale U=4*kappa; U>0 when using peakTime.",
+      "uncovered": "No proof that this scale together with the proposed seed solves all toroidal PDEs.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelRevision3.expansionScale": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.scale_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.peakTime": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.scale_at_peakTime": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Revision3_Lean/lean/PdelRevision3/CumulativeBudget.lean",
+        "PDEL_Revision3_Lean/lean/PdelRevision3/JouleHistory.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:materialdata",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:onesolution",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:viscoussolution",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:forcebalance",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:relativefield",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:powers",
+      "lean_declarations": [
+        "PdelRevision3.branchJoulePower",
+        "PdelRevision3.branchViscousPower",
+        "PdelRevision3.branchPressure",
+        "PdelRevision3.paper_reference_joule_rate",
+        "PdelRevision3.pressure_rate_four_heat"
+      ],
+      "relation": "PRESCRIBED_BRANCH_RATE_CALCULUS",
+      "assumptions": "These explicit paper branch formulas are definitions of the scalar data used in the new calculus; positive scale.",
+      "uncovered": "Not a derivation of those formulas from the full Cartesian toroidal B,J,v fields; not full certification of thm:oneT.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelRevision3.branchJoulePower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.branchViscousPower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.branchPressure": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.paper_reference_joule_rate": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.pressure_rate_four_heat": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Revision3_Lean/lean/PdelRevision3/CumulativeBudget.lean",
+        "PDEL_Revision3_Lean/lean/PdelRevision3/JouleHistory.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:thermalclosure",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:potentialpair",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:thermalpressure",
+      "lean_declarations": [
+        "PdelRevision3.branchJoulePower",
+        "PdelRevision3.branchViscousPower",
+        "PdelRevision3.branchPressure",
+        "PdelRevision3.paper_reference_joule_rate",
+        "PdelRevision3.pressure_rate_four_heat"
+      ],
+      "relation": "PRESCRIBED_BRANCH_RATE_CALCULUS",
+      "assumptions": "These explicit paper branch formulas are definitions of the scalar data used in the new calculus; positive scale.",
+      "uncovered": "Not a derivation of those formulas from the full Cartesian toroidal B,J,v fields; not full certification of thm:oneT.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelRevision3.branchJoulePower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.branchViscousPower": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.branchPressure": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.paper_reference_joule_rate": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.pressure_rate_four_heat": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Revision3_Lean/lean/PdelRevision3/CumulativeBudget.lean",
+        "PDEL_Revision3_Lean/lean/PdelRevision3/JouleHistory.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:exponents",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:passivewindow",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:fluxshear",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "fig:expansion",
+      "lean_declarations": [],
+      "relation": "FIGURE_OR_NUMERICAL_TABLE",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Not a Lean theorem target; no Lean certification of numerical images or tables.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "sec:twoT",
+      "lean_declarations": [],
+      "relation": "TWO_TEMPERATURE_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No independent electron/ion state or complete two-temperature evolution certified by Layer2/3. Historical Layer1 exchange algebra is not substituted.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:twostate",
+      "lean_declarations": [],
+      "relation": "TWO_TEMPERATURE_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No independent electron/ion state or complete two-temperature evolution certified by Layer2/3. Historical Layer1 exchange algebra is not substituted.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:twoheat",
+      "lean_declarations": [],
+      "relation": "TWO_TEMPERATURE_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No independent electron/ion state or complete two-temperature evolution certified by Layer2/3. Historical Layer1 exchange algebra is not substituted.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:Czero",
+      "lean_declarations": [],
+      "relation": "TWO_TEMPERATURE_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No independent electron/ion state or complete two-temperature evolution certified by Layer2/3. Historical Layer1 exchange algebra is not substituted.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:twoclosures",
+      "lean_declarations": [],
+      "relation": "TWO_TEMPERATURE_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No independent electron/ion state or complete two-temperature evolution certified by Layer2/3. Historical Layer1 exchange algebra is not substituted.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:exchangeband",
+      "lean_declarations": [],
+      "relation": "TWO_TEMPERATURE_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No independent electron/ion state or complete two-temperature evolution certified by Layer2/3. Historical Layer1 exchange algebra is not substituted.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "thm:twoT",
+      "lean_declarations": [],
+      "relation": "TWO_TEMPERATURE_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No independent electron/ion state or complete two-temperature evolution certified by Layer2/3. Historical Layer1 exchange algebra is not substituted.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:twotemperatures",
+      "lean_declarations": [],
+      "relation": "TWO_TEMPERATURE_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No independent electron/ion state or complete two-temperature evolution certified by Layer2/3. Historical Layer1 exchange algebra is not substituted.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:exchangepower",
+      "lean_declarations": [],
+      "relation": "TWO_TEMPERATURE_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No independent electron/ion state or complete two-temperature evolution certified by Layer2/3. Historical Layer1 exchange algebra is not substituted.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:twoentropy",
+      "lean_declarations": [],
+      "relation": "TWO_TEMPERATURE_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No independent electron/ion state or complete two-temperature evolution certified by Layer2/3. Historical Layer1 exchange algebra is not substituted.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:speciesentropy",
+      "lean_declarations": [],
+      "relation": "TWO_TEMPERATURE_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No independent electron/ion state or complete two-temperature evolution certified by Layer2/3. Historical Layer1 exchange algebra is not substituted.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:Qendpoint",
+      "lean_declarations": [],
+      "relation": "TWO_TEMPERATURE_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No independent electron/ion state or complete two-temperature evolution certified by Layer2/3. Historical Layer1 exchange algebra is not substituted.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:Tendpoint",
+      "lean_declarations": [],
+      "relation": "TWO_TEMPERATURE_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No independent electron/ion state or complete two-temperature evolution certified by Layer2/3. Historical Layer1 exchange algebra is not substituted.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:Gpole",
+      "lean_declarations": [],
+      "relation": "TWO_TEMPERATURE_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No independent electron/ion state or complete two-temperature evolution certified by Layer2/3. Historical Layer1 exchange algebra is not substituted.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "sec:energy",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:energydef",
+      "lean_declarations": [
+        "PdelEulerian.Fields.total_energy_off_shell",
+        "PdelEulerian.energy_from_stationarity",
+        "PdelEulerian.eulerian_pdel_mhd_and_energy"
+      ],
+      "relation": "LOCAL_SINGLE_TEMPERATURE_MHD",
+      "assumptions": "Mass admissibility and stationary equations for on-shell identity; retained mixed internal energy before conjugacy.",
+      "uncovered": "No certified two-temperature branch; scalar heat flux is retained generally, zero on paper exact branch only after further instantiation.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.Fields.total_energy_off_shell": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.energy_from_stationarity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.eulerian_pdel_mhd_and_energy": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Energy.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:localenergy",
+      "lean_declarations": [
+        "PdelEulerian.Fields.total_energy_off_shell",
+        "PdelEulerian.energy_from_stationarity",
+        "PdelEulerian.eulerian_pdel_mhd_and_energy"
+      ],
+      "relation": "LOCAL_SINGLE_TEMPERATURE_MHD",
+      "assumptions": "Mass admissibility and stationary equations for on-shell identity; retained mixed internal energy before conjugacy.",
+      "uncovered": "No certified two-temperature branch; scalar heat flux is retained generally, zero on paper exact branch only after further instantiation.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.Fields.total_energy_off_shell": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.energy_from_stationarity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.eulerian_pdel_mhd_and_energy": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Energy.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:totalstress",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:movingenergy",
+      "lean_declarations": [
+        "PdelEulerian.integrated_energy_from_stationarity"
+      ],
+      "relation": "PARTIAL_FIXED_BOX_ANALOG",
+      "assumptions": "Actual six spatial face fluxes and endpoint slice energies on a fixed Euclidean box.",
+      "uncovered": "Moving-boundary Reynolds theorem, toroidal material-domain energy and boundary power pairing remain NOT_RUN.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelEulerian.integrated_energy_from_stationarity": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Energy.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:integrals",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:referenceports",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:outwardpowers",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:integratedenergy",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:globalenergy",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "sec:boundary",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:histories",
+      "lean_declarations": [
+        "PdelRevision3.paper_reference_joule_rate",
+        "PdelRevision3.reference_history_closed",
+        "PdelRevision3.current_profile_density",
+        "PdelRevision3.current_history_is_paper_integral"
+      ],
+      "relation": "JOULЕ_HISTORY_ACTUAL_INTEGRAL_AND_DILUTION",
+      "assumptions": "C=b_*^2*g/6; U=4*kappa; U>=0 and a=1+U*t>0. Nonnegative physical time is included.",
+      "uncovered": "Joule history at one material label; no construction of the full toroidal map. The separate viscous closed history is not a target of this new module.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelRevision3.paper_reference_joule_rate": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.reference_history_closed": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.current_profile_density": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.current_history_is_paper_integral": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Revision3_Lean/lean/PdelRevision3/JouleHistory.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:materialbudget",
+      "lean_declarations": [
+        "PdelRevision3.reference_heat_integrable",
+        "PdelRevision3.pressure_rate_four_heat",
+        "PdelRevision3.cumulative_pressure_four_irreversible"
+      ],
+      "relation": "ACTUAL_INTERVAL_INTEGRAL_RATIO",
+      "assumptions": "Prescribed homologous branch a=1+4*kappa*t, p and D_J/D_nu from eq:thermalpressure and eq:powers; kappa>=0, t>=0. No energy equation or ratio is an assumption.",
+      "uncovered": "The four-to-one cumulative ratio is proved. Full internal-energy closed-form identity and underlying toroidal solution are not independently formalized by this theorem.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelRevision3.reference_heat_integrable": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.pressure_rate_four_heat": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.cumulative_pressure_four_irreversible": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Revision3_Lean/lean/PdelRevision3/CumulativeBudget.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:oneentropy",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:exchangehistory",
+      "lean_declarations": [],
+      "relation": "TWO_TEMPERATURE_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No independent electron/ion state or complete two-temperature evolution certified by Layer2/3. Historical Layer1 exchange algebra is not substituted.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:historycoordinate",
+      "lean_declarations": [
+        "PdelRevision3.current_history_hasDerivAt",
+        "PdelRevision3.current_history_peak",
+        "PdelRevision3.current_history_global_max",
+        "PdelRevision3.current_history_increasing",
+        "PdelRevision3.current_history_decreasing",
+        "PdelRevision3.current_history_derivative_at_peak",
+        "PdelRevision3.reference_history_increasing"
+      ],
+      "relation": "ADJACENT_PARAGRAPH_JOULE_HISTORY_PEAK",
+      "assumptions": "The following unnumbered paragraph is anchored by this existing label and eq:histories. C>0 and U>0 for strict monotonicity; C>=0 for maximum; physical t>=0. Peak scale=(3/2)^(2/3), peak time=(peakScale-1)/U.",
+      "uncovered": "This proves the material-point current-density derivative and peak paragraph. Inverse reconstruction of temperature, density, vector B and toroidal flux in the labeled displayed formula is not certified.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelRevision3.current_history_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.current_history_peak": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.current_history_global_max": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.current_history_increasing": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.current_history_decreasing": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.current_history_derivative_at_peak": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelRevision3.reference_history_increasing": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Revision3_Lean/lean/PdelRevision3/JouleHistory.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "sec:verification",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:domainbounds",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:passivitybounds",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:twopassivity",
+      "lean_declarations": [],
+      "relation": "TWO_TEMPERATURE_NOT_COVERED",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No independent electron/ion state or complete two-temperature evolution certified by Layer2/3. Historical Layer1 exchange algebra is not substituted.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "tab:sweeps",
+      "lean_declarations": [],
+      "relation": "FIGURE_OR_NUMERICAL_TABLE",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Not a Lean theorem target; no Lean certification of numerical images or tables.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "sec:fields3d",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "fig:spatialBJ",
+      "lean_declarations": [],
+      "relation": "FIGURE_OR_NUMERICAL_TABLE",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Not a Lean theorem target; no Lean certification of numerical images or tables.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:fieldmap_pressure",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "fig:spatialrhop",
+      "lean_declarations": [],
+      "relation": "FIGURE_OR_NUMERICAL_TABLE",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Not a Lean theorem target; no Lean certification of numerical images or tables.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "fig:spatialpowers",
+      "lean_declarations": [],
+      "relation": "FIGURE_OR_NUMERICAL_TABLE",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Not a Lean theorem target; no Lean certification of numerical images or tables.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:fieldmap_scalings",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "fig:transform",
+      "lean_declarations": [],
+      "relation": "FIGURE_OR_NUMERICAL_TABLE",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Not a Lean theorem target; no Lean certification of numerical images or tables.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:literaturerecovery",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "fig:thermalenergy",
+      "lean_declarations": [],
+      "relation": "FIGURE_OR_NUMERICAL_TABLE",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Not a Lean theorem target; no Lean certification of numerical images or tables.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "fig:ratecomparison",
+      "lean_declarations": [],
+      "relation": "FIGURE_OR_NUMERICAL_TABLE",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Not a Lean theorem target; no Lean certification of numerical images or tables.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:joulefraction",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:partitionderivative",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "fig:partition",
+      "lean_declarations": [],
+      "relation": "FIGURE_OR_NUMERICAL_TABLE",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Not a Lean theorem target; no Lean certification of numerical images or tables.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:rcomparison",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "fig:twothermal",
+      "lean_declarations": [],
+      "relation": "FIGURE_OR_NUMERICAL_TABLE",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Not a Lean theorem target; no Lean certification of numerical images or tables.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "fig:interval",
+      "lean_declarations": [],
+      "relation": "FIGURE_OR_NUMERICAL_TABLE",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Not a Lean theorem target; no Lean certification of numerical images or tables.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:quadraturenumbers",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "fig:boundary",
+      "lean_declarations": [],
+      "relation": "FIGURE_OR_NUMERICAL_TABLE",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Not a Lean theorem target; no Lean certification of numerical images or tables.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "tab:residuals",
+      "lean_declarations": [],
+      "relation": "FIGURE_OR_NUMERICAL_TABLE",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "Not a Lean theorem target; no Lean certification of numerical images or tables.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "sec:formal",
+      "lean_declarations": [
+        "PdelBasic.pdel_basic_variational_theorem",
+        "PdelEulerian.eulerian_pdel_mhd_theorem"
+      ],
+      "relation": "BUILD_STATUS_UPDATE",
+      "assumptions": "Actual new Layer2/3 builds and audits are required; Layer1 history is not substituted.",
+      "uncovered": "Revision3 text still says Layer2/3 compilation unconfirmed; update publication wording only with this run evidence, without claiming full toroidal certification.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelBasic.pdel_basic_variational_theorem": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelEulerian.eulerian_pdel_mhd_theorem": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer2_Lean/lean/PdelBasic/Stationarity.lean",
+        "PDEL_Layer3_Lean/lean/PdelEulerian/Equations.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "sec:discussion",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "app:geometry",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:mapfunctions",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:surfacemap",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:ellipticidentities",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:jacobian",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:fieldlineseparation",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:periods",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:axialshear",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "app:scalar",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:scalardot",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:axisparameters",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:uniquescalar",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:axisderivatives",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:fullaxisresidual",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "app:exponents",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:generalansatz",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:inductionmatching",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:matchingresult",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:generalmaterial",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "app:review",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewmixedstate",
+      "lean_declarations": [
+        "PdelBasic.mixedInternal",
+        "PdelBasic.mixedInternal_chain_rule"
+      ],
+      "relation": "SINGLE_DOF_SPECIALIZATION",
+      "assumptions": "Independent entropy state before conjugacy; regular scalar path.",
+      "uncovered": "No arbitrary continuum constitutive law.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelBasic.mixedInternal": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.mixedInternal_chain_rule": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer2_Lean/lean/PdelBasic/Model.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewbeforeIBP",
+      "lean_declarations": [
+        "PdelBasic.mixedDensity_hasDerivAt",
+        "PdelBasic.firstVariation_residual",
+        "PdelBasic.mixedAction_hasDerivAt"
+      ],
+      "relation": "SINGLE_DOF_SPECIALIZATION",
+      "assumptions": "Path/Loads regularity; mechanical endpoint conditions; dominated IntegralRegular assumptions only for literal derivative under integral.",
+      "uncovered": "No continuum spatial integration by parts, boundary traction or arbitrary continuum functional.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelBasic.mixedDensity_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.firstVariation_residual": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.mixedAction_hasDerivAt": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer2_Lean/lean/PdelBasic/FirstVariation.lean",
+        "PDEL_Layer2_Lean/lean/PdelBasic/IntegralBridge.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewstressIBP",
+      "lean_declarations": [],
+      "relation": "NOT_COVERED_THIS_RUN",
+      "assumptions": "See the labeled Revision3 statement; no mathematical assumption changed.",
+      "uncovered": "No declaration in this run certifies this full claim/context. In particular no torus embedding, complete homologous Cartesian MHD solution, moving boundary, stability or physical validation is claimed.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "NOT_RUN",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {},
+      "source_files": [],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewinternal",
+      "lean_declarations": [
+        "PdelBasic.totalEnergy_off_shell",
+        "PdelBasic.finite_interval_energy_balance",
+        "PdelBasic.internal_history_budget"
+      ],
+      "relation": "SINGLE_DOF_SPECIALIZATION",
+      "assumptions": "C1 kinematics; stationarity where on-shell; real interval integral.",
+      "uncovered": "No continuum boundary flux or moving-volume energy theorem.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelBasic.totalEnergy_off_shell": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.finite_interval_energy_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.internal_history_budget": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer2_Lean/lean/PdelBasic/Energy.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewkinetic",
+      "lean_declarations": [
+        "PdelBasic.totalEnergy_off_shell",
+        "PdelBasic.finite_interval_energy_balance",
+        "PdelBasic.internal_history_budget"
+      ],
+      "relation": "SINGLE_DOF_SPECIALIZATION",
+      "assumptions": "C1 kinematics; stationarity where on-shell; real interval integral.",
+      "uncovered": "No continuum boundary flux or moving-volume energy theorem.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelBasic.totalEnergy_off_shell": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.finite_interval_energy_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.internal_history_budget": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer2_Lean/lean/PdelBasic/Energy.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewboundarybudget",
+      "lean_declarations": [
+        "PdelBasic.totalEnergy_off_shell",
+        "PdelBasic.finite_interval_energy_balance",
+        "PdelBasic.internal_history_budget"
+      ],
+      "relation": "SINGLE_DOF_SPECIALIZATION",
+      "assumptions": "C1 kinematics; stationarity where on-shell; real interval integral.",
+      "uncovered": "No continuum boundary flux or moving-volume energy theorem.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelBasic.totalEnergy_off_shell": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.finite_interval_energy_balance": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "PdelBasic.internal_history_budget": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer2_Lean/lean/PdelBasic/Energy.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    },
+    {
+      "latex_label": "eq:reviewentropyflux",
+      "lean_declarations": [
+        "PdelBasic.reservoir_entropy_nonnegative"
+      ],
+      "relation": "PARTIAL_ANALOGY",
+      "assumptions": "Positive bath temperature, nonnegative conductance and Newton heat-out port.",
+      "uncovered": "Reservoir entropy identity is not the continuum Fourier entropy-flux PDE.",
+      "semantic_review": "REVIEWED",
+      "proof_status": "PASS",
+      "proof_status_meaning": "Status of referenced Lean declarations only; read relation and uncovered for manuscript coverage.",
+      "uncovered_status": "NOT_RUN",
+      "axioms_by_declaration": {
+        "PdelBasic.reservoir_entropy_nonnegative": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "source_files": [
+        "PDEL_Layer2_Lean/lean/PdelBasic/Energy.lean"
+      ],
+      "paper_sha256": "23dce85c9bfadf6c9db7e49307f0ea158faf901b2859228acfe8b81315bb5e3a"
+    }
+  ]
+}

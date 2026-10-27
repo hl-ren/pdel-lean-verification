@@ -1,0 +1,1750 @@
+Rc files read (in order):
+  NONE
+Latexmk: This is Latexmk, John Collins, 9 March 2026. Version 4.88.
+No existing .aux file, so I'll make a simple one, and require run of *latex.
+Latexmk: applying rule 'xelatex'...
+Rule 'xelatex':  Reasons for rerun
+Category 'other':
+  Rerun of 'xelatex' forced or previously required:
+    Reason or flag: 'Initial setup'
+
+------------
+Run number 1 of rule 'xelatex'
+------------
+------------
+Running 'xelatex -no-pdf -interaction=nonstopmode -halt-on-error -recorder -output-directory="${PUBLICATION_WORKSPACE}/output/pdf/article"  "PDEL_Toroidal_Journal_Full.tex"'
+------------
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 22.1) (preloaded format=xelatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(PDEL_Toroidal_Journal_Full.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ar
+ticle.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/si
+ze11.clo))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometr
+y/geometry.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphic
+s/keyval.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex
+/ifvtex.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex
+/iftex.sty))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometr
+y/geometry.cfg))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath
+/amsmath.sty
+For additional information on amsmath, use the `?' option.
+
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath
+/amstext.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath
+/amsgen.sty))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath
+/amsbsy.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath
+/amsopn.sty))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfont
+s/amssymb.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfont
+s/amsfonts.sty))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amscls/
+amsthm.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/mathtoo
+ls/mathtools.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/c
+alc.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/mathtoo
+ls/mhsetup.sty))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/b
+m.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/jknappe
+n/mathrsfs.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fontspe
+c/fontspec.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3packa
+ges/xparse/xparse.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3kerne
+l/expl3.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backe
+nd/l3backend-xetex.def)))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fontspe
+c/fontspec-xetex.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/fo
+ntenc.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fontspe
+c/fontspec.cfg)))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphic
+s/graphicx.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphic
+s/graphics.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphic
+s/trig.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphic
+s-cfg/graphics.cfg)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphic
+s-def/xetex.def)))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/booktab
+s/booktabs.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/a
+rray.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/t
+abularx.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/l
+ongtable.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microty
+pe/microtype.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolbo
+x/etoolbox.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microty
+pe/microtype-xetex.def)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microty
+pe/microtype.cfg))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption
+/caption.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption
+/caption3.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption
+/ltcaption.sty))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption
+/subcaption.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyhd
+r/fancyhdr.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/placein
+s/placeins.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/needspa
+ce/needspace.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/natbib/
+natbib.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperre
+f/hyperref.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvsetke
+ys/kvsetkeys.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvdef
+inekeys/kvdefinekeys.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfes
+cape/pdfescape.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcm
+ds/ltxcmds.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfte
+xcmds/pdftexcmds.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwa
+rerr/infwarerr.sty)))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hycolor
+/hycolor.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperre
+f/nameref.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcoun
+t/refcount.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/getti
+tlestring/gettitlestring.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptio
+ns/kvoptions.sty)))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/strin
+genc/stringenc.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperre
+f/pd1enc.def)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intca
+lc/intcalc.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperre
+f/puenc.def)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url
+.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bitse
+t/bitset.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigin
+tcalc/bigintcalc.sty)))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperre
+f/hxetex.def
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfi
+lecheck/rerunfilecheck.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/uniqu
+ecounter/uniquecounter.sty)))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xurl/xu
+rl.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/f
+loat.sty)
+(${PROJECT_ROOT}/github_publication/publish-2
+0261027T111131Z/output/pdf/article/PDEL_Toroidal_Journal_Full.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfont
+s/umsa.fd)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microty
+pe/mt-msa.cfg)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfont
+s/umsb.fd)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microty
+pe/mt-msb.cfg)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microty
+pe/mt-cmr.cfg)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/jknappe
+n/ursfs.fd)
+Underfull \hbox (badness 1325) in paragraph at lines 84--85
+[]\TU/TeXGyreTermes(0)/m/n/10 Extending a three-dimensional magnetostatic equil
+ibrium to resistive evolution requires the
+
+Underfull \hbox (badness 1221) in paragraph at lines 84--85
+\TU/TeXGyreTermes(0)/m/n/10 equilibrium, a symmetric positive-definite resistiv
+ity tensor is constructed so that the resistive
+
+Underfull \hbox (badness 1515) in paragraph at lines 86--88
+\TU/TeXGyreTermes(0)/b/n/10.95 Keywords: \TU/TeXGyreTermes(0)/m/n/10.95 path-de
+pendent entropic Lagrangian; resistive magnetohydrodynamics; exact solution;
+
+Package natbib Warning: Citation `Kruskal1958' on page 1 undefined on input lin
+e 89.
+
+
+Package natbib Warning: Citation `Grad1967' on page 1 undefined on input line 8
+9.
+
+
+Package natbib Warning: Citation `Helander2014' on page 1 undefined on input li
+ne 89.
+
+
+Package natbib Warning: Citation `Landreman' on page 1 undefined on input line 
+91.
+
+
+Package natbib Warning: Citation `Issan' on page 1 undefined on input line 91.
+
+
+Package natbib Warning: Citation `Gomez2026' on page 1 undefined on input line 
+91.
+
+
+Package natbib Warning: Citation `Lesaffre2007' on page 1 undefined on input li
+ne 91.
+
+
+Package natbib Warning: Citation `Zhu2014' on page 1 undefined on input line 91
+.
+
+
+Package natbib Warning: Citation `Montani' on page 1 undefined on input line 91
+.
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 91--92
+\TU/TeXGyreTermes(0)/m/n/10.95 complete dissipative thermal evolution studied h
+ere. Exact shearing-box solutions with viscosity,
+
+[1]
+
+Package natbib Warning: Citation `Spitzer' on page 2 undefined on input line 93
+.
+
+
+Package natbib Warning: Citation `Braginskii1965' on page 2 undefined on input 
+line 93.
+
+
+Package natbib Warning: Citation `Poulipoulis' on page 2 undefined on input lin
+e 93.
+
+
+Package natbib Warning: Citation `Lingam' on page 2 undefined on input line 93.
+
+
+
+Underfull \hbox (badness 1189) in paragraph at lines 93--94
+\TU/TeXGyreTermes(0)/m/n/10.95 Braginskii theories relate electrical and therma
+l transport to collisional plasma physics [\TU/TeXGyreTermes(0)/b/n/10.95 ? ? \
+TU/TeXGyreTermes(0)/m/n/10.95 ].
+
+Underfull \hbox (badness 1264) in paragraph at lines 93--94
+\TU/TeXGyreTermes(0)/m/n/10.95 Generalizations include axisymmetric equilibria 
+with anisotropic resistivity and toroidal flow, and
+
+Package natbib Warning: Citation `Newcomb1962' on page 2 undefined on input lin
+e 95.
+
+
+Package natbib Warning: Citation `Holm1998' on page 2 undefined on input line 9
+5.
+
+
+Package natbib Warning: Citation `GayBalmaz2017a' on page 2 undefined on input 
+line 95.
+
+
+Package natbib Warning: Citation `GayBalmaz2017b' on page 2 undefined on input 
+line 95.
+
+
+Package natbib Warning: Citation `PortHamiltonian' on page 2 undefined on input
+ line 95.
+
+
+Package natbib Warning: Citation `Materassi2012' on page 2 undefined on input l
+ine 95.
+
+
+Package natbib Warning: Citation `Coquinot2020' on page 2 undefined on input li
+ne 95.
+
+
+Package natbib Warning: Citation `Carlier' on page 2 undefined on input line 95
+.
+
+
+Package natbib Warning: Citation `Gawlik2021' on page 2 undefined on input line
+ 95.
+
+
+Package natbib Warning: Citation `Gawlik2025' on page 2 undefined on input line
+ 95.
+
+
+Package natbib Warning: Citation `RenEntropy' on page 2 undefined on input line
+ 97.
+
+
+Package natbib Warning: Citation `Ren' on page 2 undefined on input line 97.
+
+
+Package natbib Warning: Citation `RenSpending' on page 2 undefined on input lin
+e 97.
+
+
+Package natbib Warning: Citation `RenEulerian' on page 2 undefined on input lin
+e 97.
+
+
+Package natbib Warning: Citation `RenMultiChannel' on page 2 undefined on input
+ line 97.
+
+
+LaTeX Warning: Reference `sec:review' on page 2 undefined on input line 101.
+
+
+LaTeX Warning: Reference `sec:pdel' on page 2 undefined on input line 101.
+
+
+LaTeX Warning: Reference `sec:realization' on page 2 undefined on input line 10
+1.
+
+
+LaTeX Warning: Reference `sec:oneT' on page 2 undefined on input line 101.
+
+
+LaTeX Warning: Reference `sec:twoT' on page 2 undefined on input line 101.
+
+
+LaTeX Warning: Reference `sec:energy' on page 2 undefined on input line 101.
+
+
+LaTeX Warning: Reference `sec:verification' on page 2 undefined on input line 1
+01.
+
+
+LaTeX Warning: Reference `sec:discussion' on page 2 undefined on input line 101
+.
+
+
+LaTeX Warning: Reference `app:geometry' on page 2 undefined on input line 101.
+
+
+LaTeX Warning: Reference `app:review' on page 2 undefined on input line 101.
+
+
+[2]
+
+Package natbib Warning: Citation `RenEntropy' on page 3 undefined on input line
+ 108.
+
+
+Package natbib Warning: Citation `RenSpending' on page 3 undefined on input lin
+e 108.
+
+
+Package natbib Warning: Citation `RenEulerian' on page 3 undefined on input lin
+e 108.
+
+
+Package natbib Warning: Citation `RenMultiChannel' on page 3 undefined on input
+ line 108.
+
+
+Package natbib Warning: Citation `RenSpending' on page 3 undefined on input lin
+e 165.
+
+
+Package natbib Warning: Citation `RenMultiChannel' on page 3 undefined on input
+ line 165.
+
+
+LaTeX Warning: Reference `eq:reviewaction' on page 3 undefined on input line 17
+8.
+
+
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfont
+s/ueuf.fd)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microty
+pe/mt-euf.cfg)
+[3]
+
+LaTeX Warning: Reference `app:review' on page 4 undefined on input line 222.
+
+
+Package natbib Warning: Citation `GayBalmaz2017a' on page 4 undefined on input 
+line 222.
+
+
+Package natbib Warning: Citation `GayBalmaz2017b' on page 4 undefined on input 
+line 222.
+
+
+LaTeX Warning: Reference `eq:reviewfirstvariation' on page 4 undefined on input
+ line 224.
+
+
+LaTeX Warning: Reference `sec:formal' on page 4 undefined on input line 224.
+
+
+Package natbib Warning: Citation `RenEulerian' on page 4 undefined on input lin
+e 227.
+
+
+[4]
+
+LaTeX Warning: Reference `eq:revieweuleraction' on page 5 undefined on input li
+ne 265.
+
+
+Package natbib Warning: Citation `Holm1998' on page 5 undefined on input line 2
+65.
+
+
+Package natbib Warning: Citation `RenEulerian' on page 5 undefined on input lin
+e 265.
+
+
+LaTeX Warning: Reference `sec:pdel' on page 5 undefined on input line 309.
+
+
+Package natbib Warning: Citation `RenMultiChannel' on page 5 undefined on input
+ line 311.
+
+
+LaTeX Warning: Reference `sec:twoT' on page 5 undefined on input line 311.
+
+
+[5]
+
+Package natbib Warning: Citation `PortHamiltonian' on page 6 undefined on input
+ line 348.
+
+
+Package natbib Warning: Citation `Carlier' on page 6 undefined on input line 34
+8.
+
+
+Package natbib Warning: Citation `Gawlik2025' on page 6 undefined on input line
+ 348.
+
+
+Package natbib Warning: Citation `RenEntropy' on page 6 undefined on input line
+ 368.
+
+
+Package natbib Warning: Citation `RenSpending' on page 6 undefined on input lin
+e 368.
+
+
+Package natbib Warning: Citation `RenEulerian' on page 6 undefined on input lin
+e 368.
+
+
+Package natbib Warning: Citation `RenMultiChannel' on page 6 undefined on input
+ line 368.
+
+
+[6]
+
+Package natbib Warning: Citation `Newcomb1962' on page 7 undefined on input lin
+e 370.
+
+
+Package natbib Warning: Citation `Holm1998' on page 7 undefined on input line 3
+70.
+
+
+Package natbib Warning: Citation `RenEulerian' on page 7 undefined on input lin
+e 370.
+
+
+LaTeX Warning: Reference `eq:reviewrates' on page 7 undefined on input line 377
+.
+
+
+Package natbib Warning: Citation `RenEntropy' on page 7 undefined on input line
+ 392.
+
+
+Package natbib Warning: Citation `RenEulerian' on page 7 undefined on input lin
+e 392.
+
+
+LaTeX Warning: Reference `eq:action' on page 7 undefined on input line 405.
+
+
+Package natbib Warning: Citation `Holm1998' on page 7 undefined on input line 4
+08.
+
+
+Package natbib Warning: Citation `RenEulerian' on page 7 undefined on input lin
+e 408.
+
+
+Package natbib Warning: Citation `Carlier' on page 7 undefined on input line 40
+8.
+
+
+Package natbib Warning: Citation `Gawlik2025' on page 7 undefined on input line
+ 408.
+
+
+LaTeX Warning: Reference `sec:boundary' on page 7 undefined on input line 418.
+
+
+LaTeX Warning: Reference `eq:action' on page 7 undefined on input line 444.
+
+
+[7]
+
+LaTeX Warning: Reference `eq:explicitMHDhistories' on page 8 undefined on input
+ line 459.
+
+
+LaTeX Warning: Reference `sec:review' on page 8 undefined on input line 462.
+
+
+Package natbib Warning: Citation `RenSpending' on page 8 undefined on input lin
+e 462.
+
+
+Package natbib Warning: Citation `RenEulerian' on page 8 undefined on input lin
+e 462.
+
+
+Package natbib Warning: Citation `RenMultiChannel' on page 8 undefined on input
+ line 462.
+
+
+LaTeX Warning: Reference `eq:variations' on page 8 undefined on input line 472.
+
+
+
+LaTeX Warning: Reference `eq:spending' on page 8 undefined on input line 472.
+
+
+LaTeX Warning: Reference `eq:kinematics' on page 8 undefined on input line 484.
+
+
+
+LaTeX Warning: Reference `eq:action' on page 8 undefined on input line 503.
+
+
+LaTeX Warning: Reference `sec:formal' on page 8 undefined on input line 503.
+
+
+Package natbib Warning: Citation `Carlier' on page 8 undefined on input line 50
+3.
+
+
+[8]
+
+LaTeX Warning: Reference `sec:realization' on page 9 undefined on input line 52
+0.
+
+
+LaTeX Warning: Reference `sec:oneT' on page 9 undefined on input line 520.
+
+
+LaTeX Warning: Reference `sec:twoT' on page 9 undefined on input line 520.
+
+
+Package natbib Warning: Citation `Landreman' on page 9 undefined on input line 
+527.
+
+
+Package natbib Warning: Citation `Issan' on page 9 undefined on input line 527.
+
+
+
+[9]
+
+LaTeX Warning: Reference `eq:seedfield' on page 10 undefined on input line 570.
+
+
+
+LaTeX Warning: Reference `eq:current' on page 10 undefined on input line 570.
+
+
+LaTeX Warning: Reference `app:geometry' on page 10 undefined on input line 577.
+
+
+
+Package natbib Warning: Citation `Landreman' on page 10 undefined on input line
+ 579.
+
+
+Package natbib Warning: Citation `Issan' on page 10 undefined on input line 579
+.
+
+
+Package natbib Warning: Citation `Helander2014' on page 10 undefined on input l
+ine 579.
+
+
+LaTeX Warning: Reference `app:geometry' on page 10 undefined on input line 579.
+
+
+
+LaTeX Warning: Reference `app:geometry' on page 10 undefined on input line 591.
+
+
+
+LaTeX Warning: Reference `tab:parameters' on page 10 undefined on input line 59
+3.
+
+
+LaTeX Warning: Reference `sec:verification' on page 10 undefined on input line 
+593.
+
+
+LaTeX Warning: Reference `tab:parameters' on page 10 undefined on input line 61
+5.
+
+
+LaTeX Warning: Reference `tab:parameters' on page 10 undefined on input line 61
+5.
+
+
+[10]
+
+LaTeX Warning: Reference `eq:tensor' on page 11 undefined on input line 643.
+
+
+LaTeX Warning: Reference `eq:eigenidentity' on page 11 undefined on input line 
+643.
+
+
+LaTeX Warning: Reference `eq:current' on page 11 undefined on input line 646.
+
+
+LaTeX Warning: Reference `eq:eigenidentity' on page 11 undefined on input line 
+654.
+
+
+Package natbib Warning: Citation `Braginskii1965' on page 11 undefined on input
+ line 656.
+
+
+Package natbib Warning: Citation `Poulipoulis' on page 11 undefined on input li
+ne 656.
+
+
+[11]
+
+LaTeX Warning: Reference `eq:gyrotropic' on page 12 undefined on input line 662
+.
+
+
+LaTeX Warning: Reference `eq:tensor' on page 12 undefined on input line 665.
+
+
+LaTeX Warning: Reference `eq:seedfield' on page 12 undefined on input line 667.
+
+
+
+LaTeX Warning: Reference `eq:regularity' on page 12 undefined on input line 667
+.
+
+
+LaTeX Warning: Reference `eq:scalareigen' on page 12 undefined on input line 67
+5.
+
+
+LaTeX Warning: Reference `app:scalar' on page 12 undefined on input line 675.
+
+
+LaTeX Warning: Reference `eq:scalareigen' on page 12 undefined on input line 68
+2.
+
+
+LaTeX Warning: Reference `eq:scalareigen' on page 12 undefined on input line 68
+4.
+
+
+LaTeX Warning: Reference `sec:formal' on page 12 undefined on input line 691.
+
+
+LaTeX Warning: Reference `eq:mhs' on page 12 undefined on input line 694.
+
+
+LaTeX Warning: Reference `eq:designpotential' on page 12 undefined on input lin
+e 694.
+
+
+[12]
+
+LaTeX Warning: Reference `eq:system' on page 13 undefined on input line 716.
+
+
+LaTeX Warning: Reference `eq:textures' on page 13 undefined on input line 716.
+
+
+LaTeX Warning: Reference `eq:oneclosures' on page 13 undefined on input line 71
+6.
+
+
+LaTeX Warning: Reference `eq:mass' on page 13 undefined on input line 719.
+
+
+LaTeX Warning: Reference `eq:textures' on page 13 undefined on input line 719.
+
+
+LaTeX Warning: Reference `lem:tensor' on page 13 undefined on input line 735.
+
+
+LaTeX Warning: Reference `eq:onesolution' on page 13 undefined on input line 74
+6.
+
+
+LaTeX Warning: Reference `eq:materialdata' on page 13 undefined on input line 7
+61.
+
+
+LaTeX Warning: Reference `eq:viscoussolution' on page 13 undefined on input lin
+e 761.
+
+
+LaTeX Warning: Reference `eq:powers' on page 13 undefined on input line 761.
+
+
+LaTeX Warning: Reference `eq:relativefield' on page 13 undefined on input line 
+771.
+
+
+LaTeX Warning: Reference `sec:pdel' on page 13 undefined on input line 771.
+
+
+LaTeX Warning: Reference `eq:forcebalance' on page 13 undefined on input line 7
+78.
+
+
+[13]
+
+LaTeX Warning: Reference `thm:oneT' on page 14 undefined on input line 781.
+
+
+LaTeX Warning: Reference `app:exponents' on page 14 undefined on input line 781
+.
+
+
+LaTeX Warning: Reference `eq:onesolution' on page 14 undefined on input line 79
+4.
+
+
+LaTeX Warning: Reference `eq:onesolution' on page 14 undefined on input line 79
+7.
+
+
+Package natbib Warning: Citation `Landreman' on page 14 undefined on input line
+ 806.
+
+
+Package natbib Warning: Citation `Issan' on page 14 undefined on input line 806
+.
+
+
+Underfull \hbox (badness 1137) in paragraph at lines 820--821
+\TU/TeXGyreTermes(0)/m/n/10.95 A two-temperature state permits the same magneti
+c and mechanical evolution to use an electron-
+
+LaTeX Warning: Reference `eq:action' on page 14 undefined on input line 829.
+
+
+LaTeX Warning: Reference `eq:freeenergy' on page 14 undefined on input line 833
+.
+
+
+[14]
+[15]
+
+Package natbib Warning: Citation `Spitzer' on page 16 undefined on input line 8
+65.
+
+
+Package natbib Warning: Citation `Braginskii1965' on page 16 undefined on input
+ line 865.
+
+
+Package natbib Warning: Citation `Lingam' on page 16 undefined on input line 86
+5.
+
+
+LaTeX Warning: Reference `eq:twoclosures' on page 16 undefined on input line 86
+5.
+
+
+Package natbib Warning: Citation `Spitzer' on page 16 undefined on input line 8
+65.
+
+
+LaTeX Warning: Reference `thm:oneT' on page 16 undefined on input line 869.
+
+
+LaTeX Warning: Reference `eq:twoheat' on page 16 undefined on input line 875.
+
+
+LaTeX Warning: Reference `eq:twoclosures' on page 16 undefined on input line 87
+5.
+
+
+LaTeX Warning: Reference `eq:twoclosures' on page 16 undefined on input line 88
+7.
+
+
+LaTeX Warning: Reference `eq:twoentropy' on page 16 undefined on input line 905
+.
+
+
+[16]
+
+LaTeX Warning: Reference `thm:twoT' on page 17 undefined on input line 908.
+
+
+LaTeX Warning: Reference `eq:exchangepower' on page 17 undefined on input line 
+908.
+
+
+LaTeX Warning: Reference `eq:fluxshear' on page 17 undefined on input line 932.
+
+
+
+Package natbib Warning: Citation `Carlier' on page 17 undefined on input line 9
+39.
+
+
+Package natbib Warning: Citation `Gawlik2025' on page 17 undefined on input lin
+e 939.
+
+
+Package natbib Warning: Citation `PortHamiltonian' on page 17 undefined on inpu
+t line 953.
+
+
+Package natbib Warning: Citation `RenMultiChannel' on page 17 undefined on inpu
+t line 953.
+
+
+[17]
+
+LaTeX Warning: Reference `eq:relativefield' on page 18 undefined on input line 
+1004.
+
+
+LaTeX Warning: Reference `eq:movingenergy' on page 18 undefined on input line 1
+006.
+
+
+LaTeX Warning: Reference `eq:powers' on page 18 undefined on input line 1009.
+
+
+Package natbib Warning: Citation `RenEulerian' on page 18 undefined on input li
+ne 1015.
+
+
+LaTeX Warning: Reference `eq:historytransport' on page 18 undefined on input li
+ne 1015.
+
+
+[18]
+
+LaTeX Warning: Reference `eq:materialbudget' on page 19 undefined on input line
+ 1027.
+
+
+Package natbib Warning: Citation `Landreman' on page 19 undefined on input line
+ 1056.
+
+
+Package natbib Warning: Citation `Issan' on page 19 undefined on input line 105
+6.
+
+
+Package natbib Warning: Citation `Gawlik2021' on page 19 undefined on input lin
+e 1056.
+
+
+Package natbib Warning: Citation `Gawlik2025' on page 19 undefined on input lin
+e 1056.
+
+
+LaTeX Warning: Reference `tab:parameters' on page 19 undefined on input line 10
+63.
+
+
+[19]
+
+LaTeX Warning: Reference `tab:sweeps' on page 20 undefined on input line 1079.
+
+
+LaTeX Warning: Reference `tab:parameters' on page 20 undefined on input line 10
+82.
+
+
+LaTeX Warning: Reference `tab:parameters' on page 20 undefined on input line 10
+82.
+
+
+Underfull \hbox (badness 3158) in paragraph at lines 1090--1090
+[]|\TU/TeXGyreTermes(0)/m/n/10 Temperature separation, ion entropy and interval
+
+
+LaTeX Warning: Reference `eq:domainbounds' on page 20 undefined on input line 1
+092.
+
+
+LaTeX Warning: Reference `fig:spatialBJ' on page 20 undefined on input line 109
+5.
+
+
+LaTeX Warning: Reference `fig:spatialpowers' on page 20 undefined on input line
+ 1095.
+
+
+LaTeX Warning: Reference `fig:spatialBJ' on page 20 undefined on input line 109
+7.
+
+
+LaTeX Warning: Reference `eq:current' on page 20 undefined on input line 1097.
+
+
+LaTeX Warning: Reference `fig:spatialrhop' on page 20 undefined on input line 1
+112.
+
+
+LaTeX Warning: Reference `fig:spatialBJ' on page 20 undefined on input line 113
+0.
+
+
+LaTeX Warning: Reference `fig:spatialBJ' on page 20 undefined on input line 113
+0.
+
+
+[20]
+
+LaTeX Warning: Reference `fig:spatialpowers' on page 21 undefined on input line
+ 1134.
+
+
+LaTeX Warning: Reference `eq:joulefraction' on page 21 undefined on input line 
+1134.
+
+
+[21]
+
+LaTeX Warning: Reference `fig:geometry' on page 22 undefined on input line 1164
+.
+
+
+LaTeX Warning: Reference `fig:expansion' on page 22 undefined on input line 116
+4.
+
+
+LaTeX Warning: Reference `fig:transform' on page 22 undefined on input line 116
+4.
+
+
+LaTeX Warning: Reference `eq:periods' on page 22 undefined on input line 1164.
+
+
+Package natbib Warning: Citation `Helander2014' on page 22 undefined on input l
+ine 1168.
+
+
+LaTeX Warning: Reference `eq:complexseed' on page 22 undefined on input line 11
+79.
+
+
+LaTeX Warning: Reference `eq:seedfield' on page 22 undefined on input line 1179
+.
+
+
+Package natbib Warning: Citation `Landreman' on page 22 undefined on input line
+ 1179.
+
+
+Package natbib Warning: Citation `Issan' on page 22 undefined on input line 117
+9.
+
+
+[22]
+
+LaTeX Warning: Reference `eq:thermalpressure' on page 23 undefined on input lin
+e 1185.
+
+
+LaTeX Warning: Reference `fig:thermalenergy' on page 23 undefined on input line
+ 1190.
+
+
+LaTeX Warning: Reference `eq:materialbudget' on page 23 undefined on input line
+ 1190.
+
+
+Package natbib Warning: Citation `Lesaffre2007' on page 23 undefined on input l
+ine 1190.
+
+
+Package natbib Warning: Citation `Montani' on page 23 undefined on input line 1
+190.
+
+
+Package natbib Warning: Citation `Gawlik2025' on page 23 undefined on input lin
+e 1190.
+
+
+LaTeX Warning: Reference `fig:ratecomparison' on page 23 undefined on input lin
+e 1201.
+
+
+[23]
+
+LaTeX Warning: Reference `fig:partition' on page 24 undefined on input line 122
+5.
+
+
+LaTeX Warning: Reference `eq:partitionderivative' on page 24 undefined on input
+ line 1229.
+
+
+LaTeX Warning: Reference `eq:partitionderivative' on page 24 undefined on input
+ line 1229.
+
+
+Package natbib Warning: Citation `Poulipoulis' on page 24 undefined on input li
+ne 1232.
+
+
+Package natbib Warning: Citation `Lingam' on page 24 undefined on input line 12
+32.
+
+
+Package natbib Warning: Citation `Braginskii1965' on page 24 undefined on input
+ line 1232.
+
+
+[24]
+
+LaTeX Warning: Reference `fig:twothermal' on page 25 undefined on input line 12
+42.
+
+
+LaTeX Warning: Reference `fig:interval' on page 25 undefined on input line 1242
+.
+
+
+LaTeX Warning: Reference `eq:twoentropy' on page 25 undefined on input line 124
+2.
+
+
+LaTeX Warning: Reference `eq:Qendpoint' on page 25 undefined on input line 1258
+.
+
+
+LaTeX Warning: Reference `eq:Gpole' on page 25 undefined on input line 1258.
+
+
+Package natbib Warning: Citation `Spitzer' on page 25 undefined on input line 1
+258.
+
+
+Package natbib Warning: Citation `Braginskii1965' on page 25 undefined on input
+ line 1258.
+
+
+[25]
+
+LaTeX Warning: Reference `fig:boundary' on page 26 undefined on input line 1269
+.
+
+
+Package natbib Warning: Citation `PortHamiltonian' on page 26 undefined on inpu
+t line 1279.
+
+
+Package natbib Warning: Citation `RenMultiChannel' on page 26 undefined on inpu
+t line 1279.
+
+
+[26]
+
+LaTeX Warning: Reference `eq:potentialpair' on page 27 undefined on input line 
+1282.
+
+
+LaTeX Warning: Reference `tab:residuals' on page 27 undefined on input line 128
+2.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1294--1294
+[]|\TU/TeXGyreTermes(0)/m/n/10 Independent
+
+Package natbib Warning: Citation `LeanValidation' on page 27 undefined on input
+ line 1301.
+
+
+[27]
+
+LaTeX Warning: Reference `sec:review' on page 28 undefined on input line 1303.
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 1313--1314
+[]\TU/TeXGyreTermes(0)/m/n/10.95 The solutions distinguish magnetic winding fro
+m flux conservation and cooling from negative
+
+LaTeX Warning: Reference `sec:formal' on page 28 undefined on input line 1320.
+
+
+Package natbib Warning: Citation `Landreman' on page 28 undefined on input line
+ 1326.
+
+
+Package natbib Warning: Citation `Issan' on page 28 undefined on input line 132
+6.
+
+
+LaTeX Warning: Reference `eq:seedfield' on page 28 undefined on input line 1326
+.
+
+
+[28]
+
+LaTeX Warning: Reference `eq:regularity' on page 29 undefined on input line 134
+9.
+
+
+LaTeX Warning: Reference `eq:surfacemap' on page 29 undefined on input line 136
+3.
+
+
+Package natbib Warning: Citation `Landreman' on page 29 undefined on input line
+ 1374.
+
+
+Package natbib Warning: Citation `Issan' on page 29 undefined on input line 137
+4.
+
+
+Package natbib Warning: Citation `Kruskal1958' on page 29 undefined on input li
+ne 1374.
+
+
+Package natbib Warning: Citation `Helander2014' on page 29 undefined on input l
+ine 1374.
+
+
+LaTeX Warning: Reference `eq:transform' on page 29 undefined on input line 1392
+.
+
+
+[29]
+
+Package natbib Warning: Citation `Landreman' on page 30 undefined on input line
+ 1411.
+
+
+Package natbib Warning: Citation `Issan' on page 30 undefined on input line 141
+1.
+
+
+Package natbib Warning: Citation `Poulipoulis' on page 30 undefined on input li
+ne 1414.
+
+
+Package natbib Warning: Citation `Montani' on page 30 undefined on input line 1
+414.
+
+
+LaTeX Warning: Reference `eq:seedfield' on page 30 undefined on input line 1414
+.
+
+
+Package natbib Warning: Citation `Landreman' on page 30 undefined on input line
+ 1414.
+
+
+Package natbib Warning: Citation `Issan' on page 30 undefined on input line 141
+4.
+
+
+LaTeX Warning: Reference `eq:scalareigen' on page 30 undefined on input line 14
+14.
+
+
+LaTeX Warning: Reference `eq:scalardot' on page 30 undefined on input line 1426
+.
+
+
+LaTeX Warning: Reference `eq:seedfield' on page 30 undefined on input line 1432
+.
+
+
+LaTeX Warning: Reference `eq:current' on page 30 undefined on input line 1432.
+
+
+LaTeX Warning: Reference `prop:scalar' on page 30 undefined on input line 1449.
+
+
+
+LaTeX Warning: Reference `eq:axisderivatives' on page 30 undefined on input lin
+e 1451.
+
+
+LaTeX Warning: Reference `tab:parameters' on page 30 undefined on input line 14
+51.
+
+
+[30]
+
+Package natbib Warning: Citation `Lesaffre2007' on page 31 undefined on input l
+ine 1454.
+
+
+Package natbib Warning: Citation `Montani' on page 31 undefined on input line 1
+454.
+
+
+LaTeX Warning: Reference `sec:pdel' on page 31 undefined on input line 1454.
+
+
+LaTeX Warning: Reference `eq:eigenidentity' on page 31 undefined on input line 
+1467.
+
+
+LaTeX Warning: Reference `eq:materialdata' on page 31 undefined on input line 1
+493.
+
+
+LaTeX Warning: Reference `eq:passivewindow' on page 31 undefined on input line 
+1495.
+
+
+LaTeX Warning: Reference `eq:matchingresult' on page 31 undefined on input line
+ 1497.
+
+
+LaTeX Warning: Reference `eq:generalmaterial' on page 31 undefined on input lin
+e 1497.
+
+
+LaTeX Warning: Reference `sec:review' on page 31 undefined on input line 1501.
+
+
+Package natbib Warning: Citation `RenEntropy' on page 31 undefined on input lin
+e 1501.
+
+
+Package natbib Warning: Citation `RenSpending' on page 31 undefined on input li
+ne 1501.
+
+
+Package natbib Warning: Citation `RenEulerian' on page 31 undefined on input li
+ne 1501.
+
+
+Package natbib Warning: Citation `RenMultiChannel' on page 31 undefined on inpu
+t line 1501.
+
+
+LaTeX Warning: Reference `eq:reviewhistories' on page 31 undefined on input lin
+e 1509.
+
+
+LaTeX Warning: Reference `eq:reviewmixedstate' on page 31 undefined on input li
+ne 1509.
+
+
+LaTeX Warning: Reference `eq:reviewrules' on page 31 undefined on input line 15
+09.
+
+
+Underfull \hbox (badness 1314) in paragraph at lines 1523--1525
+\TU/TeXGyreTermes(0)/m/n/10.95 Time-endpoint vanishing of $\OML/cmm/m/it/10.95 
+^^N\OML/cmm/b/it/10.95 u$ \TU/TeXGyreTermes(0)/m/n/10.95 removes the kinetic en
+dpoint term. Stress symmetry gives $\OML/cmm/b/it/10.95 ^^[ \OT1/cmr/m/n/10.95 
+:
+
+[31]
+
+LaTeX Warning: Reference `eq:reviewfirstvariation' on page 32 undefined on inpu
+t line 1531.
+
+
+LaTeX Warning: Reference `eq:reviewinternal' on page 32 undefined on input line
+ 1550.
+
+
+LaTeX Warning: Reference `eq:reviewkinetic' on page 32 undefined on input line 
+1550.
+
+
+LaTeX Warning: Reference `eq:reviewenergy' on page 32 undefined on input line 1
+550.
+
+
+Package natbib Warning: Citation `GayBalmaz2017b' on page 32 undefined on input
+ line 1572.
+
+
+LaTeX Warning: Reference `sec:formal' on page 32 undefined on input line 1574.
+
+(PDEL_Toroidal_Journal_Full.bbl
+Underfull \hbox (badness 1215) in paragraph at lines 43--47
+[]\TU/TeXGyreTermes(0)/m/n/10 Javier Gómez-Serrano, Lukas Liehr, and Mitchell A
+. Taylor.  Counterexamples to Grad’s conjecture.
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 152--158
+[]\TU/TeXGyreTermes(0)/m/n/10 Valentin Carlier and Martin Campos-Pinto.  A leas
+t-action principle for visco-resistive Hall
+
+Underfull \hbox (badness 3977) in paragraph at lines 168--174
+[]\TU/TeXGyreTermes(0)/m/n/10 Evan S. Gawlik, François Gay-Balmaz, and Bastien 
+Manach-Pérennou.  Structure-preserving and
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--189
+[]\TU/TeXGyreTermes(0)/m/n/10 Huilong Ren.  Path-dependent energy Lagrangian fo
+r irreversible thermomechanical systems.
+
+Underfull \hbox (badness 1533) in paragraph at lines 191--196
+[]\TU/TeXGyreTermes(0)/m/n/10 Huilong Ren.  Spending operators and weak power-p
+ort decompositions for path-dependent entropic
+)
+
+Package natbib Warning: There were undefined citations.
+
+
+[33]
+(${PROJECT_ROOT}/github_publication/publish-2
+0261027T111131Z/output/pdf/article/PDEL_Toroidal_Journal_Full.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `PDEL_Toroidal_Journal_Full.out' has chang
+ed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )
+(see the transcript file for additional information)
+Output written on ${PROJECT_ROOT}/github_publ
+ication/publish-20261027T111131Z/output/pdf/article/PDEL_Toroidal_Journal_Full.
+xdv (33 pages, 882048 bytes).
+Transcript written on "${PROJECT_ROOT}/github
+_publication/publish-20261027T111131Z/output/pdf/article/PDEL_Toroidal_Journal_
+Full.log".
+xelatex: major issue: So far, no MiKTeX administrator has checked for updates.
+Latexmk: Getting log file '${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.log'
+Latexmk: Examining '${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.fls'
+Latexmk: Examining '${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.log'
+Latexmk: References changed.
+Latexmk: Found input bbl file 'PDEL_Toroidal_Journal_Full.bbl'
+Latexmk: References changed.
+Latexmk: References changed.
+Latexmk: References changed.
+Latexmk: Log file says output to '${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.xdv'
+Latexmk: Using bibtex to make bibliography file(s).
+  ===Source file '${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.bbl' for 'xelatex'
+Create bibtex ${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full
+kpsewhich: major issue: So far, no MiKTeX administrator has checked for updates.
+kpsewhich: major issue: So far, no MiKTeX administrator has checked for updates.
+Latexmk: Found bibliography file(s):
+  ./references.bib
+Latexmk: applying rule 'bibtex ${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full'...
+Rule 'bibtex ${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full':  Reasons for rerun
+Category 'other':
+  Rerun of 'bibtex ${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full' forced or previously required:
+    Reason or flag: 'Initial set up of rule'
+
+------------
+Run number 1 of rule 'bibtex ${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full'
+------------
+Latexmk: Change directory to '${PUBLICATION_WORKSPACE}/output/pdf/article/'.
+To assist finding of files in document directory, I set
+  BIBINPUTS='${PUBLICATION_WORKSPACE}/manuscript:${PUBLICATION_WORKSPACE}/output/pdf/article:'
+  BSTINPUTS='${PUBLICATION_WORKSPACE}/manuscript:'.
+------------
+Running 'bibtex  "PDEL_Toroidal_Journal_Full.aux"'
+------------
+This is BibTeX, Version 0.99d (MiKTeX 22.1)
+The top-level auxiliary file: PDEL_Toroidal_Journal_Full.aux
+The style file: unsrtnat.bst
+Database file #1: references.bib
+bibtex: major issue: So far, no MiKTeX administrator has checked for updates.
+Latexmk: Change directory back to '${PUBLICATION_WORKSPACE}/manuscript'
+Latexmk: applying rule 'xelatex'...
+Rule 'xelatex':  Reasons for rerun
+Changed files or newly in use/created:
+  ${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.aux
+  ${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.bbl
+  ${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.out
+
+------------
+Run number 2 of rule 'xelatex'
+------------
+------------
+Running 'xelatex -no-pdf -interaction=nonstopmode -halt-on-error -recorder -output-directory="${PUBLICATION_WORKSPACE}/output/pdf/article"  "PDEL_Toroidal_Journal_Full.tex"'
+------------
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 22.1) (preloaded format=xelatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(PDEL_Toroidal_Journal_Full.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/ar
+ticle.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/si
+ze11.clo))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometr
+y/geometry.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphic
+s/keyval.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex
+/ifvtex.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/iftex
+/iftex.sty))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/geometr
+y/geometry.cfg))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath
+/amsmath.sty
+For additional information on amsmath, use the `?' option.
+
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath
+/amstext.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath
+/amsgen.sty))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath
+/amsbsy.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath
+/amsopn.sty))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfont
+s/amssymb.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfont
+s/amsfonts.sty))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amscls/
+amsthm.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/mathtoo
+ls/mathtools.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/c
+alc.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/mathtoo
+ls/mhsetup.sty))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/b
+m.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/jknappe
+n/mathrsfs.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fontspe
+c/fontspec.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3packa
+ges/xparse/xparse.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3kerne
+l/expl3.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backe
+nd/l3backend-xetex.def)))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fontspe
+c/fontspec-xetex.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/base/fo
+ntenc.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fontspe
+c/fontspec.cfg)))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphic
+s/graphicx.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphic
+s/graphics.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphic
+s/trig.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphic
+s-cfg/graphics.cfg)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphic
+s-def/xetex.def)))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/booktab
+s/booktabs.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/a
+rray.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/t
+abularx.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/tools/l
+ongtable.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microty
+pe/microtype.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/etoolbo
+x/etoolbox.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microty
+pe/microtype-xetex.def)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microty
+pe/microtype.cfg))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption
+/caption.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption
+/caption3.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption
+/ltcaption.sty))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/caption
+/subcaption.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyhd
+r/fancyhdr.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/placein
+s/placeins.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/needspa
+ce/needspace.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/natbib/
+natbib.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperre
+f/hyperref.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvsetke
+ys/kvsetkeys.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/kvdef
+inekeys/kvdefinekeys.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfes
+cape/pdfescape.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/ltxcm
+ds/ltxcmds.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/pdfte
+xcmds/pdftexcmds.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/infwa
+rerr/infwarerr.sty)))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hycolor
+/hycolor.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperre
+f/nameref.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/refcoun
+t/refcount.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/getti
+tlestring/gettitlestring.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/kvoptio
+ns/kvoptions.sty)))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/strin
+genc/stringenc.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperre
+f/pd1enc.def)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/intca
+lc/intcalc.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperre
+f/puenc.def)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url
+.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bitse
+t/bitset.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/bigin
+tcalc/bigintcalc.sty)))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/hyperre
+f/hxetex.def
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/rerunfi
+lecheck/rerunfilecheck.sty
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/generic/uniqu
+ecounter/uniquecounter.sty)))
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/xurl/xu
+rl.sty)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/float/f
+loat.sty)
+(${PROJECT_ROOT}/github_publication/publish-2
+0261027T111131Z/output/pdf/article/PDEL_Toroidal_Journal_Full.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+
+(${PROJECT_ROOT}/github_publication/publish-2
+0261027T111131Z/output/pdf/article/PDEL_Toroidal_Journal_Full.out)
+(${PROJECT_ROOT}/github_publication/publish-2
+0261027T111131Z/output/pdf/article/PDEL_Toroidal_Journal_Full.out)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfont
+s/umsa.fd)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microty
+pe/mt-msa.cfg)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfont
+s/umsb.fd)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microty
+pe/mt-msb.cfg)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microty
+pe/mt-cmr.cfg)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/jknappe
+n/ursfs.fd)
+Underfull \hbox (badness 1325) in paragraph at lines 84--85
+[]\TU/TeXGyreTermes(0)/m/n/10 Extending a three-dimensional magnetostatic equil
+ibrium to resistive evolution requires the
+
+Underfull \hbox (badness 1221) in paragraph at lines 84--85
+\TU/TeXGyreTermes(0)/m/n/10 equilibrium, a symmetric positive-definite resistiv
+ity tensor is constructed so that the resistive
+
+Underfull \hbox (badness 1515) in paragraph at lines 86--88
+\TU/TeXGyreTermes(0)/b/n/10.95 Keywords: \TU/TeXGyreTermes(0)/m/n/10.95 path-de
+pendent entropic Lagrangian; resistive magnetohydrodynamics; exact solution;
+
+Underfull \hbox (badness 1253) in paragraph at lines 91--92
+\TU/TeXGyreTermes(0)/m/n/10.95 complete dissipative thermal evolution studied h
+ere. Exact shearing-box solutions with viscosity,
+
+[1]
+Underfull \hbox (badness 1924) in paragraph at lines 93--94
+\TU/TeXGyreTermes(0)/m/n/10.95 Braginskii theories relate electrical and therma
+l transport to collisional plasma physics [[], []].
+
+Underfull \hbox (badness 1264) in paragraph at lines 93--94
+\TU/TeXGyreTermes(0)/m/n/10.95 Generalizations include axisymmetric equilibria 
+with anisotropic resistivity and toroidal flow, and
+
+[2]
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfont
+s/ueuf.fd)
+(${USER_HOME}/Library/Application Support/MiKTeX/texmfs/install/tex/latex/microty
+pe/mt-euf.cfg)
+[3]
+[4]
+[5]
+[6]
+[7]
+[8]
+[9]
+[10]
+[11]
+[12]
+[13]
+Underfull \hbox (badness 1137) in paragraph at lines 820--821
+\TU/TeXGyreTermes(0)/m/n/10.95 A two-temperature state permits the same magneti
+c and mechanical evolution to use an electron-
+
+[14]
+[15]
+[16]
+[17]
+[18]
+[19]
+Underfull \hbox (badness 3158) in paragraph at lines 1090--1090
+[]|\TU/TeXGyreTermes(0)/m/n/10 Temperature separation, ion entropy and interval
+
+
+[20]
+[21]
+[22]
+[23]
+[24]
+[25]
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 1294--1294
+[]|\TU/TeXGyreTermes(0)/m/n/10 Independent
+
+[27]
+Underfull \hbox (badness 1297) in paragraph at lines 1313--1314
+[]\TU/TeXGyreTermes(0)/m/n/10.95 The solutions distinguish magnetic winding fro
+m flux conservation and cooling from negative
+
+[28]
+[29]
+[30]
+Underfull \hbox (badness 1533) in paragraph at lines 1501--1502
+\TU/TeXGyreTermes(0)/m/n/10.95 The reference-volume model of Section []2[] foll
+ows the thermo-mechanical PDEL state and power
+
+Underfull \hbox (badness 1314) in paragraph at lines 1523--1525
+\TU/TeXGyreTermes(0)/m/n/10.95 Time-endpoint vanishing of $\OML/cmm/m/it/10.95 
+^^N\OML/cmm/b/it/10.95 u$ \TU/TeXGyreTermes(0)/m/n/10.95 removes the kinetic en
+dpoint term. Stress symmetry gives $\OML/cmm/b/it/10.95 ^^[ \OT1/cmr/m/n/10.95 
+:
+
+[31]
+(${PROJECT_ROOT}/github_publication/publish-2
+0261027T111131Z/output/pdf/article/PDEL_Toroidal_Journal_Full.bbl
+Underfull \hbox (badness 1215) in paragraph at lines 43--47
+[]\TU/TeXGyreTermes(0)/m/n/10 Javier Gómez-Serrano, Lukas Liehr, and Mitchell A
+. Taylor.  Counterexamples to Grad’s conjecture.
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 152--158
+[]\TU/TeXGyreTermes(0)/m/n/10 Valentin Carlier and Martin Campos-Pinto.  A leas
+t-action principle for visco-resistive Hall
+
+Underfull \hbox (badness 3977) in paragraph at lines 168--174
+[]\TU/TeXGyreTermes(0)/m/n/10 Evan S. Gawlik, François Gay-Balmaz, and Bastien 
+Manach-Pérennou.  Structure-preserving and
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--189
+[]\TU/TeXGyreTermes(0)/m/n/10 Huilong Ren.  Path-dependent energy Lagrangian fo
+r irreversible thermomechanical systems.
+
+Underfull \hbox (badness 1533) in paragraph at lines 191--196
+[]\TU/TeXGyreTermes(0)/m/n/10 Huilong Ren.  Spending operators and weak power-p
+ort decompositions for path-dependent entropic
+)
+[33]
+(${PROJECT_ROOT}/github_publication/publish-2
+0261027T111131Z/output/pdf/article/PDEL_Toroidal_Journal_Full.aux) )
+(see the transcript file for additional information)
+Output written on ${PROJECT_ROOT}/github_publ
+ication/publish-20261027T111131Z/output/pdf/article/PDEL_Toroidal_Journal_Full.
+xdv (33 pages, 925400 bytes).
+Transcript written on "${PROJECT_ROOT}/github
+_publication/publish-20261027T111131Z/output/pdf/article/PDEL_Toroidal_Journal_
+Full.log".
+xelatex: major issue: So far, no MiKTeX administrator has checked for updates.
+Latexmk: Getting log file '${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.log'
+Latexmk: Examining '${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.fls'
+Latexmk: Examining '${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.log'
+Latexmk: Found input bbl file '${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.bbl'
+Latexmk: Log file says output to '${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.xdv'
+Latexmk: Using bibtex to make bibliography file(s).
+  ===Source file '${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.bbl' for 'xelatex'
+kpsewhich: major issue: So far, no MiKTeX administrator has checked for updates.
+kpsewhich: major issue: So far, no MiKTeX administrator has checked for updates.
+Latexmk: Found bibliography file(s):
+  ./references.bib
+Latexmk: applying rule 'xdvipdfmx'...
+Rule 'xdvipdfmx':  Reasons for rerun
+Changed files or newly in use/created:
+  ${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.xdv
+Category 'changed_source_rules':
+  xelatex
+Category 'no_dest':
+  xdvipdfmx
+
+------------
+Run number 1 of rule 'xdvipdfmx'
+------------
+------------
+Running 'xdvipdfmx -E -o "${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.pdf"  "${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.xdv"'
+------------
+${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.xdv -> ${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.pdf
+[1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20][21][22][23][24][25][26][27][28][29][30][31][32][33]
+1253051 bytes written
+xdvipdfmx: major issue: So far, no MiKTeX administrator has checked for updates.
+Latexmk: All targets (${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.xdv ${PUBLICATION_WORKSPACE}/output/pdf/article/PDEL_Toroidal_Journal_Full.pdf) are up-to-date
+
+latexmk: major issue: So far, no MiKTeX administrator has checked for updates.

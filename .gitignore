@@ -1,0 +1,6 @@
+**/.lake/
+verification-runs/
+**/__pycache__/
+*.pyc
+.DS_Store
+*.zip

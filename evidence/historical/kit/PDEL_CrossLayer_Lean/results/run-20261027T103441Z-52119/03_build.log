@@ -1,0 +1,112 @@
+⚠ [2793/2797] Replayed PdelMHD.PassiveTensor
+warning: ././././PdelMHD/PassiveTensor.lean:74:2: try 'simp at hg' instead of 'simpa using hg'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ././././PdelMHD/PassiveTensor.lean:120:30: 'ring' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: ././././PdelMHD/PassiveTensor.lean:120:30: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: ././././PdelMHD/PassiveTensor.lean:128:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././././PdelMHD/PassiveTensor.lean:138:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2794/2797] Replayed PdelMHD.Balances
+warning: ././././PdelMHD/Balances.lean:67:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././././PdelMHD/Balances.lean:86:5: unused variable `hg`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [6659/6688] Built PdelBasic.Model
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Model.lean:78:62: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Model.lean:77:70: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Model.lean:82:33: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Model.lean:83:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Model.lean:84:56: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Model.lean:78:62: 'ring' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Model.lean:112:62: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Model.lean:111:70: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Model.lean:113:72: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Model.lean:114:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Model.lean:112:62: 'ring' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Model.lean:123:71: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Model.lean:124:26: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Model.lean:137:52: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Model.lean:138:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [6660/6688] Built PdelBasic.History
+⚠ [6661/6688] Built PdelBasic.FirstVariation
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/FirstVariation.lean:186:82: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/FirstVariation.lean:187:72: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/FirstVariation.lean:188:44: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [6662/6688] Built PdelEulerian.Smooth
+warning: ././../../PDEL_Layer3_Lean/lean/././PdelEulerian/Smooth.lean:103:2: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [6663/6688] Built PdelBasic.Stationarity
+✔ [6664/6688] Built PdelBasic.IntegralBridge
+⚠ [6665/6688] Built PdelBasic.Energy
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Energy.lean:24:28: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Energy.lean:26:50: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Energy.lean:108:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Energy.lean:156:57: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Energy.lean:159:57: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [6666/6688] Built PdelBasic.Examples
+warning: ././../../PDEL_Layer2_Lean/lean/././PdelBasic/Examples.lean:64:11: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [6667/6688] Built PdelBasic
+✔ [6668/6688] Built PdelEulerian.VectorCalculus
+⚠ [6669/6688] Built PdelEulerian.Thermodynamics
+warning: ././../../PDEL_Layer3_Lean/lean/././PdelEulerian/Thermodynamics.lean:108:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././../../PDEL_Layer3_Lean/lean/././PdelEulerian/Thermodynamics.lean:108:64: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [6670/6688] Built PdelEulerian.Fields
+✔ [6671/6688] Built PdelBridge.Vectors
+⚠ [6672/6688] Built PdelEulerian.History
+warning: ././../../PDEL_Layer3_Lean/lean/././PdelEulerian/History.lean:192:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././../../PDEL_Layer3_Lean/lean/././PdelEulerian/History.lean:192:37: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [6673/6688] Built PdelBridge.Tensor
+✔ [6674/6688] Built PdelBridge.Thermal
+⚠ [6675/6688] Built PdelEulerian.FirstVariation
+warning: ././../../PDEL_Layer3_Lean/lean/././PdelEulerian/FirstVariation.lean:96:62: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././../../PDEL_Layer3_Lean/lean/././PdelEulerian/FirstVariation.lean:137:67: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [6676/6688] Built PdelEulerian.BoxIntegration
+✔ [6677/6688] Built PdelBridge.Histories
+⚠ [6678/6688] Built PdelEulerian.Stationarity
+warning: ././../../PDEL_Layer3_Lean/lean/././PdelEulerian/Stationarity.lean:120:4: try 'simp' instead of 'simpa'
+note: this linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [6679/6688] Built PdelEulerian.Equations
+✔ [6680/6688] Built PdelBridge.Transport
+✔ [6681/6688] Built PdelEulerian.Energy
+⚠ [6682/6688] Built PdelBridge.Budgets
+warning: ././././PdelBridge/Budgets.lean:35:15: unused variable `M`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+✔ [6683/6688] Built PdelEulerian.IntegralBridge
+✔ [6684/6688] Built PdelEulerian.Examples
+✔ [6685/6688] Built PdelEulerian
+✔ [6686/6688] Built PdelBridge.ThermalReduction
+✔ [6687/6688] Built PdelBridge
+Build completed successfully.

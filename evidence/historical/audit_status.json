@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "step": "integration_build",
+      "command": [
+        "lake",
+        "build",
+        "PdelIntegration"
+      ],
+      "cwd": "${HISTORICAL_RUN}/kit/PDEL_Integration_Check/lean",
+      "exit_code": 0,
+      "seconds": 4.872,
+      "log": "${HISTORICAL_RUN}/04_integration_build.log"
+    },
+    {
+      "step": "dependencies",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "${HISTORICAL_RUN}/CheckDependencies.lean"
+      ],
+      "cwd": "${HISTORICAL_RUN}/kit/PDEL_Integration_Check/lean",
+      "exit_code": 0,
+      "seconds": 5.074,
+      "log": "${HISTORICAL_RUN}/05_dependencies.log.attempt1",
+      "diagnostic_validation": "Initial Python classification rejected compiler-only unsafe helpers; Lean command itself exited 0."
+    },
+    {
+      "step": "dependencies",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "${HISTORICAL_RUN}/CheckDependencies.lean"
+      ],
+      "cwd": "${HISTORICAL_RUN}/kit/PDEL_Integration_Check/lean",
+      "exit_code": 0,
+      "seconds": 6.491,
+      "log": "${HISTORICAL_RUN}/05_dependencies.log"
+    },
+    {
+      "step": "axioms",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "${HISTORICAL_RUN}/CheckAllAxioms.lean"
+      ],
+      "cwd": "${HISTORICAL_RUN}/kit/PDEL_Integration_Check/lean",
+      "exit_code": 0,
+      "seconds": 238.829,
+      "log": "${HISTORICAL_RUN}/06_all_axioms.log"
+    },
+    {
+      "step": "full_types",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "${HISTORICAL_RUN}/CheckAllTypes.lean"
+      ],
+      "cwd": "${HISTORICAL_RUN}/kit/PDEL_Integration_Check/lean",
+      "exit_code": 0,
+      "seconds": 10.368,
+      "log": "${HISTORICAL_RUN}/07_all_full_types.log"
+    },
+    {
+      "step": "lean_search_paths",
+      "command": [
+        "lake",
+        "env",
+        "python3",
+        "-c",
+        "import os,json; print(json.dumps({k:os.environ.get(k) for k in [\"LEAN_PATH\",\"LEAN_SRC_PATH\"]}))"
+      ],
+      "cwd": "${HISTORICAL_RUN}/kit/PDEL_Integration_Check/lean",
+      "exit_code": 0,
+      "seconds": 0.286,
+      "log": "${HISTORICAL_RUN}/08_lean_paths.log"
+    }
+  ],
+  "steps": {
+    "integration_build": "PASS",
+    "dependencies": "PASS",
+    "axioms": "PASS",
+    "full_types": "PASS",
+    "lean_search_paths": "PASS"
+  },
+  "integration_build_log": "04_integration_build.log",
+  "dependencies_log": "05_dependencies.log",
+  "axioms_log": "06_all_axioms.log",
+  "full_types_log": "07_all_full_types.log",
+  "lean_search_paths_log": "08_lean_paths.log",
+  "declaration_count": 626,
+  "theorem_count": 412,
+  "loaded_project_constants": 1709,
+  "loaded_project_modules": 37,
+  "diagnostic_resolution": {
+    "status": "RESOLVED",
+    "compiler_unsafe_axiom_entries": 62,
+    "used_by_audited_proofs_or_types": 0,
+    "axiom_whitelist_changed": false,
+    "note": "CheckDependencies now records ConstantInfo.isUnsafe; #print axioms policy unchanged."
+  }
+}

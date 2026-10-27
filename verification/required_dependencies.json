@@ -1,0 +1,96 @@
+[
+  {
+    "declaration": "PdelBridge.seed_positive_definite",
+    "required_proof_dependencies": [
+      "PdelMHD.tensor_positive_definite"
+    ],
+    "status": "PASS"
+  },
+  {
+    "declaration": "PdelBridge.seed_maps_current",
+    "required_proof_dependencies": [
+      "PdelMHD.tensor_maps_current"
+    ],
+    "status": "PASS"
+  },
+  {
+    "declaration": "PdelBridge.seed_current_power",
+    "required_proof_dependencies": [
+      "PdelMHD.current_power"
+    ],
+    "status": "PASS"
+  },
+  {
+    "declaration": "PdelBridge.receiver_derivative_via_layer2",
+    "required_proof_dependencies": [
+      "PdelBasic.endpoint_channel_derivative"
+    ],
+    "status": "PASS"
+  },
+  {
+    "declaration": "PdelBridge.reservoir_exchange_via_layer1",
+    "required_proof_dependencies": [
+      "PdelMHD.exchange_entropy_identity",
+      "PdelBasic.reservoir_entropy_identity"
+    ],
+    "status": "PASS"
+  },
+  {
+    "declaration": "PdelBridge.coupled_finite_energy_budget",
+    "required_proof_dependencies": [
+      "PdelBasic.finite_interval_energy_balance",
+      "PdelEulerian.integrated_energy_from_stationarity"
+    ],
+    "status": "PASS"
+  },
+  {
+    "declaration": "PdelBridge.three_layer_exchange_budget",
+    "required_proof_dependencies": [
+      "PdelMHD.exchange_energy_cancellation"
+    ],
+    "status": "PASS"
+  },
+  {
+    "declaration": "PdelBridge.thermal_projection_stationary",
+    "required_proof_dependencies": [
+      "PdelBasic.pdel_basic_variational_theorem",
+      "PdelEulerian.eulerian_pdel_variational_theorem"
+    ],
+    "status": "PASS"
+  },
+  {
+    "declaration": "PdelBridge.stationary_seed_joule",
+    "required_proof_dependencies": [
+      "PdelEulerian.eulerian_pdel_variational_theorem"
+    ],
+    "status": "PASS"
+  },
+  {
+    "declaration": "PdelRevision3.nonmagnetic_stationarity_iff",
+    "required_proof_dependencies": [
+      "PdelEulerian.eulerian_pdel_mhd_theorem"
+    ],
+    "status": "PASS"
+  },
+  {
+    "declaration": "PdelRevision3.nonmagnetic_first_variation",
+    "required_proof_dependencies": [
+      "PdelEulerian.firstVariation_raw"
+    ],
+    "status": "PASS"
+  },
+  {
+    "declaration": "PdelRevision3.current_history_is_paper_integral",
+    "required_proof_dependencies": [
+      "PdelRevision3.paper_reference_joule_rate"
+    ],
+    "status": "PASS"
+  },
+  {
+    "declaration": "PdelIntegration.branch_dissipation_via_layer1",
+    "required_proof_dependencies": [
+      "PdelMHD.dissipative_power_sum"
+    ],
+    "status": "PASS"
+  }
+]
