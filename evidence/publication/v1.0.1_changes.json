@@ -1,0 +1,10 @@
+{
+  "previous_release": "v1.0.0",
+  "current_release": "v1.0.1",
+  "mathematical_source_changes": [],
+  "dependency_commit_changes": [],
+  "changed_tool": "scripts/verify_github.py",
+  "change": "Fetch and validate the locked ProofWidgets release tag for cold dependency setup.",
+  "paper_change": "Versioned release link and text changed from v1.0.0 to v1.0.1 only.",
+  "paper_sha256": "f80094486b2de48a6254e958ccdb874be5d8fe72919eac80ebdb3d458dc0846a"
+}

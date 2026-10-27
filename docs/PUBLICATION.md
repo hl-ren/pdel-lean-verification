@@ -1,6 +1,6 @@
 # Publication provenance
 
-This repository publishes the independently validated PDEL verification package with English documentation. The publication copy preserves all 78 locked source, configuration, and verification-tool files, all 37 project Lean modules, and the previous compiler/axiom/type/dependency evidence byte-for-byte.
+This repository publishes the independently validated PDEL verification package with English documentation. The initial v1.0.0 publication preserved all 78 locked source, configuration, and verification-tool files. All 37 project Lean modules and the previous local compiler/axiom/type/dependency evidence remain byte-for-byte unchanged in v1.0.1. The v1.0.1 correction changes only dependency-fetch tooling and its recorded hash, as described below.
 
 ## Stable manuscript correspondence
 
@@ -20,4 +20,10 @@ These successful builds do not establish a standalone LaTeX build from this repo
 
 Repository: <https://github.com/hl-ren/pdel-lean-verification>
 
-Versioned verification release: <https://github.com/hl-ren/pdel-lean-verification/releases/tag/v1.0.0>
+Versioned verification release: <https://github.com/hl-ren/pdel-lean-verification/releases/tag/v1.0.1>
+
+## v1.0.1 dependency-fetch correction
+
+The [first GitHub run](https://github.com/hl-ren/pdel-lean-verification/actions/runs/40495033001) failed before any project Lean build or axiom audit. Exact-commit shallow fetches omitted the ProofWidgets release tag; Lake 4.19 resolves this dependency's archive using an exact tag at HEAD. The failed run's status and cache log are preserved under `evidence/first-github-run/`.
+
+The verifier now fetches the locked ProofWidgets input tag and checks that the tag resolves to the already pinned commit. It does not change dependency versions, proof sources, declaration targets, allowed axioms, or mathematical assumptions. This also avoids silently trusting a tag if it has been moved. The original v1.0.0 release remains available as a historical publication; v1.0.1 supersedes it for reproduction.

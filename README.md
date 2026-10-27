@@ -2,7 +2,7 @@
 
 Reproducible Lean 4 compilation, per-declaration axiom audits, and cross-layer dependency checks for **PDEL Toroidal Journal, Revision 3**.
 
-[Verification release v1.0.0](https://github.com/hl-ren/pdel-lean-verification/releases/tag/v1.0.0) · [GitHub Actions](https://github.com/hl-ren/pdel-lean-verification/actions/workflows/verify.yml)
+[Verification release v1.0.1](https://github.com/hl-ren/pdel-lean-verification/releases/tag/v1.0.1) · [GitHub Actions](https://github.com/hl-ren/pdel-lean-verification/actions/workflows/verify.yml)
 
 ## Recorded verification
 

@@ -171,6 +171,15 @@ def main():
                 run(['git','remote','add','origin',dep['url']],target,f'02_{i}_remote.log')
                 run(['git','fetch','--depth','1','origin',dep['rev']],target,f'02_{i}_fetch.log')
                 run(['git','checkout','--detach','FETCH_HEAD'],target,f'02_{i}_checkout.log')
+                if dep['name'] == 'proofwidgets':
+                    # Lake resolves its release archive by an exact Git tag.
+                    # Fetching only the locked commit does not create that tag.
+                    tag = dep['inputRev']
+                    require(re.fullmatch(r'v[0-9]+(?:\.[0-9]+)+', tag), 'Invalid ProofWidgets release tag')
+                    ref = 'refs/tags/' + tag
+                    run(['git','fetch','--depth','1','origin',ref+':'+ref], target, f'02_{i}_release_tag.log')
+                    tagged = subprocess.check_output(['git','rev-parse',ref+'^{commit}'],cwd=target,text=True).strip()
+                    require(tagged == dep['rev'], 'ProofWidgets release tag does not match the pinned commit')
         def check_pins():
             checks=[]
             for dep in read(ROOT/'verification/dependencies.lock.json'):

@@ -141,7 +141,7 @@
     "lean/lakefile.toml": "e4725085ab8f9e5035afc3adbfcf137d649f891e70405d8e2036f19013c7bc04",
     "lean/lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
     "lean/theorems.json": "3028fe111061cf0577b552197683a6b4a88dbaac59f827eb2745d22bf076d1ba",
-    "scripts/verify_github.py": "9be68ed0b5d18c1bbbab7ecc2a76a2cd3e187312d90f101ba7512409dce9a329",
+    "scripts/verify_github.py": "3b8cb1d270cda059db295e30734ae4d3e361475b6b798f037d5b2a416e9c3dca",
     "verification/CheckDependencies.lean": "825651d4db852e214528825a35455301597e1cb5a5bd58f65daf7787b058f9d3",
     "verification/declarations.json": "e8816427a0501f78c57e3bf063177f265b5059edea81c75c1bd10438ad45482a",
     "verification/dependencies.lock.json": "982057a21093c223543f0f0016bd29900b8d0ef9125e65aaaf971bca77910b2f",
