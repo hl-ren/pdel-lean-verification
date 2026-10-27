@@ -1,8 +1,0 @@
-{
-  "status": "PASS",
-  "mutated_file": "lean/PdelMHD.lean",
-  "expected": "Reject changed proof source",
-  "actual_exit_code": 1,
-  "diagnostic": "PACKAGE CHECK FAILED: Changed locked source/tool: lean/PdelMHD.lean",
-  "restored_sha256": "2cc66db8434c0116cc510a0c9359b21b9b8aceae7efb9551ccb4bf45f0175f93"
-}

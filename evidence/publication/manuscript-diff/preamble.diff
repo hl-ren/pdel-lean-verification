@@ -1,9 +1,0 @@
---- before/preamble.tex
-+++ after/preamble.tex
-@@ -64,4 +64,5 @@
- \newcommand{\suppref}{Supplementary Material}
- 
- \usepackage{float}
--\newcommand{\repositoryplaceholder}{\texttt{[GitHub repository URL pending]}}
-+\newcommand{\repositoryurl}{\url{https://github.com/hl-ren/pdel-lean-verification}}
-+\newcommand{\repositoryarchive}{\href{https://github.com/hl-ren/pdel-lean-verification/releases/tag/v1.0.0}{verification release v1.0.0}}

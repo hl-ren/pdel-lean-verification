@@ -2,7 +2,7 @@
 
 Lean 4 formalization accompanying *A path-dependent entropic Lagrangian formulation for exact thermoviscous evolution of sheared magnetic tori with anisotropic resistivity*.
 
-[Manuscript](paper/PDEL_Toroidal_Journal_Full.tex) · [Verification archive](https://github.com/hl-ren/pdel-lean-verification/releases/tag/v1.0.1) · [Declaration correspondence](docs/REVISION3_STATEMENT_MAP.json)
+[Verification archive](https://github.com/hl-ren/pdel-lean-verification/releases/tag/v1.0.1) · [Declaration correspondence](docs/REVISION3_STATEMENT_MAP.json)
 
 ## Mathematical scope
 
@@ -41,11 +41,9 @@ An existing cache of the nine pinned third-party packages can be supplied with `
 
 The [Ubuntu verification run](https://github.com/hl-ren/pdel-lean-verification/actions/runs/40495422483) completed a fresh dependency fetch, compilation, axiom audit, type extraction and dependency analysis. The full report is archived with [v1.0.1](https://github.com/hl-ren/pdel-lean-verification/releases/tag/v1.0.1). The logical dependencies are limited to `Classical.choice`, `Quot.sound` and `propext`.
 
-- [Local verification records](evidence/README.md), including the [declaration audit](evidence/historical/declaration_status.json), [axiom output](evidence/historical/06_all_axioms.log) and [complete types](evidence/historical/07_all_full_types.log).
-- [Verification record and version information](docs/PUBLICATION.md).
-- [Declaration registry](verification/declarations.json), [source lock](verification/source_lock.json) and [proof-source hashes](verification/proof_source_provenance.json).
+The repository retains the Lean sources, audit drivers, declaration registries, dependency locks, CI workflow and manuscript correspondence needed to reproduce these checks. Historical logs and complete types remain in the versioned verification archive; a new run writes fresh evidence locally.
 
-The [manuscript correspondence](docs/REVISION3_STATEMENT_MAP.json) is indexed by stable LaTeX labels and records the associated declarations, hypotheses and unformalized content. The repository includes the manuscript source for reference; its figures and numerical-analysis files are distributed separately with the manuscript.
+The [declaration registry](verification/declarations.json), [source lock](verification/source_lock.json) and [proof-source hashes](verification/proof_source_provenance.json) identify the audited sources. The [manuscript correspondence](docs/REVISION3_STATEMENT_MAP.json) uses stable LaTeX labels and records declarations, hypotheses and coverage limits. Manuscript sources and figures are distributed separately.
 
 ## Checksums
 
