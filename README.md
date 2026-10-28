@@ -2,7 +2,7 @@
 
 Lean 4 formalization accompanying *A path-dependent entropic Lagrangian formulation for exact thermoviscous evolution of sheared magnetic tori with anisotropic resistivity*.
 
-[Verification archive](https://github.com/hl-ren/pdel-lean-verification/releases/tag/v1.0.1) · [Declaration correspondence](docs/REVISION3_STATEMENT_MAP.json)
+[Paper: arXiv:2610.37305v1](https://arxiv.org/abs/2610.37305v1) · [Verification archive v1.0.2](https://github.com/hl-ren/pdel-lean-verification/releases/tag/v1.0.2) · [Declaration correspondence](docs/REVISION3_STATEMENT_MAP.json)
 
 ## Mathematical scope
 
@@ -23,10 +23,10 @@ Full Maxwell dynamics, the two-temperature PDE system, toroidal embedding, movin
 
 The development uses **Lean 4.19.0** and mathlib commit `c44e0c8ee63ca166450922a373c7409c5d26b00b`. All nine third-party dependency revisions are fixed in [the dependency manifest](verification/dependencies.lock.json).
 
-Requirements: Python 3.11 or later, Git and curl; macOS also requires Apple Command Line Tools. Repository access is currently restricted, so cloning requires an authorized account.
+Requirements: Python 3.11 or later, Git and curl; macOS also requires Apple Command Line Tools.
 
 ```sh
-git clone https://github.com/hl-ren/pdel-lean-verification.git
+git clone --branch v1.0.2 https://github.com/hl-ren/pdel-lean-verification.git
 cd pdel-lean-verification
 bash verify.sh
 ```
@@ -39,7 +39,7 @@ An existing cache of the nine pinned third-party packages can be supplied with `
 
 ## Verification records
 
-The [Ubuntu verification run](https://github.com/hl-ren/pdel-lean-verification/actions/runs/40495422483) completed a fresh dependency fetch, compilation, axiom audit, type extraction and dependency analysis. The full report is archived with [v1.0.1](https://github.com/hl-ren/pdel-lean-verification/releases/tag/v1.0.1). The logical dependencies are limited to `Classical.choice`, `Quot.sound` and `propext`.
+The [Ubuntu verification run](https://github.com/hl-ren/pdel-lean-verification/actions/runs/40515165759) completed a fresh dependency fetch, compilation, axiom audit, type extraction and dependency analysis. The full report is archived with [v1.0.2](https://github.com/hl-ren/pdel-lean-verification/releases/tag/v1.0.2). The logical dependencies are limited to `Classical.choice`, `Quot.sound` and `propext`.
 
 The repository retains the Lean sources, audit drivers, declaration registries, dependency locks, CI workflow and manuscript correspondence needed to reproduce these checks. Historical logs and complete types remain in the versioned verification archive; a new run writes fresh evidence locally.
 
